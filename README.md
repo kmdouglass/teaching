@@ -3,6 +3,10 @@ Optics and biophysics teaching materials
 
 ## Image formatting
 
+Sketches and illustrations are saved as Inkscape SVGs.
+
+Some browsers will not render some SVG features such as arrowheads, so it might be necessary to download images to see them in their entirety.
+
 ## Sizes
 
 Widths
@@ -18,4 +22,4 @@ DPI
 
 ## Font
 
-- Arial
+- Arial, 8 pt
