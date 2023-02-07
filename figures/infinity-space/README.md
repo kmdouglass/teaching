@@ -1,0 +1,1 @@
+Optical path of an infinity corrected microscope. Rays emitted from a point in the sample plane are parallel in the infinity space. O/O' and T/T' denote the principle planes of the objective and tube lens, respectively. f_obj and f_TL denote their focal lengths.

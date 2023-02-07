@@ -1,7 +1,9 @@
 # teaching
 Optics and biophysics teaching materials
 
-## Image sizes
+## Image formatting
+
+## Sizes
 
 Widths
 
@@ -13,3 +15,7 @@ DPI
 
 - Sketches: 300
 - Raster: 600
+
+## Font
+
+- Arial
