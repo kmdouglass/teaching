@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90mm"
+   height="57mm"
+   viewBox="0 0 90 57"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="dstorm-state-model.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title3851">Three state model of fluorescence photoswitching</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="3.6596241"
+     inkscape:cx="196.60489"
+     inkscape:cy="122.6902"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3689">
+    <inkscape:grid
+       type="xygrid"
+       id="grid25"
+       empcolor="#e50000"
+       empopacity="0.18823529"
+       spacingy="0.26458334"
+       empspacing="10"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker3370"
+       refX="1"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path3368"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3166"
+       refX="1"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path3164"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2179"
+       refX="1"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path2177"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1"
+       refX="1"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path5057"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8221">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop8217" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop8219" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8221"
+       id="linearGradient8223"
+       x1="45.090595"
+       y1="15.143952"
+       x2="56.651337"
+       y2="15.143952"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(45.323687,10.548882)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1996"
+       transform="translate(-33.406433,-15.507753)">
+      <g
+         id="g3720"
+         transform="translate(-1.3020826,2.4904192)">
+        <g
+           id="g1854"
+           transform="translate(-2.6458322)">
+          <g
+             id="g3689">
+            <text
+               xml:space="preserve"
+               style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+               x="51.181061"
+               y="32.393543"
+               id="text328"><tspan
+                 sodipodi:role="line"
+                 id="tspan326"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+                 x="51.181061"
+                 y="32.393543">ON</tspan></text>
+            <rect
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none"
+               id="rect419"
+               width="18.520834"
+               height="10.583333"
+               x="43.989765"
+               y="26.091085" />
+            <text
+               xml:space="preserve"
+               style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+               x="79.270988"
+               y="27.088783"
+               id="text3528"><tspan
+                 sodipodi:role="line"
+                 id="tspan3526"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+                 x="79.270988"
+                 y="27.088783">k<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan3929">off</tspan>(I)</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+               x="80.598007"
+               y="37.14296"
+               id="text3536"><tspan
+                 sodipodi:role="line"
+                 id="tspan3534"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+                 x="80.598007"
+                 y="37.14296">k<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan3532">on</tspan></tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+               x="99.783798"
+               y="42.709835"
+               id="text3542"><tspan
+                 sodipodi:role="line"
+                 id="tspan3540"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+                 x="99.783798"
+                 y="42.709835">k<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan3544">bl</tspan></tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+               x="63.271263"
+               y="42.709835"
+               id="text3561"><tspan
+                 sodipodi:role="line"
+                 id="tspan3559"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+                 x="63.271263"
+                 y="42.709835">k<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan3557">bl</tspan></tspan></text>
+          </g>
+        </g>
+        <g
+           id="g1864"
+           transform="translate(10.583293)">
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="95.404411"
+             y="32.393543"
+             id="text1091"><tspan
+               sodipodi:role="line"
+               id="tspan1089"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="95.404411"
+               y="32.393543">OFF</tspan></text>
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none"
+             id="rect1093"
+             width="18.520834"
+             height="10.583333"
+             x="88.968971"
+             y="26.091085" />
+        </g>
+        <g
+           id="g1859"
+           transform="translate(1.58748,3.7041535)">
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="70.486023"
+             y="49.85537"
+             id="text1097"><tspan
+               sodipodi:role="line"
+               id="tspan1095"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="70.486023"
+               y="49.85537">BLEACHED</tspan></text>
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none"
+             id="rect1099"
+             width="18.520834"
+             height="10.583333"
+             x="68.860619"
+             y="43.5536" />
+        </g>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;marker-end:url(#Arrow1)"
+           d="m 59.864766,28.73692 h 39.6875"
+           id="path1920" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;marker-end:url(#marker2179)"
+           d="m 99.552266,34.028587 h -39.6875"
+           id="path2175" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;marker-end:url(#marker3166)"
+           d="M 57.218933,36.67442 73.093932,47.257753"
+           id="path3162" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;marker-end:url(#marker3370)"
+           d="M 102.1981,36.67442 86.323099,47.257753"
+           id="path3366" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata2091">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Kyle M. Douglass</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:language>English</dc:language>
+        <dc:title>Three state model of fluorescence photoswitching</dc:title>
+        <dc:description>Rate coefficients between states are denoted by k's. k_off is a function of light irradiance at the fluorophore. Photons are emitted from the fluorophore when it is in the ON state, but not when it is in the OFF state or the BLEACHED state. Once bleached, a fluorophore will remain that way forever.</dc:description>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
