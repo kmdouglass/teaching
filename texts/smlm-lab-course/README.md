@@ -4,6 +4,14 @@ Laboratory manual for the SMLM course as part of the Travaux Pratiques de Physiq
 
 ## Build the manual
 
+### Docker
+
 ```console
-docker build -t smlm-lab-course .
+./build.sh
+```
+
+### TeX Live
+
+```console
+pdflatex smlm-lab-manual.tex
 ```
