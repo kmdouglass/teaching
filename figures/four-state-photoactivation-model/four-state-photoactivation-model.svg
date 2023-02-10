@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90mm"
+   height="57mm"
+   viewBox="0 0 90 57"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="four-state-photoactivation-model.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title3851">Four state model of fluorescence photoactivation</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="3.6596241"
+     inkscape:cx="247.97629"
+     inkscape:cy="122.6902"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3720">
+    <inkscape:grid
+       type="xygrid"
+       id="grid25"
+       empcolor="#e50000"
+       empopacity="0.18823529"
+       spacingy="0.26458334"
+       empspacing="10"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker1730"
+       refX="1"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path1728"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1530"
+       refX="2"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path1528"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1326"
+       refX="1"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606599"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path1324"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8221">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop8217" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop8219" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8221"
+       id="linearGradient8223"
+       x1="45.090595"
+       y1="15.143952"
+       x2="56.651337"
+       y2="15.143952"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(45.323687,10.548882)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1996"
+       transform="translate(-33.406433,-15.507753)">
+      <g
+         id="g3720"
+         transform="translate(-1.3020826,2.4904192)">
+        <g
+           id="g3044"
+           transform="translate(1.3437514,2.0416664)">
+          <g
+             id="g449"
+             transform="translate(27.760416,-2.490418)">
+            <text
+               xml:space="preserve"
+               style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+               x="48.535229"
+               y="32.393543"
+               id="text328"><tspan
+                 sodipodi:role="line"
+                 id="tspan326"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+                 x="48.535229"
+                 y="32.393543">ON</tspan></text>
+            <rect
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none"
+               id="rect419"
+               width="18.520834"
+               height="10.583333"
+               x="41.343933"
+               y="26.091085" />
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="58.625336"
+             y="27.20038"
+             id="text3528"><tspan
+               sodipodi:role="line"
+               id="tspan3526"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="58.625336"
+               y="27.20038">k<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2890">a</tspan>(I<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2076">UV</tspan>)</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="84.45018"
+             y="40.192799"
+             id="text3536"><tspan
+               sodipodi:role="line"
+               id="tspan3534"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="84.45018"
+               y="40.192799">k<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan3532">on</tspan></tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="92.791107"
+             y="27.208372"
+             id="text3561"><tspan
+               sodipodi:role="line"
+               id="tspan3559"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="92.791107"
+               y="27.208372">k<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan3557">bl</tspan></tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="40.051163"
+             y="29.903126"
+             id="text1091"><tspan
+               sodipodi:role="line"
+               id="tspan1089"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="40.051163"
+               y="29.903126">INACTIVE</tspan></text>
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none"
+             id="rect1093"
+             width="18.520834"
+             height="10.583333"
+             x="37.354347"
+             y="23.600668" />
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="102.47975"
+             y="29.902437"
+             id="text1097"><tspan
+               sodipodi:role="line"
+               id="tspan1095"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="102.47975"
+               y="29.902437">BLEACHED</tspan></text>
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none"
+             id="rect1099"
+             width="18.520834"
+             height="10.583333"
+             x="100.85435"
+             y="23.600668" />
+          <g
+             id="g468"
+             transform="translate(11.885413,18.676249)">
+            <text
+               xml:space="preserve"
+               style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+               x="63.654373"
+               y="32.393543"
+               id="text464"><tspan
+                 sodipodi:role="line"
+                 id="tspan462"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+                 x="63.654373"
+                 y="32.393543">OFF</tspan></text>
+            <rect
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none"
+               id="rect466"
+               width="18.520834"
+               height="10.583333"
+               x="57.218933"
+               y="26.091085" />
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;marker-end:url(#marker1326)"
+               d="M 43.989769,10.216085 H 57.218936"
+               id="path1131" />
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;marker-end:url(#marker1326)"
+               d="M 75.739769,10.216085 H 88.968935"
+               id="path1458" />
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;marker-end:url(#marker1530)"
+               d="M 62.510603,15.507752 V 26.091084"
+               id="path1526" />
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;marker-end:url(#marker1730)"
+               d="M 70.448102,26.091084 V 15.507752"
+               id="path1726" />
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="64.208733"
+             y="40.206028"
+             id="text2898"><tspan
+               sodipodi:role="line"
+               id="tspan2896"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="64.208733"
+               y="40.206028">k<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2900">off</tspan>(I<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2902">VIS</tspan>)</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata2091">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Kyle M. Douglass</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:language>English</dc:language>
+        <dc:title>Four state model of fluorescence photoactivation</dc:title>
+        <dc:description>Rate coefficients between states are denoted by k's. k_a, the activation rate, is a function of light irradiance at the fluorophore in the UV part of the spectrum; k_off is a function of irradiance in the visible part of the spectrum. Photons are emitted from the fluorophore when it is in the ON state, but not when it is in the INACTIVE, OFF, or the BLEACHED states. Once bleached, a fluorophore will remain that way forever.</dc:description>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
