@@ -36,6 +36,8 @@ In this course you will learn about a super-resolution fluorescence microscopy t
 
 \chapter{The Modern Fluorescence Microscope}
 
+\section{Epifluorescence microscopes}
+
 The design of a modern fluorescence microscope is illustrated in \autoref{fig:epifluorescence-microscope}. In this design, light from a source such as a laser or a high intensity LED enters the microscope and is reflected into the objective lens by a dichroic mirror.\footnote{A dichroic mirror is a mirror with an engineered surface that reflects some wavelengths of light and transmits others.} The exictation light is focused by the objective lens onto the sample where it excites fluorescent molecules within the sample. The fluorescence light is collected by the same objective and passes subsequently through the dichroic mirror. A second lens, known as the tube lens, collects the fluorescence light and forms an image of the sample on the camera.
 
 \begin{figure}[ht]
@@ -49,7 +51,18 @@ There are a few important things to understand about this microscope. The first 
 
 Another important characteristic of the design illustrated in \autoref{fig:epifluorescence-microscope} is that the sample is excited by the same lens that collects the fluorescence signal. This geometry is known as \textbf{epi-illumination}, as opposed to \textbf{transillumination} whereby the sample is illuminated by light that is focused onto the sample by a separate condenser lens. When imaging fluorescence from a sample and simply reflected light, it is known more specifically as \textbf{epifluorescence}. Epifluorescence microscopes solve the problem of the excitation light dominating the weaker fluorescence signal because most of the excitation light propagates away from the objective after it leaves the sample.
 
-A final thing to note about the design in figure \autoref{fig:epifluorescence-microscope} is that the final image of the sample is formed on the camera by a second lens called the tube lens.
+\section{Infinity corrected systems}
+
+A final thing to note about the design in \autoref{fig:epifluorescence-microscope} is that the final image of the sample is formed on the camera by a second lens called the tube lens. Modern microscopes use objectives that are infinity corrected. As illustrated in \autoref{fig:infinity-space}, an infinity corrected system places the sample in the front focal plane of the objective lens. The result is that the image of the sample is formed at infinity and requires the tube lens to form a real image at the camera's sensor plane.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics{infinity-space.png}
+    \caption{Optical path of an infinity corrected microscope. Rays emitted from a point in the sample plane are parallel in the infinity space. $O/O'$ and $T/T'$ denote the principle planes of the objective and tube lens, respectively. $f_{obj}$ and $f_{TL}$ denote their focal lengths.}
+    \label{fig:infinity-space}
+\end{figure}
+
+Prior to the development of infinity corrected systems, microscope objectives formed their images at a fixed distance from the objective, called the tube length. By convention, this distance was usually around 160 mm. A second lens, the eye piece, would reform the image for viewing by an observer. Modern microscopy often requires that additonal optical elements be placed after the objective during measurements, such as dichroic mirrors and filters. Upon insertion into the optical path, one of these additonal elements would displace the location of the image formed by a traditional objective due the refractive index difference between the element's material and air. This in turn would force the microscopist to refocus the image and result in a slightly different magnification of the final image. Infinity corrected systems do not suffer from these problems because the intermediate image is located at infinity and will not change the position of the final image when additonal elements are inserted into the so-called infinity space between the objective and tube lens.
 
 \chapter{Single Molecule Localization Microscopy}
 
