@@ -34,7 +34,7 @@ In this course you will learn about a super-resolution fluorescence microscopy t
     \item Analyze data from the microscope to produce super-resolved images of cellular structures.
 \end{enumerate}
 
-\chapter{The Modern Fluorescence Microscope}
+\chapter{The Modern Fluorescence Microscope} \label{ch:microscopes}
 
 \section{Epifluorescence Microscopes}
 
@@ -93,17 +93,22 @@ We can answer this question if we first assume a few properties about the micros
 
 Let the density of fluorescence emitters in a plane be represented by $O \left(x, y\right)$. Under the two assumptions above\footnote{These assumptions are equivalent to those used to model linear time invariant systems, which are characterized by an impulse response. The PSF is analogous to the impulse response.}, the resulting image $I \left(x, y\right)$ is the convolution of this density with the PSF $h \left(x, y\right)$, or
 
-\begin{equation}
+\begin{equation} \label{eq:image-formation}
     I \left(x, y\right) = h \left(x, y\right) \ast O \left(x, y\right)
 \end{equation}
 
 We can reduce the degree of blurring by increasing the numerical aperture of the objective, which has the effect of reducing the size of the PSF. Ultimately, however, diffraction prevents us from shrinking the PSF down to a point. As a result, a microscope image will never exactly reproduce an image of the object.
 
+\section{Digital Image Formation}
+
+The image described by \autoref{eq:image-formation} is a function of continuous spatial variables $x$ and $y$ and represents the optical power per area at a point $\left(x, y\right)$ in the image plane.\footnote{Equivalently, it is proportional to the photon flux at the image plane in units of $\text{photons} / s / m^2$.} A camera, which is used to record the image, is comprised of regularly-spaced, discrete, photo-sensitive elements called pixels. Each pixel converts the optical signal integrated over the time of exposure into a digital number called an analog-to-digital unit, or ADU. A well-designed camera produces images with pixel values (in units of ADUs) that are proportional to the number of photons that were incident on each pixel during an exposure.
+
+
 \chapter{Single Molecule Localization Microscopy}
 
 \section{Determination of a Single Molecule's Position}
 
-We saw in the previous chapter that diffraction determines the size of the smallest object that can be seen through a microscope. This size is approximately equal to half of the wavelength of light, which for visible wavelengths is approximately 250 nm.
+We saw in \autoref{ch:microscopes} that diffraction determines the size of the smallest object that can be seen through a microscope. This size is approximately equal to half of the wavelength of light, which for visible wavelengths is approximately 250 nm.
 
 Under some conditions, however, we can actually determine the location of single fluorescent molecules to a precision that is roughly 10 times better than the diffraction limit, or on the order of 10 nm. This process is called localizing a molecule, and the resulting estimate of its position is called a localization. The technique to do this is called single molecule localization microscopy, or SMLM.
 
