@@ -1,5 +1,5 @@
 \documentclass[10pt,a4paper]{book}
-\usepackage{graphicx, hyperref}
+\usepackage{amsmath, graphicx, hyperref}
 \graphicspath{{figures/}}
 
 \title{A Laboratory Course on Single Molecule Localization Microscopy}
@@ -66,6 +66,8 @@ Prior to the development of infinity corrected systems, microscope objectives fo
 
 \section{Imaging Properties of Microscopes}
 
+\subsection{The Point Spread Function}
+
 One of the most useful tools to characterize the performance of a microscope is the \textbf{point spread function}, or PSF. Qualitatively, the PSF is the image formed by the microscope of an infinitesimally small object emitting light uniformly in all directions. A microscope without aberrations\footnote{An aberration is any deformation of the PSF other than that caused by diffraction.} will have a PSF that is well-modeled by the Airy disk, which is the pattern seen in \autoref{fig:airy-pattern}.
 
 \begin{figure}[ht]
@@ -75,11 +77,23 @@ One of the most useful tools to characterize the performance of a microscope is 
     \label{fig:airy-pattern}
 \end{figure}
 
+The expression for the Airy disk is derived from scalar diffraction theory, i.e. the polarization of light is ignored. More precisely, it is the Fraunhofer diffraction pattern of a uniformly-illuminated circular aperture.\footnote{This is identical to solving for the image of an isotropically-emitting, incoherent point source because such a source uniformly fills the system's pupil.} Mathematically, the expression is
+
+\begin{equation}
+    I \left(X\right) = I_{0} \left[ \frac{2 J_{1}\left(X\right)}{X} \right]^2
+\end{equation}
+
+\noindent where $ X = 2 \pi r \text{NA} / \lambda $, $r$ is the radial coordinate in the image plane, $\text{NA}$ is the numerical aperture of the microscope, and $\lambda$ is the wavelength of light. $J_{1}\left(X\right)$ is called the first-order Bessel function of the first kind. Its first zero, which is important for defining resolution as we shall see later, is at $\Delta X = 3.8317$. In terms of the radial coordinate, it lies at $\Delta r \approx 0.61 \text{NA} / \lambda$.
+
+\subsection{Image Formation in Linear Shift Invariant Systems}
+
 Since the PSF is by definition the image of a point emitter and because it has a finite spatial extent, it follows that the PSF is a measure of the blurring of the image of an object seen through a microscope due to diffraction. If instead of a single emitter, our object consists of many fluorescence emitters in a plane represented by a density $O \left(x, y\right)$, then the resulting image $I \left(x, y\right)$ is the convolution of this density with the PSF $h \left(x, y\right)$, or
 
 \begin{equation}
     I \left(x, y\right) = h \left(x, y\right) \ast O \left(x, y\right)
 \end{equation}
+
+
 
 \chapter{Single Molecule Localization Microscopy}
 
