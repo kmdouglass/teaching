@@ -103,6 +103,10 @@ We can reduce the degree of blurring by increasing the numerical aperture of the
 
 The image described by \autoref{eq:image-formation} is a function of continuous spatial variables $x$ and $y$ and represents the optical power per area at a point $\left(x, y\right)$ in the image plane.\footnote{Equivalently, it is proportional to the photon flux at the image plane in units of $\text{photons} / s / m^2$.} A camera, which is used to record the image, is comprised of regularly-spaced, discrete, photo-sensitive elements called pixels. Each pixel converts the optical signal integrated over the time of exposure into a digital number called an analog-to-digital unit, or ADU. A well-designed camera produces images with pixel values (in units of ADUs) that are proportional to the number of photons that were incident on each pixel during an exposure.
 
+This raises the following question: how many pixels should the PSF span? If the PSF is smaller than a pixel, then we are effectively losing detail in the final image. On the other hand, if the PSF spans many pixels, then we sacrifice signal-to-noise ratio by spreading the photons from a fluorescent molecule out over those pixels. There must be an optimum number of pixels per PSF to balance these two effects.
+
+One approach to the problem is to consider the Nyquist sampling criterion for the entire system. In signal processing, the Nyquist criterion states that we need to sample a signal at twice the rate of its highest frequency component to reconstruct the signal exactly. The equivalent formulation in optics states that we need approximately two pixels per PSF to reconstruct the $I \left(x, y\right)$. For a Gaussian PSF, this analysis leads to a full-width half maximum of 2.355 pixels.
+
 
 \chapter{Single Molecule Localization Microscopy}
 
