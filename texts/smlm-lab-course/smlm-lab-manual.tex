@@ -1,6 +1,8 @@
 \documentclass[10pt,a4paper]{book}
-\usepackage{amsmath, graphicx, hyperref}
+\usepackage{amsmath, amssymb, graphicx, hyperref}
 \graphicspath{{figures/}}
+
+\newcommand{\given}{\;\middle|\;}
 
 \title{A Laboratory Course on Single Molecule Localization Microscopy}
 
@@ -66,7 +68,7 @@ Prior to the development of infinity corrected systems, microscope objectives fo
 
 \section{Imaging Properties of Microscopes}
 
-\subsection{The Point Spread Function}
+\subsection{The Point Spread Function} \label{sec:psf}
 
 One of the most useful tools to characterize the performance of a microscope is the \textbf{point spread function}, or PSF. Qualitatively, the PSF is the image formed by the microscope of an infinitesimally small object emitting light uniformly in all directions. A microscope without aberrations\footnote{An aberration is any deformation of the PSF other than that caused by diffraction.} will have a PSF that is well-modeled by the Airy disk, which is the pattern seen in \autoref{fig:airy-pattern}.
 
@@ -107,7 +109,6 @@ This raises the following question: how many pixels should the PSF span? If the 
 
 One approach to the problem is to consider the Nyquist sampling criterion for the entire system. In signal processing, the Nyquist criterion states that we need to sample a signal at twice the rate of its highest frequency component to reconstruct the signal exactly. The equivalent formulation in optics states that we need approximately two pixels per PSF to reconstruct the $I \left(x, y\right)$. For a Gaussian PSF, this analysis leads to a full-width half maximum of 2.355 pixels.
 
-
 \chapter{Single Molecule Localization Microscopy}
 
 \section{Determination of a Single Molecule's Position}
@@ -116,10 +117,62 @@ We saw in \autoref{ch:microscopes} that diffraction determines the size of the s
 
 Under some conditions, however, we can actually determine the location of single fluorescent molecules to a precision that is roughly 10 times better than the diffraction limit, or on the order of 10 nm. This process is called localizing a molecule, and the resulting estimate of its position is called a localization. The technique to do this is called single molecule localization microscopy, or SMLM.
 
-To understand how SMLM works, let's first consider a sample that consists of a single fluorescent molecule. When excited with light, the molecule emits fluorescence and the microscope will record a blurred image of the molecule. Such an image is shown in figure XXX.
+To understand how SMLM works, let's first consider a sample that consists of a single fluorescent molecule. When excited with light, the molecule emits fluorescence and the microscope will record a blurred image of the molecule. Such an image is shown in \autoref{fig:image-of-single-molecule}. Each pixel in \autoref{fig:image-of-single-molecule} is 160 nm in both the horizontal and vertical directions, which is much greater than the size of the molecule.
 
-The key insight of SMLM is that the position of the molecule is located at the center of its image, and we can find the center to high precision. To do this, we fit a model of the image of a single molecule to the image recorded by the microscope. Two of the model parameters will be the $x$ and $y$ positions of the molecule's center. Thus the result of the fit is an estimate of the molecule's position. 
+\begin{figure}[ht]
+    \centering
+    \includegraphics{image-of-single-molecule.png}
+    \caption{Image of a single Cy5 fluorescent molecule. Scale bar: 500 nm.}
+    \label{fig:image-of-single-molecule}
+\end{figure}
 
+The key insight of SMLM is that the position of the molecule is located at the center of its image, and we can find the center to high precision. To do this, we fit a model of the image of a single molecule to the image recorded by the microscope. Two of the model parameters will be the $x$ and $y$ positions of the molecule's center. Thus the result of the fit is an estimate of the molecule's position.
+
+From the discussion in \autoref{sec:psf}, you might think that we need to fit an Airy disk pattern to the image of the fluorophore. In practice, however, this is computationally slow to perform due to the evaluation of the Bessel function. To circumvent this issue, we can use the fact that the Airy disk is approximately the same as a Gaussian function and fit a 2D Gaussian to the image instead. The similarity between the two curves is illustrated in \autoref{fig:airy-vs-gauss}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Airy_vs_gaus.png}
+    \caption{Comparison of an Airy disk (solid line) and a Gaussian function (dotted line). By Marius Hagen - Plotted using IDL software., Public Domain, \url{https://commons.wikimedia.org/w/index.php?curid=4230024}.}
+    \label{fig:airy-vs-gauss}
+\end{figure}
+
+Alternatively, we can fit other models to the image, too. Here are some choices for the model and fit technique that are often used in practice:
+
+\begin{enumerate}
+    \item Gaussian least squares fitting
+    \item Gaussian maximum likelihood estimation
+    \item Phasors
+    \item Cubic splines
+\end{enumerate}
+
+In practice, the choice of model and fitting technique will involve tradeoffs between speed and precision.
+
+\subsection{Gaussian Least Squares Fitting}
+
+Let $f \left(x, y\right)$ represent the PSF model. A Gaussian model is written as follows:
+
+\begin{equation}
+    f \left(x, y\right) = a \exp \left[ \frac{\left(x-x_{0}^2\right) + \left(y - y_{0}^2\right)}{w} \right] + b
+\end{equation}
+
+\noindent Here, $x_0$ and $y_0$ represent the center of the molecule in pixels, $w$ is the width of the PSF in pixels, and $a$ and $b$ are related to the maximum pixel signal and the background signal, respectively. Importantly, $x_0$ and $y_0$ are continuous numbers, which means that the center of the molecule may be found with sub-pixel precision.
+
+The position of the molecule is found by minimizing the following objective function using a nonlinear least squares optimizer:
+
+\begin{equation}
+    O = \sum_{k=1}^K \left[ s_k - f_{\theta} \left(x_k, y_k\right)\right]^2
+\end{equation}
+
+\noindent where there are $K$ pixels with coordinates $\left( x_k, y_k\right)$, and the PSF model parameters are $\theta = \left( x_0, y_0, w, a, b \right)$. Gaussian least squares fitting provides good precision and performance relative to the other techniques.
+
+\subsection{Gaussian Maximum Likelihood Estimation}
+
+This technique also uses a Gaussian PSF model but instead optimizes the following objective function:
+
+\begin{equation}
+    \mathcal{L} \left(\theta \given s_1, s_2, \ldots, s_K \right)
+\end{equation}
 
 \chapter{Fluorescence Photophysics}
 
