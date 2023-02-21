@@ -174,7 +174,21 @@ This technique also uses a Gaussian PSF model but instead minimizes the followin
     \mathcal{L} \left(\theta \given s_1, s_2, \ldots, s_K \right) = \sum_{k=1}^K \left[ s_k \times \ln \left( f_{\theta} \left( x_k, y_k \right) \right) - f_{\theta} \left( x_k, y_k \right) \right]
 \end{equation}
 
+\noindent The above equation will contain some additional terms when Gaussian noise from the camera readout is included in the model, but the main idea is there.
+
 The estimates of the PSF parameters $\theta$ from maxmimum likelihood estimation (MLE) are generally more precise than the least squares solution. However, the MLE estimate is slower to compute. You would therefore choose this option if you need better precision but can afford to wait longer for a result.
+
+\subsection{Phasors}
+
+The phasor approach is based on the observation that the first complex coefficients in the horizontal and vertical direction of the discrete Fourier transform of the image contain information on the coordinates of the molecule's position. The angles associated with these coefficients (i.e. the angles of their phasor representations) provide the $x$ and $y$ positions of the molecules.
+
+Unlike the previous two methods, this approach to localizing single molecules is not iterative and is therefore computationally very fast to perform. It is however not as precise as Gaussian fitting.
+
+\subsection{Cubic splines}
+
+The cubic spline approach to single molecule localization involves fitting a 3D cubic spline to PSF data obtained from a calibration routine. This approach is the among the most precise localization methods because the PSF model is interpolated over the measured data, whereas the Gaussian model only assumes a PSF shape. In terms of speed, localizing molecules with cubic splines is relatively slow compared to the other approaches.
+
+\section{Localization Precision}
 
 
 
