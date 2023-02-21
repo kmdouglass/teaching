@@ -168,11 +168,15 @@ The position of the molecule is found by minimizing the following objective func
 
 \subsection{Gaussian Maximum Likelihood Estimation}
 
-This technique also uses a Gaussian PSF model but instead optimizes the following objective function:
+This technique also uses a Gaussian PSF model but instead minimizes the following objective function:
 
 \begin{equation}
-    \mathcal{L} \left(\theta \given s_1, s_2, \ldots, s_K \right)
+    \mathcal{L} \left(\theta \given s_1, s_2, \ldots, s_K \right) = \sum_{k=1}^K \left[ s_k \times \ln \left( f_{\theta} \left( x_k, y_k \right) \right) - f_{\theta} \left( x_k, y_k \right) \right]
 \end{equation}
+
+The estimates of the PSF parameters $\theta$ from maxmimum likelihood estimation (MLE) are generally more precise than the least squares solution. However, the MLE estimate is slower to compute. You would therefore choose this option if you need better precision but can afford to wait longer for a result.
+
+
 
 \chapter{Fluorescence Photophysics}
 
