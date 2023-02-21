@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="57mm"
+   height="57mm"
+   viewBox="0 0 57 57"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="image-of-single-molecule.svg"
+   xml:space="preserve"
+   inkscape:export-filename="image-of-single-molecule.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"><title
+     id="title2489">Image of a single Cy5 flourescent molecule.</title><sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="2"
+     inkscape:cx="83.000001"
+     inkscape:cy="217"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g389"><inkscape:grid
+       type="xygrid"
+       id="grid25"
+       empcolor="#e50000"
+       empopacity="0.18823529"
+       spacingy="0.26458334"
+       empspacing="10"
+       originx="3.6083984e-07"
+       originy="-3.8197021e-07" /></sodipodi:namedview><defs
+     id="defs2"><linearGradient
+       inkscape:collect="always"
+       id="linearGradient8221"><stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop8217" /><stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop8219" /></linearGradient><linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8221"
+       id="linearGradient8223"
+       x1="45.090595"
+       y1="15.143952"
+       x2="56.651337"
+       y2="15.143952"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(45.323687,10.548882)" /></defs><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"><g
+       id="g1996"
+       transform="translate(-33.406433,-15.507753)"><g
+         id="g389"
+         transform="translate(93.84304,-0.4790697)"><image
+           width="57"
+           height="57"
+           preserveAspectRatio="none"
+           style="stroke-width:0.0881947;image-rendering:optimizeSpeed"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAAAAABXO2kQAAABGElEQVR42hWQS04cQRBEc22h6er8
+Z2VW9QwwkhFG2AxnYMcJ2HAKzsLKG9/PZ6DZxSIUivdAxLrGND+UqVoLcTBaeSKrz9WEWSkWmC6c
+TYZiG30IYutAkt0RF3cqsobLlQFnoCqGhQry2rEGMJcim+5t3ToeCX9AOTKJjvPxevpm0WyFQYeS
+GQ+Pl7tt6xWLBIQM7nm+f/98+3UqDpQGjN9rd5eP//+eY08+BJiWJI3fr38/nu9HyrUcYSiHZZz+
+vDxN7zufFzTL9JGn/Lkdc6VD1w1k6QPJyvpBKtQzEyx2unIdVHpLYmP3Mpdt3qSbW5aMUZ4K2DxD
+sK/lDXdHHgLT+PtVNo/1xJzaHIii1tuQzlLnTno18gsVyyZm7ie/+wAAAABJRU5ErkJggg==
+"
+           id="image906"
+           x="-60.436607"
+           y="15.986823" /><path
+           style="fill:none;stroke:#ffffff;stroke-width:1.5;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           d="M -16.154874,68.15349 H -8.26994"
+           id="path1030" /></g></g></g><metadata
+     id="metadata2091"><rdf:RDF><cc:Work
+         rdf:about=""><dc:creator><cc:Agent><dc:title>Kyle M. Douglass</dc:title></cc:Agent></dc:creator><cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" /><dc:language>English</dc:language><dc:title>Image of a single Cy5 flourescent molecule.</dc:title><dc:description>Scale bar: 500 nm</dc:description></cc:Work><cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/"><cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" /><cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /></cc:License></rdf:RDF></metadata></svg>
