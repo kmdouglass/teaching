@@ -190,17 +190,36 @@ The cubic spline approach to single molecule localization involves fitting a 3D 
 
 \section{Localization Precision}
 
+The estimates of a fluorescent molecule's position have an uncertainty associated with them. This uncertainty is called the localization precision. The localization precison represents the area in which a fluorescent molecule is likely to be located.
 
+There are at least two ways to determine the localization precision in a SMLM experiment. The first is to measure the position of a single molecule multiple times and compute the standard deviation of the resulting distribution of position estimates. The second is to calculate it using the following theoretical formula:
+
+\begin{equation}
+    \langle \left( \Delta x \right)^2 \rangle = \frac{s^2 + a^{2}/12}{N} + \frac{8 \pi s^4 b^2}{a^2 N^2}
+    \label{eq:thompson}
+\end{equation}
+
+\noindent In \autoref{eq:thompson}, $\Delta x$ is the squared error in localization, $s$ is the standard deviation of the PSF, $a$ is the size of a pixel, $N$ is the number of photons recorded from the molecule, and $b$ is the number of photons coming from the background. 
+
+The important point to note about \autoref{eq:thompson} is that, in the absence of any background, the localization precision, which is the square root of the above expression, scales as $N^{-1/2}$. This means that improving the number of recorded photons from a molecule by a factor of 100 will improve our estimate of the position by only a factor of 10.
+
+Typically, we can measure between 100 and 10,000 photons from a molecule before it bleaches, and the typical standard deviation of a PSF is around 250 nm. Additonally, the pixel size is often smaller than the size of the PSF. In this case, \ref{eq:thompson} implies that the typical localization precision is then $\Delta x \sim s / N^{1/2}$, or about 25 to 80 nm.
+
+\section{Localizing Dense Distributions of Emitters}
+
+All of the preceding discussion has assumed that we wanted to localize a fluorescent molecule that is well-separated from all others. However, as two fluorescent molecules are brought close together, their images will overlap as illustrated in \autoref{fig:rayleigh}. In this situation, it is impossible to localize them because we don't know how many molecules are present.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Airy_disk_spacing_near_Rayleigh_criterion.png}
+    \caption{The images of two fluorescent molecules as they are brought close together. They cannot be easily distinguished below a certain distance.}
+    \label{fig:rayleigh}
+\end{figure}
+
+This observation poses a severe limitation on applying SMLM to real samples because there will often be a large number of fluorophores within the area spanned by the PSF.
 
 \chapter{Fluorescence Photophysics}
 
 \chapter{Localization Microscopy in Practice}
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.75\textwidth]{Airy_disk_spacing_near_Rayleigh_criterion.png}
-    \caption{Rayleigh criterion}
-    \label{fig:rayleigh}
-\end{figure}
 
 \end{document}
