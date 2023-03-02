@@ -220,6 +220,13 @@ This observation poses a severe limitation on applying SMLM to real samples beca
 
 To understand how to localize dense distributions of fluorophores, suppose that we could somehow switch on and off the fluorophores. Furthermore, let's imagine that we can do this with enough precision to control which fluorophores are emitting light at any given time. We can localize all the fluorophores in an image if we switch on only a subset of fluorophores where each fluorophore in the subset is separated from all the other fluorophores in the subset by a distance that is greater than the PSF. Then, we can switch off this subset and then switch on a new subset, taking another image. If we repeat this process, we will collect a sequence of images of sparsely distributed, ON-state fluorophores that can be localized. Finally, after localizing all the molecules in all the images we can combine their positions to make a super-resolved image.
 
+\begin{figure}
+    \centering
+    \makebox[\columnwidth][c]{\includegraphics[width=1.3\textwidth]{smlm-principle.png}}%
+    \caption{Principle of single molecule localization microscopy. a) A diffraction-limited image from a distribution single fluorophores. Each fluorophore image is a a single point spread function. b) Sequential switching of a sparse subset of fluorophores allows for their localization. c) The final, super-resolved image is reconstructed from the individual localizations.}
+    \label{fig:smlm}
+\end{figure}
+
 \chapter{Fluorescence Photophysics}
 
 \chapter{Localization Microscopy in Practice}
