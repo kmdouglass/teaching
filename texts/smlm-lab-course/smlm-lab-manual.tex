@@ -218,7 +218,7 @@ All of the preceding discussion has assumed that we wanted to localize a fluores
 
 This observation poses a severe limitation on applying SMLM to real samples because there will often be a large number of fluorophores within the area spanned by the PSF. The solution to this problem was a significant advance in light microscopy, and was discovered around the same time in the mid 2000's by a few research groups. It helped earn Eric Betzig the Nobel Prize in chemistry in 2014.
 
-To understand how to localize dense distributions of fluorophores, suppose that we could somehow switch on and off the fluorophores. Furthermore, let's imagine that we can do this with enough precision to control which fluorophores are emitting light at any given time. We can localize all the fluorophores in an image if we switch on only a subset of fluorophores where each fluorophore in the subset is separated from all the other fluorophores in the subset by a distance that is greater than the PSF. Then, we can switch off this subset and then switch on a new subset, taking another image. If we repeat this process, we will collect a sequence of images of sparsely distributed, ON-state fluorophores that can be localized. Finally, after localizing all the molecules in all the images we can combine their positions to make a super-resolved image.
+To understand how to localize dense distributions of fluorophores, suppose that we could somehow switch on and off the fluorophores. Furthermore, let's imagine that we can do this with enough precision to control which fluorophores are emitting light at any given time. We can localize all the fluorophores in an image if we switch on only a subset of fluorophores where each fluorophore in the subset is separated from all the other fluorophores in the subset by a distance that is greater than the PSF. Then, we can switch off this subset and then switch on a new subset, taking another image. If we repeat this process, we will collect a sequence of images of sparsely distributed, ON-state fluorophores that can be localized. Finally, after localizing all the molecules in all the images we can combine their positions to make a super-resolved image. This process is illustrated \autoref{fig:smlm}. \url{https://www.youtube.com/watch?v=RE70GuMCzww} contains a video demonstrating how the same process can be used to reconstruct an image of the Eiffel from its blinking lights at night.
 
 \begin{figure}
     \centering
@@ -226,6 +226,12 @@ To understand how to localize dense distributions of fluorophores, suppose that 
     \caption{Principle of single molecule localization microscopy. a) A diffraction-limited image from a distribution single fluorophores. Each fluorophore image is a a single point spread function. b) Sequential switching of a sparse subset of fluorophores allows for their localization. c) The final, super-resolved image is reconstructed from the individual localizations.}
     \label{fig:smlm}
 \end{figure}
+
+In practice, it takes on the order of ten thousand images to produce a super-resolved image using SMLM, though this order of magnitude can vary depending the structure, the density of fluorescent labels, and more.
+
+We can also infer from \autoref{fig:smlm} that a super-resolved image requires more time to acquire than a simple, diffraction-limited image because we need to acquire many images of different subsets of fluorophores. We can interpret this in terms of a tradeoff between space and time resolutions: to image with higher spatial resolutions we need to sacrifice temporal resolution.
+
+So far we have ignored the mechanism that allows us to switch single fluorophores on and off. This will be discussed in the next chapter.
 
 \chapter{Fluorescence Photophysics}
 
