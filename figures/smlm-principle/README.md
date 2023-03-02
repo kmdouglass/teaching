@@ -1,0 +1,1 @@
+Principle of single molecule localization microscopy. a) A diffraction-limited image from a distribution single fluorophores. Each fluorophore image is a a single point spread function. b) Sequential switching of a sparse subset of fluorophores allows for their localization. c) The final, super-resolved image is reconstructed from the individual localizations.
