@@ -212,11 +212,13 @@ All of the preceding discussion has assumed that we wanted to localize a fluores
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth]{Airy_disk_spacing_near_Rayleigh_criterion.png}
-    \caption{The images of two fluorescent molecules as they are brought close together. They cannot be easily distinguished below a certain distance.}
+    \caption{The images of two fluorescent molecules as they are brought close together. They cannot be easily distinguished below a certain distance. Spencer Bliven, Public domain, via Wikimedia Commons. \url{https://commons.wikimedia.org/wiki/File:Airy_disk_spacing_near_Rayleigh_criterion.png}}
     \label{fig:rayleigh}
 \end{figure}
 
-This observation poses a severe limitation on applying SMLM to real samples because there will often be a large number of fluorophores within the area spanned by the PSF.
+This observation poses a severe limitation on applying SMLM to real samples because there will often be a large number of fluorophores within the area spanned by the PSF. The solution to this problem was a significant advance in light microscopy, and was discovered around the same time in the mid 2000's by a few research groups. It helped earn Eric Betzig the Nobel Prize in chemistry in 2014.
+
+To understand how to localize dense distributions of fluorophores, suppose that we could somehow switch on and off the fluorophores. Furthermore, let's imagine that we can do this with enough precision to control which fluorophores are emitting light at any given time. We can localize all the fluorophores in an image if we switch on only a subset of fluorophores where each fluorophore in the subset is separated from all the other fluorophores in the subset by a distance that is greater than the PSF. Then, we can switch off this subset and then switch on a new subset, taking another image. If we repeat this process, we will collect a sequence of images of sparsely distributed, ON-state fluorophores that can be localized. Finally, after localizing all the molecules in all the images we can combine their positions to make a super-resolved image.
 
 \chapter{Fluorescence Photophysics}
 
