@@ -1,5 +1,5 @@
 \documentclass[10pt,a4paper]{book}
-\usepackage{amsmath, amssymb, graphicx, hyperref}
+\usepackage{amsmath, amssymb, graphicx, hyperref, mathtools}
 \graphicspath{{figures/}}
 
 \newcommand{\given}{\;\middle|\;}
@@ -235,6 +235,21 @@ So far we have ignored the mechanism that allows us to switch single fluorophore
 
 \chapter{Fluorescence Photophysics}
 
-\chapter{Localization Microscopy in Practice}
+\section{Basics of ON/OFF Switching}
+
+The most important mechanism to achieving super-resolution with SMLM is the ON/OFF switching of fluorophores. Activating only a sparse subset of fluorophores in the ON state at a given time allows us to localize individual fluorophores and, over time, build up a pointilist-like reconstruction of the object.
+
+So, how do we switch on sparse subsets of fluorescent molecules? We take advantage of their photophysical properties, in particular the number of energetic states that the molecule might occupy.
+
+\autoref{fig:alexafluor-energy} illustrates the energy levels in a popular family of fluorophores used in STORM microscopy. Fluorescence occurs when the fluorophore first absorbs a photon and transitions to the excited singlet state $\prescript{1}{}F_1$, then emits a fluorophore of slightly longer wavelength in returning to the singlet ground state $\prescript{1}{}F_0$. After absorbtion by a photon, there is a small chance that the fluorophore will undergo an intersystem crossing ($isc$) to the triplet state $\prescript{3}{}F$. From here, the molecule can react with molecular oxygen to return to the ground singlet state, or react with a thiol that is present in the buffer to form a radical anion, $F^*$. Additionally, the absorption of UV light by the fluorophore in the anion state is higher than in other states, so irradiation by UV light can promote a return to the singlet state.
+
+Interestingly, the radical anion state of the fluorophore is relatively unreactive. As a result, this state is long-lived: its lifetime is on the order of seconds, whereas the triplet state lifetime is on the order of microseconds. This means that we can "pump" a set of fluorophores into a long-lived, non-emitting state by irradiating them in the presence of thiols, and they will return to the singlet state randomly when reacting with oxygen. By tuning the concentrations of thiols and molecular oxygen in the buffer and by adjusting the irradiance of light on the sample, we can achieve a state where only a sparse subset of fluorophores is in the emitting ON state at any given time.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{alexafluor-jablonski-diagram.png}
+    \caption{Energy level diagram of flourophores from the AlexaFluor and ATTO families. From van de Linde, \textit{et al.}, "Direct stochastic optical reconstruction microscopy with standard fluorescent probes," Nature Propocols 6, 991 (2011).}
+    \label{fig:alexafluor-energy}
+\end{figure}
 
 \end{document}
