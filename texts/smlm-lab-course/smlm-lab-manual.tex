@@ -267,4 +267,14 @@ Next, we group the triplet state and all radical anion states into one state cal
 
 At any moment in time, the fluorophore has a probability to transition to a new state that is determined only by its current state, and not by its history of transitions. This type of probabilistic model is called a Markov chain. More precisely, a fluorophore is a continuous time Markov chain because the transitions may occur at any time rather than only at discrete intervals.
 
+Let $N$ represent the number of possible states in a Markov chain. The transitions between states are modeled as 3-tuples $\left(S_{i}, S'_{i}, t_i)\right)$, where $S \in \{ 1, \ldots, N \} $ is an integer identifying the original state of transition $i$, $S'_{i}$ is the next state, and $t_i$ is the time at which the transition occurred. Note that $S'_{i} = S_{i + 1}$. Then the set of 3-tuples $\{\ \left(S_{0}, S'_{0}, t_0)\right), \left(S_{1}, S'_{1}, t_{1})\right), \cdots \}$ describes the trajectory of the fluorophore through its energetic states over time.
+
+Markov chains are memoryless, which means that the time to transition to the next state is independent of the time it has spent in the current state. We can model this by writing the time to transition from state $S$ to state $S'$ as an exponentially-distributed random variable, or
+
+\begin{equation}
+    P \left(t \given S, S' \right) = k_{ \left( S, S' \right)} \exp \left( -k_{ \left( S, S' \right) } t \right)
+\end{equation}
+
+\noindent where $k_{ \left( S, S' \right)}$ is the rate coefficient from state $S$ to $S'$. When multiple states are accessible from $S$, then
+
 \end{document}
