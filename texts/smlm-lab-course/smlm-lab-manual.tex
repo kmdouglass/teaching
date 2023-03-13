@@ -278,12 +278,19 @@ Markov chains are memoryless, which means that the time to transition to the nex
 \noindent where $k_{ \left( S, S' \right)}$ is the rate coefficient from state $S$ to $S'$. When multiple states are accessible from $S$, then the transition time is still an exponentially distributed random variable. The rate coefficient to leave $S$ in this case is the sum of the rate coefficients to all the individual states, or
 
 \begin{equation}
-    k_S = \sum_1^N k_{ \left( S, i \right) }
+    k_S = \sum_{i = 1}^N k_{ \left( S, i \right) }
 \end{equation}
 
-\noindent Inaccessible states have rate coefficients of zero.
+\noindent Inaccessible states have rate coefficients of zero. So $k_{\left( \text{BLEACHED}, S' \right)} = 0$ for all $S'$.
 
-Finally, the probability to transition to a state $S'$ from a state $S$ is given by a multinomial distribution, or
+Finally, the probability to transition to a state $S'$ from a state $S$ is given by the ratio of the rate coefficient $k_{ \left( S, S'\right)}$ to the sum of all rate coefficients from state $S$, or
 
+\begin{equation}
+    P \left(S' \given S \right) = \frac{k_{\left( S, S' \right)}}{\sum_{i = 1}^N k_{ \left( S, i \right) }}
+\end{equation}
+
+\noindent This probability may be interpreted as the probability of success in a Bernoulli trial, where success means going from state $S$ to $S'$ and failure means going from state $S$ to any other state.
+
+Returning to \autoref{fig:three-state-photoswitching}, we can see that the rate coefficient from the ON to the OFF state depends on the laser irradiance $I$\footnote{The units of irradiance are $W / cm^2$, or optical power per area}. This means that increasing the irradiance increases the rate of transitioning from the fluorescent ON state to the OFF state. Once in the OFF state, there is a small probability for the molecule to randomly return to the ON state. We can therefore balance the relative number of molecules in the ON state to the OFF state by tuning the laser irradiance. This is how we achieve isolated single molecules that can be localized.
 
 \end{document}
