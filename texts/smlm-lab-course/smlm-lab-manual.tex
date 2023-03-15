@@ -297,4 +297,34 @@ Returning to \autoref{fig:three-state-photoswitching}, we can see that the rate 
 
 The mechanism for ON/OFF switching that is illustrated in \autoref{fig:three-state-photoswitching} is known as \textbf{photoswitching} because fluorophores are switched between ON and OFF states using light. Photoswitching is the mechanism used in STORM to tune the density of fluorophores so that they may be localized. PALM however uses a different mechanism: \textbf{photoactivation}.
 
+A simplified model of photoactivation is shown in \autoref{fig:four-state-photoactivation}. Here, a pulse of low-irradiance UV light illuminates a set of fluorophores within the field-of-view of the microscope. This will randomly activate a sparse subset of the fluorophores such that they can absorb light at a longer, visible wavelength. The absorbed energy is then re-emitted as fluorescence, and we can localize the fluorophore in the way we have discussed above.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics{four-state-photoactivation-model.png}
+    \caption{Four state model of fluorescence photoactivation. Rate coefficients between states are denoted by $k$'s. $k_a$, the activation rate, is a function of light irradiance at the fluorophore in the UV part of the spectrum; $k_{off}$ is a function of irradiance in the visible part of the spectrum. Photons are emitted from the fluorophore when it is in the ON state, but not when it is in the INACTIVE, OFF, or the BLEACHED states. Once bleached, a fluorophore will remain that way forever.}
+    \label{fig:four-state-photoactivation}
+\end{figure}
+
+The qualities of photoswitching and photoactivation are compared in \autoref{table:photophysics-comparison}. It's important to keep in mind that this comparison is approximate, and many exceptions can be found to it in practice.
+
+\begin{table}
+    \centering
+    \begin{tabular}{ |c|c|c| } 
+     \hline
+      XX & Photoswitching & Photoactivation \\
+     \hline 
+     SMLM Technique & STORM & PALM \\
+     \hline
+     Most common type of fluorophore & Synthetic dye & Fluorescent protein \\
+     \hline
+     Order of magnitude of number of photons per fluorophore per image & $10^2$ -- $10^5$ & $10^2$ -- $10^3$ \\
+     \hline
+     Live cell compatible & Mostly no & Mostly yes \\
+     \hline
+    \end{tabular}
+    \caption{An approximate comparison of the qualities of the photoswitching and photoactivation mechanisms used to achieve sparse subsets of emitters in SMLM.}
+    \label{table:photophysics-comparison}
+\end{table}
+
 \end{document}
