@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper]{book}
+\documentclass[10pt,a4paper,oneside]{book}
 \usepackage{amsmath, amssymb, graphicx, hyperref, mathtools}
 \graphicspath{{figures/}}
 
@@ -13,6 +13,8 @@
 \begin{document}
 
 \maketitle
+
+\tableofcontents
 
 \chapter{Introduction}
 
@@ -192,7 +194,7 @@ The cubic spline approach to single molecule localization involves fitting a 3D 
 
 The estimates of a fluorescent molecule's position have an uncertainty associated with them. This uncertainty is called the localization precision. The localization precison represents the area in which a fluorescent molecule is likely to be located.
 
-There are at least two ways to determine the localization precision in a SMLM experiment. The first is to measure the position of a single molecule multiple times and compute the standard deviation of the resulting distribution of position estimates. The second is to calculate it using the following theoretical formula:
+There are at least two ways to determine the localization precision in a SMLM experiment. The first is to measure the position of a single molecule multiple times and compute the standard deviation of the resulting distribution of position estimates. The second is to calculate it using the following theoretical formula\cite{thompson-biophysicaljournal-2002}:
 
 \begin{equation}
     \langle \left( \Delta x \right)^2 \rangle = \frac{s^2 + a^{2}/12}{N} + \frac{8 \pi s^4 b^2}{a^2 N^2}
