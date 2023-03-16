@@ -1,8 +1,9 @@
 # Latex
 *.aux
 *.log
-*.pdf
 *.out
+*.pdf
+*.toc
 
 # Bibtex
 *.bbl

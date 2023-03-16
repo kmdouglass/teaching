@@ -34,8 +34,8 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="2.8284271"
-     inkscape:cx="328.62788"
-     inkscape:cy="111.01577"
+     inkscape:cx="326.86011"
+     inkscape:cy="111.36932"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="-8"
@@ -1086,18 +1086,18 @@
              y="46.149311"
              id="tspan9973">...</tspan></text>
         <path
-           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linecap:square;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#TriangleStart)"
-           d="M -57.790774,71.549325 H 116.83422"
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0999995;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart)"
+           d="M -7.5199403,71.549325 H 66.563393"
            id="path10145" />
         <text
            xml:space="preserve"
            style="font-size:2.82222px;line-height:1;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
-           x="-54.53624"
+           x="-4.2654071"
            y="71.020157"
            id="text10486"><tspan
              sodipodi:role="line"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
-             x="-54.53624"
+             x="-4.2654071"
              y="71.020157"
              id="tspan10484">TIME</tspan></text>
         <text
