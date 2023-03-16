@@ -93,12 +93,12 @@ The expression for the Airy disk is derived from scalar diffraction theory, i.e.
 
 Since the PSF is by definition the image of an infinitesimally small emitter and because it has a finite spatial extent, it follows that the PSF is a measure of the blurring of the image of an object seen through a microscope due to diffraction. But what about samples containing many fluorophores? How does the point spread function affect its image?
 
-We can answer this question if we first assume a few properties about the microscope. The first is linearity, i.e. the image of two fluorophores is just the sum of the image of each fluorophore individually. The second assumption is that the microscope is shift invariant. This means that the PSF does not depend on the location of an emitter. 
+We can answer this question if we first assume a few properties about the microscope. The first is linearity, i.e. the image of two fluorophores is just the sum of the image of each fluorophore individually. Fluoresence light emitted from different fluorophores is incoherent, so a fluorescence microscope is linear in the emitted fluorescence intensity.\footnote{A microscope where the object is illuminated by coherent radiation is linear in the electric field.} The second assumption is that the microscope is shift invariant. This means that the PSF does not depend on the location of an emitter. 
 
-Let the density of fluorescence emitters in a plane be represented by $O \left(x, y\right)$. Under the two assumptions above\footnote{These assumptions are equivalent to those used to model linear time invariant systems, which are characterized by an impulse response. The PSF is analogous to the impulse response.}, the resulting image $I \left(x, y\right)$ is the convolution of this density with the PSF $h \left(x, y\right)$, or
+Let the density of fluorescence emitters in a plane be represented by $O \left(x, y\right)$. Under the two assumptions above\footnote{These assumptions are equivalent to those used to model linear time invariant systems, which are characterized by an impulse response. The PSF is analogous to the impulse response.}, the resulting image $I \left(x, y\right)$ is the convolution of this density with the PSF, or
 
 \begin{equation} \label{eq:image-formation}
-    I \left(x, y\right) = h \left(x, y\right) \ast O \left(x, y\right)
+    I \left(x, y\right) = \text{PSF} \left(x, y\right) \ast O \left(x, y\right)
 \end{equation}
 
 We can reduce the degree of blurring by increasing the numerical aperture of the objective, which has the effect of reducing the size of the PSF. Ultimately, however, diffraction prevents us from shrinking the PSF down to a point. As a result, a microscope image will never exactly reproduce an image of the object.
@@ -243,7 +243,7 @@ The most important mechanism to achieving super-resolution with SMLM is the ON/O
 
 So, how do we switch on sparse subsets of fluorescent molecules? We take advantage of their photophysical properties, in particular the number of energetic states that the molecule might occupy.
 
-\autoref{fig:alexafluor-energy} illustrates the energy levels in a popular family of fluorophores used in STORM microscopy. Fluorescence occurs when the fluorophore first absorbs a photon and transitions to the excited singlet state $\prescript{1}{}F_1$, then emits a fluorophore of slightly longer wavelength in returning to the singlet ground state $\prescript{1}{}F_0$. After absorbtion by a photon, there is a small chance that the fluorophore will undergo an intersystem crossing ($isc$) to the triplet state $\prescript{3}{}F$. From here, the molecule can react with molecular oxygen to return to the ground singlet state, or react with a thiol that is present in the buffer to form a radical anion, $F^*$. Additionally, the absorption of UV light by the fluorophore in the anion state is higher than in other states, so irradiation by UV light can promote a return to the singlet state.
+\autoref{fig:alexafluor-energy} illustrates the energy levels in a popular family of fluorophores used in STORM microscopy. Fluorescence occurs when the fluorophore first absorbs a photon and transitions to the excited singlet state $\prescript{1}{}F_1$, then emits a photon of slightly longer wavelength in returning to the singlet ground state $\prescript{1}{}F_0$. After absorbtion by a photon, there is a small chance that the fluorophore will undergo an intersystem crossing ($isc$) to the triplet state $\prescript{3}{}F$. From here, the molecule can react with molecular oxygen to return to the ground singlet state, or react with a thiol that is present in the buffer to form a radical anion, $F^*$. Additionally, the absorption of UV light by the fluorophore in the anion state is higher than in other states, so irradiation by UV light can promote a return to the singlet state.
 
 \begin{figure}[ht]
     \centering
