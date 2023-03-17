@@ -1,6 +1,3 @@
-FROM alpine:latest
+FROM registry.gitlab.com/islandoftex/images/texlive:latest
 
 WORKDIR /opt
-
-RUN apk update \
- && apk add texmf-dist texlive

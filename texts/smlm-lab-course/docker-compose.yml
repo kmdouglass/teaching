@@ -3,7 +3,7 @@ services:
   build-manual:
     build: .
     command: 
-      - /bin/ash
+      - /bin/sh
       - -c
       - |
         pdflatex smlm-lab-manual

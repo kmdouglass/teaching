@@ -1,5 +1,6 @@
 \documentclass[10pt,a4paper,oneside]{book}
 \usepackage{amsmath, amssymb, graphicx, hyperref, mathtools}
+\usepackage{subfiles} % Load this last
 \graphicspath{{figures/}}
 
 \newcommand{\given}{\;\middle|\;}
@@ -37,6 +38,8 @@ In this course you will learn about a super-resolution fluorescence microscopy t
     \item Model fluorescence phenomena such as photoswitching and photoactivation as continuous-time Markov chains.
     \item Analyze data from the microscope to produce super-resolved images of cellular structures.
 \end{enumerate}
+
+\subfile{chapters/lab-Instructions}
 
 \chapter{The Modern Fluorescence Microscope} \label{ch:microscopes}
 
