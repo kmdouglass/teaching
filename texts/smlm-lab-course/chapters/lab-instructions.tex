@@ -4,9 +4,20 @@
 
 \chapter{Laboratory Instructions}
 
+\section{Materials}
+
+\begin{itemize}
+    \item{Sample to image (cells, DNA origami, etc.)}
+    \item{Imaging buffer (Abbelight Smart Kit for STORM)}
+    \item{Cavity well microscope slide}
+    \item{Sealant}
+    \item{Immersion oil}
+    \item{Lens cleaning solution (ethanol, etc.)}
+\end{itemize}
+
 \section{Description of the Microscope}
 
-The microscope is an Abbelight SAFe 180. It consists of an Olympus IX83 microscope, an Abbelight scanning illumination system, a Hamamatsu ORCA-Fusion digital CMOS camera, and other components. Some of these components are labeled in \autoref{fig:microscope} and \autoref{fig:electronics}.
+The microscope is an Abbelight SAFe 180. It consists of an Olympus IX83 microscope, an Abbelight scanning illumination system, an Oxxius laser engine, a Hamamatsu ORCA-Fusion digital CMOS camera, and other components. Some of these components are labeled in \autoref{fig:microscope} and \autoref{fig:electronics}.
 
 \begin{figure}[ht]
     \centering
@@ -22,24 +33,40 @@ The microscope is an Abbelight SAFe 180. It consists of an Olympus IX83 microsco
     \label{fig:electronics}
 \end{figure}
 
-\section{Instrument Startup}\label{sec:startup}
+\section{Tasks}
+
+\subsection{Turn on the Microscope}\label{sec:startup}
 
 To turn on the microscope, switch on the following components in this order. There should be pieces of tape with numbers on them and attached to the actual devices to aid you.
 
 \begin{enumerate}
-    \item Oxxius L4Cc laser engine
-    \item Oxxius safety key
-    \item Abbelight electronics: main switch
-    \item Abbelight electronics: scanner
-    \item Hamamatsu camera \newline Wait for the status light to turn green before proceeding.
+    \item Laser engine
+    \item Laser safety key on the shutter controller
+    \item Scanner electronics: main switch
+    \item Scanner electronics: scanner
+    \item Camera \newline Wait for the status light to turn green before proceeding.
     \item Olympus CBH microscope controller
     \item Maerhaeuser Tango Desktop stage controller
     \item Olympus control panel \newline Wait for the "Start Operation" button to appear, then press it to continue. This can take about one minute.
-    \item Oxxius shutter
-    \item The control computer
+    \item Laser shutter
+    \item The computer
 \end{enumerate}
 
-\section{Instrument Shutdown}
+\subsection{Prepare the Buffer}
+
+\fbox{
+    \parbox{\textwidth}{\textbf{WARNING} The buffers used in SMLM contain highly toxic chemicals. Always follow proper laboratory safety procedures. Please alert a teaching assistant immediately if any of the buffer touches you.}
+}\newline
+
+For STORM imaging, the sample must be immersed in a buffer that facilitates photoswitching. Follow the instructions in the Abbelight Smart Kit to prepare the buffer.
+
+\subsection{Prepare the Sample}
+
+Once the buffer is prepared, remove the sample that you will image from the fridge. It will be mounted on a glass coverslip that must in turn be mounted onto a microscope slide with a well to hold the buffer. Carefully add the buffer to the well and \textbf{place the coverslip with the sample slide facing the buffer} over the well.
+
+Once the
+
+\subsection{Shutdown the Microscope}
 
 Turn off the components in the opposite order as in \autoref{sec:startup}.
 
