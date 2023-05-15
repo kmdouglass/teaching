@@ -1,0 +1,1 @@
+The principle of holography. A small scattering object is illuminated by a diverging spherical wave. The interference between the scattered wavefront and the spherical wavefront produces interference fringes in the plane of a detector. Adapted from D. Gabor, "A New Microscopic Principle," Nature 777, 161 (1948). https://doi.org/10.1038/161777a0
