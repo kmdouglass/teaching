@@ -10,11 +10,10 @@
   - [ ] 1000 uL (blue)
   - [ ] 200 uL (yellow)
 - [ ] Cavity well slides
-- [ ] Immersion oil
+- [X] Immersion oil
 - [ ] Cleaning tissue
 - Lens cleaning solvents
-  - [ ] Xylene
-  - [ ] Methanol
+  - [ ] Ethanol (90%)
 - [ ] Tweezers
 - [ ] PBS (1x)
 
@@ -22,6 +21,6 @@
 
 - PBS
 - Cells / coverslips
-- Xylene
-- Methanol
+- Ethanol
 - Gloves
+- STORM Buffer (EPFL OMoD code: 16 05 06)
