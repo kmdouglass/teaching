@@ -85,6 +85,34 @@ function linspace(a, n) {
 
 The first function, `conic` actually produces the single surface samples. `conicArray` just repeats this for an array of radial coordinates. Finally, `linspace` produces linearly spaced radial coordinates. This is more-or-less the same thing as what my Rust/Webassembly ray-tracer is passing off to the Javascript layer.
 
+## Coordinate transformations
+
+Remember when I said that the conic's vertex was at $\left(0, 0, 0\right)$ and that the principal axis was the z-axis? Well, that puts the vertex at the upper left corner of the screen when it gets drawn to the canvas. Ideally, we'd have the surface centered on the canvas with a nice, visually appealing margin around it.
+
+What's more, we'll almost always have more than one surface in our optical system. Each surface will have a local coordinate system where its vertex is at the origin, and the system will have a global coordinate system that places the surfaces within it.
+
+All this means we'll have to transform from the coordinate system of each surface into the global one of the system, then transform from that into the coordinate system of the canvas to draw everything correctly.
+
+Let's start first by transforming from each surface coordinate system to the global one of the optical system. If we assume sequential surfaces laid out in order along the z-axis, then this is simple:
+
+$$x = x_l$$
+$$y = y_l$$
+$$z = z_l + t_i$$
+
+In other words, $t_i$ is the axial location of surface $i$. $l$ denotes the local coordinate system of the surface.
+
+Next, let's assume that the 2D representation of the optical system in its coordinate system is in the $\left(y, z\right)$ plane with the z-axis pointing to the right of screen, the y-axis pointing up, and the x-axis pointing into the screen. The canvas coordinate system, on the other hand, has its origin at the upper left corner and its y-axis is pointing down the screen.
+
+The transform from the optical system's coordinate system to the canvas is
+
+$$x_c = a \left( z + \bar{z} \right)$$
+$$y_c = -a \left( y + \bar{y} \right)$$
+
+where the subscript $c$ denotes the canvas coordinate system and the overbar denotes the center of mass of all the surface samples points.
+
+$a$ is a scaling factor that we can use to make sure that the entire system fits nicely within the canvas.
+
+
 ## References
 
 - Spencer and Murty, "General Ray-Tracing Procedure", JOSA 6, 672 (1962): https://doi.org/10.1364/JOSA.52.000672
