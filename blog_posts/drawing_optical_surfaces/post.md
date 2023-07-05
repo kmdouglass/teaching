@@ -38,11 +38,21 @@ Except for MIDIs of anime theme songs playing in the background, my page is alre
 
 OK, now we're at one of the good parts. Before we jump into the code, we should probably ask ourselves that age-old question: how do we model optical surfaces?
 
-There's a classic paper by [Spencer and Murty](https://doi.org/10.1364/JOSA.52.000672) that explains how to intersect ways with surfaces of the form
+There's a classic paper by [Spencer and Murty](https://doi.org/10.1364/JOSA.52.000672) that explains how to intersect rays with surfaces of the form
 
 $$ F \left(x, y, z\right) = 0 $$
 
-Many surfaces that we are interested in in optics have profiles that  are conic sections.
+Many surfaces that we are interested in in optics have profiles that are conic sections, so it's reasonable to focus our attention on drawing these. To represent a conic as a 2D surface, we have to first do a few things:
+
+1. We assume that the vertex of the conic lies at the origin $(0, 0, 0)$ of the surface's coordinate system.
+1. We assume that the principal axis of the conic is the z-axis.
+1. We rewrite the above function into two different functions: one a function of $z$ and the other a function of $x$ and $y$: $F \left(x, y, z\right) = z - G \left(x, y \right)$.
+
+The function $G\left(x, y \right)$ above is actually the surface sag, i.e. the distance between the surface and the $z=0$ plane at a given $(x, y)$ point. The expression (in cylindrical coordinates!) for the sag of a conic surface is:
+
+$$ G \left(r \right) = \frac{r^2 / R}{1 + \sqrt{1 - \left( 1 + K \right) \left(\frac{r}{R}\right)^2}} $$
+
+where $r$ is the radial coordinate, $R$ is the radius of curvature, and $K = -e^2$ is called the [conic constant](https://en.wikipedia.org/wiki/Conic_constant), which is the negative of the square of the eccentricity. By convention, convex surfaces have a negative radius of curvature, whereas concave surfaces are positive. Drawing conics essentially comes down to plotting the above equation.
 
 
 
