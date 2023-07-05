@@ -21,20 +21,60 @@ function linspace(a, n) {
     return r;
 }
 
+/*
+    * Create an array of radial and axial points on a flat surface.
+    * numPoints: number of points to sample
+    * radius: radius of the surface
+    * offset: axial offset of the surface vertex from the origin
+    * returns: [r, z] where r is an array of radial points and z is an array of axial points
+*/
+function flatSurface(numPoints, radius, offset) {
+    let r = linspace(radius, numPoints);
+    let z = r.map(function (r) {
+        return offset;
+    });
+    return [r, z];
+}
+
+/*
+    * Create an array of radial and axial points on a conic surface.
+    * numPoints: number of points to sample
+    * roc: radius of curvature
+    * K: conic constant
+    * radius: radius of the surface
+    * offset: axial offset of the surface vertex from the origin
+    * returns: [r, z] where r is an array of radial points and z is an array of axial points
+*/
+function conicSurface(numPoints, roc, K, radius, offset) {
+    let r = linspace(radius, numPoints);
+    let sag = conicArray(r, roc, K, radius);
+    
+    // Add offset to every value in sag
+    let z = sag.map(function (s) {
+        return s + offset;
+    });
+
+    return [r, z];
+}
+
+
 let canvas = document.querySelector("canvas");
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-// Create points to sample the sag function of a spherical surface of radius 12.5 cm
-const radius = 12.5;
-const roc = 25.8  // mm
-const K = 0;  // sphere
-const r = linspace(radius, 20);
-let surface = conicArray(r, roc, K, radius);
+// Create f = 50.1 mm a planoconvex lens comprised of two surfaces, the second one being spherical.
+const radius0 = 12.5; // mm
+const thickness0 = 5.3;  // mm
+const radius1 = 12.5;  // mm
+const roc1 = 25.8; // mm
+const K1 = 0;  // spherical
+const numPoints = 20;
+let surface0 = flatSurface(numPoints, radius0, 0);
+let surface1 = conicSurface(numPoints, roc1, K1, radius1, thickness0);
+
+console.log(surface0);
+console.log(surface1);
 
 // Draw the sag of the spherical surface
 let ctx = canvas.getContext("2d");
-for (let i = 0; i < r.length; i++) {
-    ctx.fillRect(surface[i] * 10, r[i] * 10, 3, 3);
-}
