@@ -16,10 +16,10 @@ This part is pretty straightforward. I created two files: `index.html` and `canv
 
 ```html
 <canvas id="canvas"></canvas>
-<script src="canvas.js"></script>
+<script src="main.js"></script>
 ```
 
-I created the canvas with the the ID `canvas`, then I invoke a Javascript file named `canvas.js`.
+I created the canvas with the the ID `canvas`, then I invoke a Javascript file named `main.js`.
 
 I made the canvas fill the entire browser window in Javascript by setting the canvas width and `height` properties to the document's `innerWidth`/`innerHeight` respectively.
 
@@ -54,7 +54,36 @@ $$ G \left(r \right) = \frac{r^2 / R}{1 + \sqrt{1 - \left( 1 + K \right) \left(\
 
 where $r$ is the radial coordinate, $R$ is the radius of curvature, and $K = -e^2$ is called the [conic constant](https://en.wikipedia.org/wiki/Conic_constant), which is the negative of the square of the eccentricity. By convention, convex surfaces have a negative radius of curvature, whereas concave surfaces are positive. Drawing conics essentially comes down to plotting the above equation.
 
+## Sampling the surface
 
+With an equation for the surface sag in hand, we next need a few tools to sample points from the surface. I don't really know Javascript, so I let GitHub Copilot take care of these for me:
+
+```js
+// Compute the sag of a conic surface
+function conic(r, roc, K, radius) {
+    if (r > radius) return NaN;
+
+    return r * r / roc / (1 + Math.sqrt(1 - (1 + K) * r * r / roc / roc));
+}
+
+// Take an array of values r and call conic on each one
+function conicArray(r, roc, K, radius) {
+    return r.map(function (r) {
+        return conic(r, roc, K, radius);
+    });
+}
+
+// Create an array of n values from -a to a
+function linspace(a, n) {
+    let r = [];
+    for (let i = 0; i < n; i++) {
+        r.push(-a + 2 * a * i / (n - 1));
+    }
+    return r;
+}
+```
+
+The first function, `conic` actually produces the single surface samples. `conicArray` just repeats this for an array of radial coordinates. Finally, `linspace` produces linearly spaced radial coordinates. This is more-or-less the same thing as what my Rust/Webassembly ray-tracer is passing off to the Javascript layer.
 
 ## References
 
