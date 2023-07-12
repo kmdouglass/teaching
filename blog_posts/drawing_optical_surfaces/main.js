@@ -58,31 +58,6 @@ function conicSurface(numPoints, roc, K, radius, offset) {
 }
 
 /*
-    * Computes the center of mass of a system of surfaces by averaging the coordinates.
-    * surfaces: an array of surfaces, each of which is an array of [r, z] points
-    * returns: com, the 2D coordinates of the center of mass
-*/
-function centerOfMass(surfaces) {
-    let com = [0, 0];
-    let nPoints = 0;
-    
-    for (let surface of surfaces) {
-        let r = surface[0];
-        let z = surface[1];
-        for (let i = 0; i < r.length; i++) {
-            com[0] += r[i];
-            com[1] += z[i];
-            nPoints++;
-        }
-    }
-
-    com[0] /= nPoints;
-    com[1] /= nPoints;
-
-    return com;
-}
-
-/*
     * Compute the bounding box of a system of surfaces.
     * surfaces: an array of surfaces, each of which is an array of [r, z] points
     * returns: [rMin, rMax, zMin, zMax]
@@ -124,6 +99,31 @@ function findScaleFactor(surfaces, canvasWidth, canvasHeight, fillFactor = 0.9) 
 }
 
 /*
+    * Computes the center of mass of a system of surfaces by averaging the coordinates.
+    * surfaces: an array of surfaces, each of which is an array of [r, z] points
+    * returns: com, the 2D coordinates of the center of mass
+*/
+function centerOfMass(surfaces) {
+    let com = [0, 0];
+    let nPoints = 0;
+    
+    for (let surface of surfaces) {
+        let r = surface[0];
+        let z = surface[1];
+        for (let i = 0; i < r.length; i++) {
+            com[0] += r[i];
+            com[1] += z[i];
+            nPoints++;
+        }
+    }
+
+    com[0] /= nPoints;
+    com[1] /= nPoints;
+
+    return com;
+}
+
+/*
     * Transforms a system of surfaces into the canvas coordinate system.
     * surfaces: an array of surfaces, each of which is an array of [r, z] points
     * canvasWidth: the width of the canvas
@@ -155,6 +155,82 @@ function toCanvasCoordinates(surfaces, canvasWidth, canvasHeight, scaleFactor = 
     return transformedSurfaces;
 }
 
+/*
+    * Remove radial points from surfaces so that all surfaces have the same radius.
+    * surfaces: an array of surfaces, each of which is an array of [r, z] points
+    * radius: the radius to which to trim the surfaces
+    * returns: an array of trimmed surfaces
+    * Note: this function modifies the surfaces in place.
+*/
+function trimSurfaces(surfaces, radius) {
+    for (let surface of surfaces) {
+        let r = surface[0];
+        let z = surface[1];
+        let newR = [];
+        let newZ = [];
+
+        for (let i = 0; i < r.length; i++) {
+            if (r[i] <= radius) {
+                newR.push(r[i]);
+                newZ.push(z[i]);
+            }
+        }
+
+        surface[0] = newR;
+        surface[1] = newZ;
+    }
+}
+
+/*
+    * Extend a surface radially to match the radius of another surface by adding two new endpoints.
+    * surface: an array of [r, z] points
+    * radius: the radius to which to extend the surface
+    * returns: an array of [r, z] points
+    * Note: this function modifies the surface in place.
+*/
+function extendSurface(surface, radius) {
+    let r = surface[0];
+    let z = surface[1];
+    let newR = [];
+    let newZ = [];
+
+    if (r[0] < -radius) {
+        newR.push(-radius);
+        newZ.push(z[0]);
+    }
+    
+    for (let i = 0; i < r.length; i++) {
+        newR.push(r[i]);
+        newZ.push(z[i]);
+    }
+
+    if (r[r.length - 1] > radius) {
+        newR.push(radius);
+        newZ.push(z[z.length - 1]);
+    }
+}
+
+/*
+    * Close surfaces to form a lens by connecting the endpoints for each successive pair.
+    * surfaces: an array of surfaces, each of which is an array of [r, z] points
+    * ctx: the canvas context
+*/
+function closeSurfaces(surfaces, ctx) {
+    for (let i = 0; i < surfaces.length - 1; i++) {
+        let r0 = surfaces[i][0];
+        let z0 = surfaces[i][1];
+        let r1 = surfaces[i + 1][0];
+        let z1 = surfaces[i + 1][1];
+
+        ctx.moveTo(r0[r0.length - 1], z0[z0.length - 1]);
+        ctx.lineTo(r1[r1.length - 1], z1[z1.length - 1]);
+
+        ctx.moveTo(r0[0], z0[0]);
+        ctx.lineTo(r1[0], z1[0]);
+
+        ctx.stroke();
+    }
+}   
 
 let canvas = document.querySelector("canvas");
 
@@ -174,6 +250,15 @@ let surface0 = conicSurface(numPoints, roc0, K0, radius0, 0);
 let surface1 = flatSurface(numPoints, radius1, thickness0);
 let surfaces = [surface0, surface1];
 
+// Trim the surfaces so that they all have the same radius
+trimSurfaces(surfaces, radius0);
+
+if (radius0 > radius1) {
+    extendSurface(surface1, radius0);
+} else if (radius1 > radius0) {
+    extendSurface(surface0, radius1);
+}
+
 // Transform the surfaces into the canvas coordinate system
 scaleFactor = findScaleFactor(surfaces, canvas.width, canvas.height, fillFactor = 0.5);
 surfaces = toCanvasCoordinates(surfaces, canvas.width, canvas.height, scaleFactor);
@@ -190,6 +275,8 @@ for (let surface of surfaces) {
     }
 }
 ctx.stroke();
+
+closeSurfaces(surfaces, ctx);
 
 // Put a point in the center of the canvas
 ctx.beginPath();

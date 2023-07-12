@@ -193,7 +193,83 @@ function toCanvasCoordinates(surfaces, canvasWidth, canvasHeight, scaleFactor = 
 
 ## Connecting the Endpoints
 
-As a final step, we would like to connect the endpoints of the surfaces so that the lens that they represent are not open at the end.
+As a final step, we would like to connect the endpoints of the surfaces so that the lenses that they represent are not open at the end. If the surfaces have the same radii and the endpoints of each surface are the same distance from the optics axis, then this would be no problem: just draw a horizontal line between the two sets of endpoints.
+
+In general, however, surfaces might have different radii. In this case we can simply remove points from the surface with the larger radius until its radius matches the radius of the smaller surface. For now, let's only consider one lens with two surfaces so that we don't have to worry about grouping surfaces into individual lenses and trimming each lens individually for now.
+
+```js
+function trimSurfaces(surfaces, radius) {
+    for (let surface of surfaces) {
+        let r = surface[0];
+        let z = surface[1];
+        let newR = [];
+        let newZ = [];
+
+        for (let i = 0; i < r.length; i++) {
+            if (r[i] <= radius) {
+                newR.push(r[i]);
+                newZ.push(z[i]);
+            }
+        }
+
+        surface[0] = newR;
+        surface[1] = newZ;
+    }
+}
+```
+
+After trimming them, we also need to make sure that the radial coordinates of the endpoints of each surface are the same. If they aren't, we append endpoints to the smaller surface so that the new points have the same radial coordinate as the endpoints on the other surface. The axial values of the new endpoints remain unchanged.
+
+```js
+function extendSurface(surface, radius) {
+    let r = surface[0];
+    let z = surface[1];
+    let newR = [];
+    let newZ = [];
+
+    if (r[0] < -radius) {
+        newR.push(-radius);
+        newZ.push(z[0]);
+    }
+    
+    for (let i = 0; i < r.length; i++) {
+        newR.push(r[i]);
+        newZ.push(z[i]);
+    }
+
+    if (r[r.length - 1] > radius) {
+        newR.push(radius);
+        newZ.push(z[z.length - 1]);
+    }
+}
+```
+
+Finally, we connect the endpoints of each pair of surfaces.
+
+```js
+function closeSurfaces(surfaces, ctx) {
+    for (let i = 0; i < surfaces.length - 1; i++) {
+        let r0 = surfaces[i][0];
+        let z0 = surfaces[i][1];
+        let r1 = surfaces[i + 1][0];
+        let z1 = surfaces[i + 1][1];
+
+        ctx.moveTo(r0[r0.length - 1], z0[z0.length - 1]);
+        ctx.lineTo(r1[r1.length - 1], z1[z1.length - 1]);
+
+        ctx.moveTo(r0[0], z0[0]);
+        ctx.lineTo(r1[0], z1[0]);
+
+        ctx.stroke();
+    }
+}  
+```
+
+I actually found this step harder than I thought it would be due to the edge case of having surfaces with different radii.
+
+## Drawing a lens
+
+With all this in place we can finally draw a simple planoconvex lens.
 
 ## References
 
