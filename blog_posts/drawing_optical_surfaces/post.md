@@ -87,6 +87,8 @@ The first function, `conic` actually produces the single surface samples. `conic
 
 ## Coordinate transformations
 
+### From surface local to system to canvas coordinate systems
+
 Remember when I said that the conic's vertex was at $\left(0, 0, 0\right)$ and that the principal axis was the z-axis? Well, that puts the vertex at the upper left corner of the screen when it gets drawn to the canvas. Ideally, we'd have the surface centered on the canvas with a nice, visually appealing margin around it.
 
 What's more, we'll almost always have more than one surface in our optical system. Each surface will have a local coordinate system where its vertex is at the origin, and the system will have a global coordinate system that places the surfaces within it.
@@ -103,15 +105,95 @@ In other words, $t_i$ is the axial location of surface $i$. $l$ denotes the loca
 
 Next, let's assume that the 2D representation of the optical system in its coordinate system is in the $\left(y, z\right)$ plane with the z-axis pointing to the right of screen, the y-axis pointing up, and the x-axis pointing into the screen. The canvas coordinate system, on the other hand, has its origin at the upper left corner and its y-axis is pointing down the screen.
 
+To go from the optical system's coordinate system to the one of the canvas, we need to do the following:
+
+1. Center the sample points in the system about their center of mass
+2. Scale the points to change the size of the system in the canvas
+3. Center the points about the center of the canvas
+
 The transform from the optical system's coordinate system to the canvas is
 
-$$x_c = a \left( z + \bar{z} \right)$$
-$$y_c = -a \left( y + \bar{y} \right)$$
+$$x_c = \frac{w_c}{2} - a \left( z - \bar{z} \right)$$
+$$y_c = \frac{h_c}{2} + a \left( y - \bar{y} \right)$$
 
-where the subscript $c$ denotes the canvas coordinate system and the overbar denotes the center of mass of all the surface samples points.
+where the subscript $c$ denotes the canvas coordinate system and the overbar denotes the center of mass of all the surface samples points. $w_c$ and $h_c$ are the width and height of the canvas, respectively. Finally, $a$ is a scaling factor that we can use to make sure that the entire system fits nicely within the canvas.
 
-$a$ is a scaling factor that we can use to make sure that the entire system fits nicely within the canvas.
+The plus sign in the equation for $y_c$ accounts for the fact that the y-axis points down the screen, but it points up in the system's coordinate system. Additionally, we've changed $z$ for $x$ because we want the axis of the system to point along the x-axis of the canvas.
 
+### Scaling the surfaces to the canvas
+
+How can we determine a good value for $a$, the scaling factor? The first thing that comes to mind is to compute a bounding box for the surface sample points, and then determine a scaling factor so that the bounding box fills the canvas by a specific amount.
+
+To do this, we can first find the minimum and maximum radial and axial coordinates values of the optical system surface samples. This is straightforward:
+
+```js
+function boundingBox(surfaces) {
+    let rMin = Infinity;
+    let rMax = -Infinity;
+    let zMin = Infinity;
+    let zMax = -Infinity;
+
+    for (let surface of surfaces) {
+        let r = surface[0];
+        let z = surface[1];
+        for (let i = 0; i < r.length; i++) {
+            rMin = Math.min(rMin, r[i]);
+            rMax = Math.max(rMax, r[i]);
+            zMin = Math.min(zMin, z[i]);
+            zMax = Math.max(zMax, z[i]);
+        }
+    }
+
+    return [rMin, rMax, zMin, zMax];
+}
+```
+
+The algorithm loops over all the points and remembers the smallest and largest value that it sees in each direction.
+
+Next, we divide the canvas height by `rRange = rMax - rMin` and the width by `zRange = zMax - zMin` and take the smaller of the two results. This tells how much we need to scale the original system by to completely fill the canvas in the smaller of the two dimensions. Finally, a fill a factor with values between 0 and 1 lets us adjust by how much the bounding box filles this smaller dimension.
+
+The code for this is also pretty simple:
+
+```js
+function findScaleFactor(surfaces, canvasWidth, canvasHeight, fillFactor = 0.9) {
+    let [rMin, rMax, zMin, zMax] = boundingBox(surfaces);
+    let rRange = rMax - rMin;
+    let zRange = zMax - zMin;
+    let scaleFactor = fillFactor * Math.min(canvasHeight / rRange, canvasWidth / zRange);
+    return scaleFactor;
+}
+```
+
+### Final transformation
+
+The code that performs the full transformation from the surface coordinate systems to the canvas looks like the following:
+
+```js
+function toCanvasCoordinates(surfaces, canvasWidth, canvasHeight, scaleFactor = 6) {
+    let comSamples = centerOfMass(surfaces);  // (r, z) coordinates
+    let comCanvas = [canvasWidth / 2, canvasHeight / 2];  // (x, y) coordinates
+    let transformedSurfaces = [];
+
+    for (let surface of surfaces) {
+        let r = surface[0];
+        let z = surface[1];
+        let transformedSurface = [[], []];
+
+        for (let i = 0; i < r.length; i++) {
+            transformedSurface[0].push(comCanvas[0] - scaleFactor * (z[i] - comSamples[1]));
+            transformedSurface[1].push(comCanvas[1] + scaleFactor * (r[i] - comSamples[0]));
+        }
+
+        transformedSurfaces.push(transformedSurface);
+    }
+
+    return transformedSurfaces;
+}
+```
+
+## Connecting the Endpoints
+
+As a final step, we would like to connect the endpoints of the surfaces so that the lens that they represent are not open at the end.
 
 ## References
 
