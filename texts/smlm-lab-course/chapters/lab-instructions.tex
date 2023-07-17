@@ -4,12 +4,16 @@
 
 \chapter{Laboratory Instructions}
 
-This laboratory is divided into two different experiments. In the first part, you will perform STORM imaging of cells. One type of organelle in the cell (for example, its microtubules) has been labeled with fluorescent markers. You will image these markers and reconstruct the microtubule network in the cell. In the second part, you will image DNA origami nanorulers as part of a metrology experiment. The goal is to asses the precision of the microscope and the SMLM technique.
+This laboratory is divided into two different experiments. In the first part, you will perform STORM imaging of cells. One type of organelle in the cell (for example, the microtubules) has been labeled with fluorescent markers. You will image these markers and reconstruct the microtubule network in the cell. In the second part, you will image DNA origami nanorulers as part of a metrology experiment. The goal is to asses the precision of the microscope and the SMLM technique.
 
 \section{Safety}
 
 \fbox{
-    \parbox{\textwidth}{\textbf{WARNING} The buffers used in SMLM contain highly toxic chemicals. Always follow proper laboratory safety procedures. Please alert a teaching assistant immediately if any of the buffer touches you.}
+    \parbox{\textwidth}{\textbf{WARNING} The buffers used in SMLM contain highly toxic chemicals. Always follow proper laboratory safety procedures and wear the proper personal protective equipment. Please alert a teaching assistant immediately if any of the buffer touches you.}
+}\newline
+
+\noindent\fbox{
+    \parbox{\textwidth}{\textbf{WARNING} SMLM imaging requires the use of high-powered lasers. A safety interlock over the objective is in place to avoid accidental exposure. Do not attempt to bypass the interlock.}
 }\newline
 
 \section{Common Procedures}
@@ -60,7 +64,7 @@ The sample is mounted in two steps: 1) mount the sample coverslip onto a glass c
 \subsubsection{Mount the Coverslip onto the Slide}
 
 \fbox{
-    \parbox{\textwidth}{\textbf{WARNING} Gloves and eye protection must be worn for this step.}
+    \parbox{\textwidth}{\textbf{WARNING} Gloves and eye protection must be worn for this procedure.}
 }\newline
 
 A video tutorial describing this process may be found at \url{https://drive.google.com/file/d/1czRAzCVn1dEPEgESOuVnm_-1_1xvhQnW/view?usp=sharing}. You need to be signed in with your EPFL account to view the video.
@@ -80,7 +84,7 @@ Mounting the coverslip onto the slide requires the following materials:
 
 Begin by mixing the components of the buffer kit. Add 10 $\mu$L of solution from the green tube the blue tube. \textbf{Be sure to never exceed the soft stop on the pipette because you may accidentally suck solution into it.} Mix the solution by pipetting it up and down several times. Next, add 6 $\mu$L of solution from the red tube to blue tube. Mix the solution again. The buffer is now ready to use.
 
-For the next step, load 175 $mu$L of the prepared buffer solution into the cavity slide using a 1 mL pipette tip. Then, using tweezers, gently pick up the coverslip with the cell sample on it and place it over the cavity well with the sample side facing into the buffer. Gently remove any excess buffer by placing a paper towel over the slide.
+For the next step, load 175 $\mu$L of the prepared buffer solution into the cavity slide using a 1 mL pipette tip. Then, using tweezers, gently pick up the coverslip with the cell sample on it and place it over the cavity well with the sample side facing into the buffer. Gently remove any excess buffer by placing a paper towel over the slide.
 
 If there is a bubble, \textbf{very gently} slide the coverslip to the side until the bubble is exposed. Add a tiny bit more buffer, then slide the coverslip back to the center of the well. Remove any excess buffer as before.
 
@@ -97,7 +101,11 @@ Finally, mix together equal amounts of the Picodent sealant's yellow and blue co
     \label{fig:objective-sample}
 \end{figure}
 
-To mount the slide onto the microscope, first place a small drop of immersion oil on top of the objective lens. Only one small drop is necessary! The immersion oil allows light rays at large angles to the microscope axis to enter the objective's aperture. This increases the resolution of the microscope. Next, turn the focus knob so that the microscope objective is all the way down as indicated by the yellow line in the objective position indicator of the microscope controller. Then, place the slide into the sliding black metallic mounts and gently push them together until the slide is secure. Ensure that the coverslip is centered over the objective. Finally, turn the focus knob to raise the objective slowly until it is just touching the oil. You will know when the objective is touching the oil because you can see the oil spreading out underneath the objective. A video that illustrates this effect may be found at \url{https://drive.google.com/file/d/1IC5Azq-raW6_jVSnuBDrSsZ0OsQYxoPK/view?usp=sharing}.
+Mounting the slide requires only immersion oil.
+
+To mount the slide onto the microscope, first remove the black safety cover over the objective. Place a small drop of immersion oil on top of the objective lens. Only one small drop is necessary! The immersion oil allows light rays at large angles to the microscope axis to enter the objective's aperture. This increases the resolution of the microscope.
+
+Next, turn the focus knob so that the microscope objective is all the way down as indicated by the yellow line in the objective position indicator section of the microscope control panel. Then, place the slide into the sliding black metallic mounts and gently push them together until the slide is secure. Ensure that the coverslip is centered over the objective. Finally, turn the focus knob to raise the objective slowly until it is just touching the oil. You will know when the objective is touching the oil because you can see the oil spreading out underneath the objective. A video that illustrates this effect may be found at \url{https://drive.google.com/file/d/1IC5Azq-raW6_jVSnuBDrSsZ0OsQYxoPK/view?usp=sharing}.
 
 \subsection{Turn Off the Microscope}
 
@@ -105,7 +113,7 @@ Turn off the components in the opposite order as in \autoref{sec:startup}.
 
 \subsection{Remove Oil From the Objective}
 
-The oil must be removed from the objective after imaging, and sometimes during imaging if there is dust in the oil. To do this, use lens cleaning solution and lens tissue to clean the objective. The lens tissue should be folded into a small square and wetted with the cleaning solution. Avoid touching the area of the tissue that you will use to clean the objective. Then, gently wipe the objective with the wetted lens tissue, slowly dragging the tissue across the objective in one direction.
+The oil must be removed from the objective after imaging, and sometimes during imaging if there is dust in the oil. To do this, use lens cleaning solution and lens tissue to clean the objective. The lens tissue should be folded into a small square and wetted with the cleaning solution. In this laboratory, ethanol is used as the solution, though this can vary with objective manufacturers. Avoid touching the area of the tissue that you will use to clean the objective. After wetting, gently wipe the objective with the lens tissue, slowly moving the tissue across the objective in one direction. Repeat the process if oil remains.
 
 A video demonstration on cleaning objectives may be found at \url{https://www.youtube.com/watch?v=Tz4Dy5D6kdw}.
 
@@ -121,7 +129,6 @@ A video demonstration on cleaning objectives may be found at \url{https://www.yo
     \item{Immersion oil}
     \item{Lens cleaning solution (xylene, methanol, etc.)}
 \end{itemize}
-
 
 For STORM imaging, the sample must be immersed in a buffer that facilitates photoswitching. Follow the instructions in the Abbelight Smart Kit to prepare the buffer.
 
@@ -141,6 +148,10 @@ After mounting the sample, you should start the imaging software which is called
     \caption{The NEO Live Imaging screen immediately after startup.}
     \label{fig:liveimaging-startup}
 \end{figure}
+
+\section{Experiment 2 - Nanoscale Optical Metrology with SMLM}
+
+
 
 
 
