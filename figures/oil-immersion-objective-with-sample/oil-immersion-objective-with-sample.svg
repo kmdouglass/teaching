@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90mm"
+   height="57mm"
+   viewBox="0 0 90 57"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="oil-immersion-objective-with-sample.svg"
+   inkscape:export-filename="oil-immersion-objective-with-sample.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title12527">Optical path of an infinity corrected microscope</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="103.06081"
+     inkscape:cy="188.09041"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g14738">
+    <inkscape:grid
+       type="xygrid"
+       id="grid25"
+       empcolor="#e50000"
+       empopacity="0.18823529"
+       spacingy="0.26458334"
+       empspacing="10"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8221">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop8217" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop8219" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8221"
+       id="linearGradient8223"
+       x1="45.090595"
+       y1="15.143952"
+       x2="56.651337"
+       y2="15.143952"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(45.323687,10.548882)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <g
+       id="g1996"
+       transform="translate(-33.406433,-15.507753)"
+       style="display:inline">
+      <g
+         id="g389"
+         transform="translate(93.84304,-0.4790697)">
+        <g
+           id="g14738"
+           transform="translate(-87.109818,-6.2238838)">
+          <text
+             xml:space="preserve"
+             style="font-size:2.82223px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';fill:none;stroke:#000000;stroke-width:0.25;stroke-dasharray:0.750001, 0.750001;stroke-dashoffset:0"
+             x="-52.499107"
+             y="60.965988"
+             id="text4663"><tspan
+               sodipodi:role="line"
+               id="tspan4661"
+               style="stroke-width:0.25"
+               x="-52.499107"
+               y="60.965988" /></text>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;line-height:1;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="71.680794"
+             y="75.269699"
+             id="text10391-2"><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="71.680794"
+               y="75.269699"
+               id="tspan10389-2">OBJECTIVE</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82223px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0"
+             x="-49.853275"
+             y="31.861824"
+             id="text14495"><tspan
+               sodipodi:role="line"
+               id="tspan14493"
+               style="stroke-width:0.1"
+               x="-49.853275"
+               y="31.861824" /></text>
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 45.194044,56.606541 c 5.291667,5.291666 0,10.583331 0,10.583331 m 14.968039,-4.94219"
+             id="path2298"
+             sodipodi:nodetypes="cc" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 98.14625,56.606541 c -5.291667,5.291666 0,10.583331 0,10.583331 m -14.968039,-4.94219"
+             id="path2298-5"
+             sodipodi:nodetypes="cc" />
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2624"
+             width="68.791664"
+             height="5.2916665"
+             x="37.256546"
+             y="51.314873" />
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;line-height:1;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="71.591904"
+             y="62.97784"
+             id="text10391-2-7"><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="71.591904"
+               y="62.97784"
+               id="tspan10389-2-3">IMMERSION OIL</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;line-height:1;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="71.664253"
+             y="54.791798"
+             id="text10391-2-7-4"><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="71.664253"
+               y="54.791798"
+               id="tspan10389-2-3-6">COVERSLIP</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82223px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             x="71.387405"
+             y="53.828693"
+             id="text2742"><tspan
+               sodipodi:role="line"
+               id="tspan2740"
+               style="stroke-width:0.25"
+               x="71.387405"
+               y="53.828693" /></text>
+          <ellipse
+             style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="path2823"
+             cx="51.088284"
+             cy="49.250957"
+             rx="5.051394"
+             ry="2.0639143" />
+          <ellipse
+             style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="path2825"
+             cx="68.90065"
+             cy="49.344501"
+             rx="2.7517288"
+             ry="1.9703699" />
+          <ellipse
+             style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="path2827"
+             cx="88.693108"
+             cy="49.204185"
+             rx="10.009243"
+             ry="2.1106865" />
+          <path
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 26.673211,51.314872 h 10.583333 c 0,0 5.291667,-7.937499 7.9375,-7.937499 l 52.916667,1e-6"
+             id="path2829"
+             sodipodi:nodetypes="ccsc" />
+          <path
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 116.63154,51.314872 h -10.58333 c 0,0 -5.29167,-7.937499 -7.9375,-7.937499"
+             id="path3571" />
+          <path
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="M 26.673211,27.502373 H 116.63154"
+             id="path3573" />
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;line-height:1;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="71.685616"
+             y="34.683445"
+             id="text3587"><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="71.685616"
+               y="34.683445"
+               id="tspan3589">SLIDE</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82223px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             x="58.42321"
+             y="46.023205"
+             id="text3595"><tspan
+               sodipodi:role="line"
+               id="tspan3597"
+               x="58.42321"
+               y="46.023205"></tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;line-height:1;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="71.620842"
+             y="46.325123"
+             id="text3605"><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="71.620842"
+               y="46.325123"
+               id="tspan3603">CELLS IN BUFFER</tspan></text>
+        </g>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           d="m -49.832441,68.903492 7.9375,-7.937503 52.916667,2e-6 7.9375,7.9375"
+           id="path1180" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata2091">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Kyle M. Douglass</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:language>English</dc:language>
+        <dc:title>Optical path of an infinity corrected microscope</dc:title>
+        <dc:description>Illustration of the sample/objective space showing the relative positions of the various components and media. This illustration is not to scale!</dc:description>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
