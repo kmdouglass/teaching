@@ -57,9 +57,9 @@ To turn on the microscope, turn on the following components in this order. There
     \item The computer
 \end{enumerate}
 
-\subsection{Mount the Sample}
+\subsection{Mount the Sample}\label{sec:mount-sample}
 
-The sample is mounted in two steps: 1) mount the sample coverslip onto a glass cavity well slide, and 2) mount the slide/coverslip combination onto the microscope.
+The sample is mounted in two steps: 1. mount the sample coverslip onto a glass cavity well slide, and 2. mount the slide/coverslip combination onto the microscope.
 
 \subsubsection{Mount the Coverslip onto the Slide}
 
@@ -111,7 +111,15 @@ Next, turn the focus knob so that the microscope objective is all the way down a
 
 Turn off the components in the opposite order as in \autoref{sec:startup}.
 
-\subsection{Remove Oil From the Objective}
+\subsection{Remove Oil From the Objective}\label{sec:remove-oil}
+
+\subsubsection{Materials}
+
+\begin{itemize}
+    \item{Ethanol}
+    \item{Lens cleaning tissue}
+    \item{Tweezers}
+\end{itemize}
 
 The oil must be removed from the objective after imaging, and sometimes during imaging if there is dust in the oil. To do this, use lens cleaning solution and lens tissue to clean the objective. The lens tissue should be folded into a small square and wetted with the cleaning solution. In this laboratory, ethanol is used as the solution, though this can vary with objective manufacturers. Avoid touching the area of the tissue that you will use to clean the objective. After wetting, gently wipe the objective with the lens tissue, slowly moving the tissue across the objective in one direction. Repeat the process if oil remains.
 
@@ -119,28 +127,18 @@ A video demonstration on cleaning objectives may be found at \url{https://www.yo
 
 \section{Experiment 1 - STORM Imaging of Cells}
 
-\section{Materials}
+\subsection{Materials}
 
 \begin{itemize}
-    \item{Sample to image (cells, DNA origami, etc.)}
-    \item{Imaging buffer (Abbelight Smart Kit for STORM)}
-    \item{Cavity well microscope slide}
-    \item{Sealant}
-    \item{Immersion oil}
-    \item{Lens cleaning solution (xylene, methanol, etc.)}
+    \item{Mounted cell sample (see \ref{sec:mount-sample})}
+    \item{Lens cleaning products (see \ref{sec:remove-oil})}
 \end{itemize}
 
-For STORM imaging, the sample must be immersed in a buffer that facilitates photoswitching. Follow the instructions in the Abbelight Smart Kit to prepare the buffer.
+\subsection{Procedure}
 
-\subsection{Prepare the Sample}
+\subsubsection{Setup the Microscope Configuration}
 
-Once the buffer is prepared, remove the sample that you will image from the fridge. If it is a cell sample, then it will be mounted on a glass coverslip that must in turn be mounted onto a microscope slide with a well to hold the buffer. Carefully add the buffer to the well and \textbf{place the coverslip with the sample slide facing the buffer} over the well.
-
-\subsection{Mount the Sample onto the Microscope}
-
-\subsection{Find a Region to Image}
-
-After mounting the sample, you should start the imaging software which is called \textbf{NEO Live Imaging}. You will see a screen like the one in \autoref{fig:liveimaging-startup}.
+After mounting the sample and making contact with the immersion oil (\ref{sec:mount-sample}), you should start the imaging software which is called \textbf{NEO Live Imaging}. You will see a screen like the one in \autoref{fig:liveimaging-startup}.
 
 \begin{figure}[ht]
     \centering
@@ -149,10 +147,22 @@ After mounting the sample, you should start the imaging software which is called
     \label{fig:liveimaging-startup}
 \end{figure}
 
+From this screen, you can access two different modes of the software. The first is the `System' mode, which allows you to configure the microscope for different imaging modalities. The second mode is called `Imaging'. While in imaging mode, you directly control the invididual components of the microscope to acquire images.
+
+Click `System'. You will see a screen like the one in \autoref{fig:liveimaging-system.png}.
+
+\texbf{TODO}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1.0\textwidth]{liveimaging-system.png}
+    \caption{The NEO Live Imaging screen in `System' mode.}
+    \label{fig:liveimaging-system.png}
+\end{figure}
+
+\subsubsection{Find a Region to Image}
+
 \section{Experiment 2 - Nanoscale Optical Metrology with SMLM}
-
-
-
 
 
 \end{document}
