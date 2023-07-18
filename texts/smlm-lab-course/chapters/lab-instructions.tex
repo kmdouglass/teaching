@@ -149,16 +149,34 @@ After mounting the sample and making contact with the immersion oil (\ref{sec:mo
 
 From this screen, you can access two different modes of the software. The first is the `System' mode, which allows you to configure the microscope for different imaging modalities. The second mode is called `Imaging'. While in imaging mode, you directly control the invididual components of the microscope to acquire images.
 
-Click `System'. You will see a screen like the one in \autoref{fig:liveimaging-system.png}.
-
-\texbf{TODO}
+Click `System'. You will see a screen like the one in \autoref{fig:liveimaging-system}. Clicking on `Hardware Configuration' will reveal a screen like \autoref{fig:liveimaging-hardware-config}. Ensure that the microscope is correct. It should be the `SAFe 180'. Also ensure that the resolution is set to `Nanoscopy' and that `2D' is selected. (3D imaging requires the insertion of an additional lens and a calibration step.) Finally, you can see the pixel size on the sample, which is the camera's physical pixel size divided by the magnification of the microscope. For a 100x objective, the pixel size should be about 108 nm.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1.0\textwidth]{liveimaging-system.png}
     \caption{The NEO Live Imaging screen in `System' mode.}
-    \label{fig:liveimaging-system.png}
+    \label{fig:liveimaging-system}
 \end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[height=0.5\textheight]{liveimaging-hardware-config.png}
+    \caption{The NEO Live Imaging screen showing the current hardware configuration.}
+    \label{fig:liveimaging-hardware-config}
+\end{figure}
+
+From this screen, you can also select the `Show Optical Path' button to see an illustration of the excitation and emission light paths through the microscope.
+
+If everything looks good, click the `Back' button to go back to the `System' screen.
+
+
+\subsubsection{Find the Sample}
+
+\fbox{
+    \parbox{\textwidth}{\textbf{ADVICE} It can help to turn off the room lights and close the window shades to reduce the amount of ambient light hitting the camera.}
+}\newline
+
+Now you will try to find the sample in the focal plane of the microscope. To start, click the `Imaging' button to put the microscope into imaging mode. Next, start a live stream from the camera by clicking the play button with the label `Start Preview'. You should now see a live image from the camera. The live stream will contain only noise.
 
 \subsubsection{Find a Region to Image}
 
