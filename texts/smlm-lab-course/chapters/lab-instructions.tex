@@ -179,7 +179,7 @@ Now you will try to find the sample in the focal plane of the microscope. To sta
 
 Ensure that the metallic safety cover is in place over the objective and sample. If it is not, the lasers will not turn on. Turn on the red 642 nm laser by first selecting the `Settings' button to enable the laser controls. Then, toggle the radio button next to the \textbf{red} slider. Slide the slider a small amount to the right to increase the power slightly.
 
-With the laser on, adjust the focus slowly to try and find the sample. You may need to increase the laser power a small amount and/or move the sample stage with the joystick. When the sample is in focus, you should see a clear image of the cells. Out-of-focus images will appear blurry, as in \autoref{fig:in-vs-out-of-focus}.
+With the laser on, adjust the focus slowly to try and find the sample. You may need to increase the laser power a small amount and/or move the sample stage with the joystick. When the sample is in focus, you should see a clear image of the cells. Out-of-focus images will appear blurry, as in \autoref{fig:in-vs-out-of-focus}. If, after several minutes, you are unable to find the sample, ask for help. It could be that the cells have detached from the coverslip, in which case you would need to mount a new sample.
 
 \begin{figure}[ht]
     \centering
@@ -190,7 +190,18 @@ With the laser on, adjust the focus slowly to try and find the sample. You may n
 
 \subsubsection{Setup a STORM Acquisition}
 
-A STORM acquisiton is a series of frames recorded from the sample where the fluorophores are blinking on and off. To setup a new acquisition, first create a project by clicking the `New Project' button. You will be prompted to enter a name for the project. 
+A STORM acquisiton is a series of frames recorded from the sample in which the fluorophores are blinking on and off. To setup a new acquisition, first create a project by clicking the `New Project' button. You will be prompted to enter a name for the project, as well as a path to the project data. The path should be \textbf{Documents/acquisition/YYYY-MM-DD-NAME1-NAME2} where `YYYY-MM-DD' are the year, month, and day of the acquisition. `NAME1' and `NAME2' are you and your partner's last names. Once finished, click `OK'. You will see the project appear in the project explorer pane. For the moment, there are no files in the project.
+
+Next, start a live preview. Increase the red laser power until the fluorescent molecules start to blink on and off rapidly. Try to set the power so that there are no overlapping images of individual fluorescent molecules in any one frame. In the `Settings' window, adjust the exposure time and the number of frames. Common values are 50 ms exporsures and 60000 frames. Also ensure that `EPI' (epi-illumination) is selected for the illumination mode. The settings will look similar to those in \autoref{fig:liveimaging-imaging-settings}.
+
+For the next step, double click in the window containing the live stream. This will...
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{liveimaging-imaging-settings.png}
+    \caption{The NEO Live Imaging screen showing the default acquisition settings. Note the exposure time and the number of frames.}
+    \label{fig:liveimaging-imaging-settings}
+\end{figure}
 
 \section{Experiment 2 - Nanoscale Optical Metrology with SMLM}
 
