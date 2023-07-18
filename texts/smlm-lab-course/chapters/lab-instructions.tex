@@ -142,7 +142,7 @@ After mounting the sample and making contact with the immersion oil (\ref{sec:mo
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=1.0\textwidth]{liveimaging-startup.png}
+    \includegraphics[width=0.75\textwidth]{liveimaging-startup.png}
     \caption{The NEO Live Imaging screen immediately after startup.}
     \label{fig:liveimaging-startup}
 \end{figure}
@@ -169,7 +169,6 @@ From this screen, you can also select the `Show Optical Path' button to see an i
 
 If everything looks good, click the `Back' button to go back to the `System' screen.
 
-
 \subsubsection{Find the Sample}
 
 \fbox{
@@ -178,7 +177,20 @@ If everything looks good, click the `Back' button to go back to the `System' scr
 
 Now you will try to find the sample in the focal plane of the microscope. To start, click the `Imaging' button to put the microscope into imaging mode. Next, start a live stream from the camera by clicking the play button with the label `Start Preview'. You should now see a live image from the camera. The live stream will contain only noise.
 
-\subsubsection{Find a Region to Image}
+Ensure that the metallic safety cover is in place over the objective and sample. If it is not, the lasers will not turn on. Turn on the red 642 nm laser by first selecting the `Settings' button to enable the laser controls. Then, toggle the radio button next to the \textbf{red} slider. Slide the slider a small amount to the right to increase the power slightly.
+
+With the laser on, adjust the focus slowly to try and find the sample. You may need to increase the laser power a small amount and/or move the sample stage with the joystick. When the sample is in focus, you should see a clear image of the cells. Out-of-focus images will appear blurry, as in \autoref{fig:in-vs-out-of-focus}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1.0\textwidth]{in-vs-out-of-focus.png}
+    \caption{An in-focus image of microtubules in COS7 cells (left) and an out-of-focus image (right). Images courtesy of Matt Lycas.}
+    \label{fig:in-vs-out-of-focus}
+\end{figure}
+
+\subsubsection{Setup a STORM Acquisition}
+
+A STORM acquisiton is a series of frames recorded from the sample where the fluorophores are blinking on and off. To setup a new acquisition, first create a project by clicking the `New Project' button. You will be prompted to enter a name for the project. 
 
 \section{Experiment 2 - Nanoscale Optical Metrology with SMLM}
 
