@@ -172,7 +172,7 @@ If everything looks good, click the `Back' button to go back to the `System' scr
 \subsubsection{Find the Sample}
 
 \fbox{
-    \parbox{\textwidth}{\textbf{ADVICE} It can help to turn off the room lights and close the window shades to reduce the amount of ambient light hitting the camera.}
+    \parbox{\textwidth}{\textbf{TIP} It can help to turn off the room lights and close the window shades to reduce the amount of ambient light hitting the camera.}
 }\newline
 
 Now you will try to find the sample in the focal plane of the microscope. To start, click the `Imaging' button to put the microscope into imaging mode. Next, start a live stream from the camera by clicking the play button with the label `Start Preview'. You should now see a live image from the camera. The live stream will contain only noise.
@@ -194,14 +194,22 @@ A STORM acquisiton is a series of frames recorded from the sample in which the f
 
 Next, start a live preview. Increase the red laser power until the fluorescent molecules start to blink on and off rapidly. Try to set the power so that there are no overlapping images of individual fluorescent molecules in any one frame. In the `Settings' window, adjust the exposure time and the number of frames. Common values are 50 ms exporsures and 60000 frames. Also ensure that `EPI' (epi-illumination) is selected for the illumination mode. The settings will look similar to those in \autoref{fig:liveimaging-imaging-settings}.
 
-For the next step, double click in the window containing the live stream. This will...
-
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.75\textwidth]{liveimaging-imaging-settings.png}
     \caption{The NEO Live Imaging screen showing the default acquisition settings. Note the exposure time and the number of frames.}
     \label{fig:liveimaging-imaging-settings}
 \end{figure}
+
+For the next step, double click in the window containing the live stream. This will create a green box to define a region of interest, or ROI. The area inside the ROI will be acquired during the acquisition.
+
+\fbox{
+    \parbox{\textwidth}{\textbf{TIP} Always use a ROI. Using the full camera frame will create very large datasets that are difficult to work with.}
+}\newline
+
+Good ROI sizes are between $25 \, \mu m\times 25 \, \mu m$ and $100 \, \mu m\times 100 \, \mu m$, which is large enough to cover about one cell.
+
+At this point, everything is set. Click the `Start' button to begin the acquisition. The acquisition will take about 50 minutes to complete!!!!!!!!!!!
 
 \section{Experiment 2 - Nanoscale Optical Metrology with SMLM}
 
