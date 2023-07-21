@@ -211,6 +211,31 @@ Good ROI sizes are between $25 \, \mu m\times 25 \, \mu m$ and $100 \, \mu m\tim
 
 At this point, everything is set. Click the `Start' button to begin the acquisition. At 50 ms and 10,000 frames, an acquisiton will take about 8 minutes. You can see how many frames have been acquired in the settings pane. When the acquisition is finished, you will see new files appear in the project explorer pane for this acquisition.
 
+\subsubsection{Tune the Density of Emitters}
+
+During the acquisition, you will need to maintain a good density of emitters. A good density is one where the single molecule images do not overlap and where enough fluoresecent molecules are emitting light to quickly sample the underlying structure. \autoref{fig:good-vs-bad-density} shows examples of good and bad emitter densities.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1.0\textwidth]{sm-density-examples.png}
+    \caption{Examples of too dense, good, and too sparse densities of fluorescent emitters. These are single frames from a STORM acquisition of nucleoporins on the nuclear membrane of U2OS cells.}
+    \label{fig:good-vs-bad-density}
+\end{figure}
+
+Movies of the blinking fluorophores can be found at the following links:
+
+\begin{itemize}
+    \item \href{https://drive.google.com/file/d/12zIK-BqMl0qttkYljKi7P9xZ3krMvthe/view?usp=sharing}{Too Dense}
+    \item \href{https://drive.google.com/file/d/1Is4U-K297sku4u20OJqwY6IOUags1bLl/view?usp=sharing}{Good}
+    \item \href{https://drive.google.com/file/d/1W2AxVjYirPj8t8d2__m8rNoNTUyM3RfY/view?usp=sharing}{Too Sparse}
+\end{itemize}
+
+To maintain a good density of emitters, you will need to adjust the laser power during the acquisition. If the density is too high, you can either increase the amount of 642 nm (red) laser power, or decrease the amount of 405 nm (UV) laser power (if you are using any). If the density is too low, you can either decrease the amount of 642 nm laser power, or increase the amount of 405 nm laser power. You can also adjust the exposure time to increase or decrease the number of photons collected per frame, but this cannot be set once an acquisiton has started.
+
+\subsection{Analysis}
+
+...
+
 \section{Experiment 2 - Nanoscale Optical Metrology with SMLM}
 
 
