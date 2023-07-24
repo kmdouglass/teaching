@@ -253,7 +253,7 @@ To begin, open the software called \textbf{NEO Analysis}. Click on the `Batch' b
 
 Now, you can either add another dataset to process by selecting `Add Dataset', or start the analysis by clicking the `Start' button.
 
-Processing can take several minutes, or even more than an hour if many large datasets are being processed. \autoref{fig:smlm-data-analysis} illustrates the procedure. During processing, images of single fluorescent molecules will first be filtered. This will facilitate identification of the images of single fluorescent molecules. Peak finding algorithms will then be run on the filtered images to segment them into indiviual square regions. Next, the positions of the molecules will be determined to precisions on the order of $\approx 10 \, nm$ by fitting point spread functin (PSF) models to them. Finally, the positions will be rendered into a super-resolution image. The analysis results will be saved in the same directory as the raw data by default.
+Processing can take several minutes, or even more than an hour if many large datasets are being processed. \autoref{fig:smlm-data-analysis} illustrates the procedure. During processing, images of single fluorescent molecules will first be filtered. This will facilitate identification of the images of single fluorescent molecules. Peak finding algorithms will then be run on the filtered images to segment them into indiviual square regions. Next, the positions of the molecules will be determined to precisions on the order of $\approx 10 \, nm$ by fitting point spread functin (PSF) models to them. Finally, the positions will be rendered into a super-resolution image. The localization results will be saved in the same directory as the raw data by default.
 
 \begin{figure}
     \centering
@@ -262,7 +262,7 @@ Processing can take several minutes, or even more than an hour if many large dat
     \label{fig:smlm-data-analysis}
 \end{figure}
 
-\textbf{TO DO 3d viewer}
+The final steps that remain involve analyzing the localization data and super-resolution image. Click `Batch' to exit Batch mode, and then click `3D Viewer' to open the 3D viewer. Then click `Load File' to select a file containing localization data from the previous steps. These files will be named `CoordTable_SAFE180_2D.csv'. After loading the file, you will see a 3D rendering of the localizations. From here you can attempt filtering and further processing on the localizations. See \autoref{sec:exp1-questions} for more information about what to try during these post-processing steps.
 
 For a more complete discussion of the many ways to analyze super-resolution data, please see \cite{martens-frontiersinbioinformatics-2022}.
 
@@ -291,6 +291,10 @@ In this experiment, you will image DNA origami nanorulers as part of a metrology
     \item{Immersion oil}
     \item{Lens cleaning products (see \autoref{sec:remove-oil})}
 \end{itemize}
+
+\subsection{Description of the Sample}
+
+The sample is a DNA origami nanoruler. It consists of a long DNA strand that has been folded into a specific shape. The shape is designed to be imaged with SMLM. The nanoruler is labeled with fluorescent markers at specific locations. The distance between the markers is known to a high degree of precision. The nanoruler is mounted on a glass coverslip and imaged as in \autoref{sec:mount-sample}.
 
 \subsection{Procedure}
 
