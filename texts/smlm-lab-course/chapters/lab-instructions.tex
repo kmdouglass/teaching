@@ -247,7 +247,26 @@ Also, remove any oil from the sample slide. To do this, use lens cleaning soluti
 
 In the previous section you acquired image stacks of blinking single molecules. In this section, you will reconstruct a super-resolution image from the raw data.
 
-To begin, open the software called \textbf{NEO Analysis}.
+To begin, open the software called \textbf{NEO Analysis}. Click on the `Batch' button to enter batch processing mode. Here you will configure which files to process and how to process them. Select `Input Dataset', which will open a File Open... dialog window. Navigate to one of your datasets and select the `ROI.tif' file from within the dataset. This file contains the raw image stack that will be processed into a single super-resolution image. For now, leave all the options at their default values for processing.
+
+Now, you can either add another dataset to process by selecting `Add Dataset', or start the analysis by clicking the `Start' button.
+
+Processing can take several minutes, or even more than an hour if many large datasets are being processed. \autoref{fig:smlm-data-analysis} illustrates the procedure. During processing, images of single fluorescent molecules will first be filtered. This will facilitate identification of the images of single fluorescent molecules. Peak finding algorithms will then be run on the filtered images to segment them into indiviual square regions. Next, the positions of the molecules will be determined to precisions on the order of $\approx 10 \, nm$ by fitting point spread functin (PSF) models to them. Finally, the positions will be rendered into a super-resolution image. The analysis results will be saved in the same directory as the raw data by default.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\textwidth]{smlm-data-analysis.jpg}
+    \caption{The steps involved in processing raw data into a super-resolution image. Image from \cite{martens-frontiersinbioinformatics-2022}.}
+    \label{fig:smlm-data-analysis}
+\end{figure}
+
+For a more complete discussion of the many ways to analyze super-resolution data, please see \cite{martens-frontiersinbioinformatics-2022}.
+
+\subsection{Questions}
+
+In your final report, you should answer the following questions:
+
+\textbf{TO DO}
 
 \section{Experiment 2 - Nanoscale Optical Metrology with SMLM}
 
@@ -261,5 +280,8 @@ In this experiment, you will image DNA origami nanorulers as part of a metrology
     \item{Lens cleaning products (see \ref{sec:remove-oil})}
 \end{itemize}
 
+\subsection{Procedure}
+
+\textbf{TO DO}
 
 \end{document}
