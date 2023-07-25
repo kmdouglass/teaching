@@ -4,7 +4,7 @@
 
 \chapter{Laboratory Instructions}
 
-This laboratory is divided into two different experiments. In the first part, you will perform STORM imaging of cells. One type of organelle in the cell (for example, the microtubules) has been labeled with fluorescent markers. You will image these markers and reconstruct the microtubule network in the cell. In the second part, you will image DNA origami nanorulers as part of a metrology experiment. The goal is to asses the precision of the microscope and the SMLM technique.
+This laboratory is divided into two different experiments. In the first part, you will perform STORM imaging of tubulin. Tubulin is the protein that makes up microtubules, one of the filaments comprising the cytoskeleton. In this experiment tubulin has been labeled with fluorescent markers. You will image these markers and reconstruct the microtubule network in the cell. In the second part, you will image mitochondria. Mitochondria are tube-like organelles that produce energy for the cell.
 
 \section{Safety}
 
@@ -125,7 +125,14 @@ The oil must be removed from the objective after imaging, and sometimes during i
 
 A video demonstration on cleaning objectives may be found at \url{https://www.youtube.com/watch?v=Tz4Dy5D6kdw}.
 
-\section{Experiment 1 - STORM Imaging of Cells}
+\section{Experiment 1 - STORM Imaging of Microtubules}\label{sec:exp1}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{cos7-microtubules.png}
+    \caption{STORM image of microtubules in COS7 cells. Cells were labelled with antibodies against $\alpha$-tubulin and secondary antibodies conjugated with AlexaFluor 647. Scale bar 10 $\mu$m. From \cite{douglass-naturephotonics-2016}.}
+    \label{fig:cos7-microtubules}
+\end{figure}
 
 \subsection{Materials}
 
@@ -233,7 +240,7 @@ Movies of the blinking fluorophores can be found at the following links:
 
 To maintain a good density of emitters, you will need to adjust the laser power during the acquisition. If the density is too high, you can either increase the amount of 642 nm (red) laser power, or decrease the amount of 405 nm (UV) laser power (if you are using any). If the density is too low, you can either decrease the amount of 642 nm laser power, or increase the amount of 405 nm laser power. You can also adjust the exposure time to increase or decrease the number of photons collected per frame, but this cannot be set once an acquisiton has started.
 
-Try to acquire enough images that you can answer the questions in \autoref{sec:exp1-questions}.
+Try to acquire enough images that you can answer the questions in \autoref{sec:questions}.
 
 \subsubsection{Clean up}
 
@@ -262,15 +269,27 @@ Processing can take several minutes, or even more than an hour if many large dat
     \label{fig:smlm-data-analysis}
 \end{figure}
 
-The final steps that remain involve analyzing the localization data and super-resolution image. Click `Batch' to exit Batch mode, and then click `3D Viewer' to open the 3D viewer. Then click `Load File' to select a file containing localization data from the previous steps. These files will be named `CoordTable\_SAFE180\_2D.csv'. After loading the file, you will see a 3D rendering of the localizations. From here you can attempt filtering and further processing on the localizations. See \autoref{sec:exp1-questions} for more information about what to try during these post-processing steps.
+The final steps that remain involve analyzing the localization data and super-resolution image. Click `Batch' to exit Batch mode, and then click `3D Viewer' to open the 3D viewer. Then click `Load File' to select a file containing localization data from the previous steps. These files will be named `CoordTable\_SAFE180\_2D.csv'. After loading the file, you will see a 3D rendering of the localizations. From here you can attempt filtering and further processing on the localizations. See \autoref{sec:questions} for more information about what to try during these post-processing steps.
 
 For a more complete discussion of the many ways to analyze super-resolution data, please see \cite{martens-frontiersinbioinformatics-2022}.
 
-\subsection{Questions}\label{sec:exp1-questions}
+\section{Experiment 2 - STORM Imaging of Mitochondria}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{cos7-mitochondria.jpeg}
+    \caption{STORM image of mitochondria in COS7 cells.}
+    \label{fig:cos7-mitochondria}
+\end{figure}
+
+This experiment is performed exactly as in \autoref{sec:exp-1}, except that the mitochondrial sample is used.
+
+\subsection{Questions}\label{sec:questions}
 
 In your final report, you should answer the following questions based on what you learned during this experiment:
 
 \begin{enumerate}
+    \item{What is the difference between a STORM image and a conventional fluorescence image?}
     \item{What is the effect of the red (642 nm) laser power in STORM imaging?}
     \item{What is the effect of the UV (405 nm) laser power in STORM imaging?}
     \item{What is the effect of the exposure time in STORM imaging? What does it mean when the exposure time is too high or too low?}
@@ -278,6 +297,7 @@ In your final report, you should answer the following questions based on what yo
     \item{Do you think drift correction is necessary to produce good images?}
     \item{Is it necessary to filter the localizations to get a good image? Why or why not?}
     \item{What makes a good STORM image? How can you tell during an acquisiton whether the super-resolution image will be good or not?}
+    \item{Which is easier to image: microtibules or mitochondria? Why?}
 \end{enumerate}
 
 \end{document}
