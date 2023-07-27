@@ -16,11 +16,7 @@ This laboratory is divided into two different experiments. In the first part, yo
     \parbox{\textwidth}{\textbf{WARNING} SMLM imaging requires the use of high-powered lasers. A safety interlock over the objective is in place to avoid accidental exposure. Do not attempt to bypass the interlock.}
 }\newline
 
-\section{Common Procedures}
-
-The following procedures are common to both experiments.
-
-\subsection{Description of the Microscope}
+\section{Description of the Microscope}
 
 The microscope is an Abbelight SAFe 180. It consists of an Olympus IX83 microscope, an Abbelight scanning illumination system, an Oxxius laser engine, a Hamamatsu ORCA-Fusion digital CMOS camera, and other components. Some of these components are labeled in \autoref{fig:microscope} and \autoref{fig:electronics}.
 
@@ -39,6 +35,41 @@ The microscope is an Abbelight SAFe 180. It consists of an Olympus IX83 microsco
 \end{figure}
 
 You may learn more about the microscope here: \url{https://www.abbelight.com/solutions/bioimaging-instruments/}.
+
+\section{Materials and Waste}
+
+The following materials are used in this laboratory:
+
+\begin{itemize}
+  \item Cell samples on glass coverslips
+  \item Abbelight Smart Buffer kits
+  \item Gloves
+  \item $1000 \, \mu L$ micropipette (blue) and tips
+  \item $200 \, \mu L$ micropipette (yellow) and tips
+  \item $10 \, \mu L$ micropette (red) and tips
+  \item Cavity well slides
+  \item Immersion oil
+  \item Cleaning tissue
+  \item Lens cleaning solvent (ethanol 90% - 99%)
+  \item Tweezers
+  \item  PBS (1x)
+  \item Plastic dishes for mixing paste
+\end{itemize}
+
+The following waste is generated in this laboratory and must be disposed of in the proper bin. The following goes in biological waste:
+
+\begin{itemize}
+    - PBS
+    - Cells / coverslips
+    - Used pipette tips
+    - Gloves
+\end{itemize}
+
+Ethanol (EPFL OMoD code: 07 01 04) goes in the bin for alcohols; the used STORM buffer (EPFL OMoD code: 16 05 06) has its own special bin.
+
+\section{Common Procedures}
+
+The following procedures are common to both experiments.
 
 \subsection{Turn On the Microscope}\label{sec:startup}
 
@@ -78,7 +109,7 @@ Mounting the coverslip onto the slide requires the following materials:
     \item{Picodent sealant (both yellow and blue components)}
     \item{Tweezers}
     \item{Pipettes}
-    \item{200 $\mu$L and 1 mL pipette tips}
+    \item{10 $\mu$L and 1 mL pipette tips}
     \item{Paper towels}
 \end{itemize}
 
@@ -221,7 +252,7 @@ At this point, everything is set. Click the `Start' button to begin the acquisit
 
 \subsubsection{Tune the Density of Emitters}
 
-During the acquisition, you will need to maintain a good density of emitters. A good density is one where the single molecule images do not overlap and where enough fluoresecent molecules are emitting light to quickly sample the underlying structure. \autoref{fig:good-vs-bad-density} shows examples of good and bad emitter densities.
+During the acquisition, you will need to maintain a good density of emitters. A good density is one where the single molecule images do not overlap and where at least one fluoresecent molecule per PSF area is emitting light. \autoref{fig:good-vs-bad-density} shows examples of good and bad emitter densities.
 
 \begin{figure}[ht]
     \centering
@@ -260,7 +291,7 @@ To begin, open the software called \textbf{NEO Analysis}. Click on the `Batch' b
 
 Now, you can either add another dataset to process by selecting `Add Dataset', or start the analysis by clicking the `Start' button.
 
-Processing can take several minutes, or even more than an hour if many large datasets are being processed. \autoref{fig:smlm-data-analysis} illustrates the procedure. During processing, images of single fluorescent molecules will first be filtered. This will facilitate identification of the images of single fluorescent molecules. Peak finding algorithms will then be run on the filtered images to segment them into indiviual square regions. Next, the positions of the molecules will be determined to precisions on the order of $\approx 10 \, nm$ by fitting point spread functin (PSF) models to them. Finally, the positions will be rendered into a super-resolution image. The localization results will be saved in the same directory as the raw data by default.
+Processing can take several minutes, or even more than an hour if many large datasets are being processed. \autoref{fig:smlm-data-analysis} illustrates the procedure. During processing, images of single fluorescent molecules will first be filtered. This will facilitate identification of the images of single fluorescent molecules. Peak finding algorithms will then be run on the filtered images to segment them into indiviual square regions. Next, the positions of the molecules will be determined to precisions on the order of $\approx 10 \, nm$ by fitting point spread function (PSF) models to them. Finally, the positions will be rendered into a super-resolution image. The localization results will be saved in the same directory as the raw data by default.
 
 \begin{figure}
     \centering
@@ -282,7 +313,7 @@ For a more complete discussion of the many ways to analyze super-resolution data
     \label{fig:cos7-mitochondria}
 \end{figure}
 
-This experiment is performed exactly as in \autoref{sec:exp-1}, except that the mitochondrial sample is used.
+This experiment is performed exactly as in \autoref{sec:exp1}, except that the mitochondrial sample is used.
 
 \subsection{Questions}\label{sec:questions}
 
@@ -298,6 +329,7 @@ In your final report, you should answer the following questions based on what yo
     \item{Is it necessary to filter the localizations to get a good image? Why or why not?}
     \item{What makes a good STORM image? How can you tell during an acquisiton whether the super-resolution image will be good or not?}
     \item{Which is easier to image: microtibules or mitochondria? Why?}
+    \item{If you failed to create any super-resolution images, what do you think went wrong? What could be improved?}
 \end{enumerate}
 
 \end{document}
