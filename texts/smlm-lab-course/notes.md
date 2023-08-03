@@ -22,9 +22,23 @@
 
 # Waste
 
-- PBS
-- Cells / coverslips
-- Used pipette tips
+## Genetically modified organisms
+- Cells on coverslips
+
+## Liquid waste
+
+- PBS (OMoD code: 06 03 14)
+
+## Alcohols
+
 - Ethanol (EPFL OMoD code: 07 01 04)
+
+## Special
+
+- STORM buffer (EPFL OMoD code: 16 05 06)
+
+## Etc.
+
+- Used pipette tips
 - Gloves
-- STORM Buffer (EPFL OMoD code: 16 05 06)
+- Glass (EPFL OMoD code: 18 01 01)
