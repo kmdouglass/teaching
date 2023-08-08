@@ -1,5 +1,10 @@
 name: Build SMLM Course Manual
-on: [push]
+
+on:
+    push:
+      tags:
+      - 'smlm-lab-manual-*'
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -14,5 +19,5 @@ jobs:
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
-          name: PDF
+          name: smlm-lab-manual
           path: texts/smlm-lab-course/smlm-lab-manual.pdf
