@@ -118,6 +118,32 @@ Let the density of fluorescence emitters in a plane be represented by $O \left(x
 
 We can reduce the degree of blurring by increasing the numerical aperture of the objective, which has the effect of reducing the size of the PSF. Ultimately, however, diffraction prevents us from shrinking the PSF down to a point. As a result, a microscope image will never exactly reproduce an image of the object.
 
+\section{Types of Illuminations}
+
+Imaging fluorescent molecules is challenging because of their weak signals. Any background light, such as autofluorescence from the sample buffer or out-of-focus fluorescence from the sample, will reduce the signal-to-noise ratio of the image. As a result, it is important to minimize the amount of background light that reaches the camera.
+
+Out-of-focus fluorescence can be mitigated by a careful choice of illumination strategy. Any microscope will have a finite focal volume, as illustrated in \autoref{fig:depth-of-focus}. Sources of light from within this volume will appear in focus in the image, whereas sources outside of this volume will appear out-of-focus. Sources that lie outside the axial extent of this volume (called the depth of focus) contribute to background fluorescence.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics{focal-volume.png}
+    \caption{The focal volume of a microscope. This is the volume within which a point source will appear in focus in an image. Point sources outside of this volume will appear out-of-focus. The axial extent of the focal volume is called the depth of focus.}
+    \label{fig:depth-of-focus}
+\end{figure}
+
+Epi-illumination, as shown in \autoref{fig:epi-modes}, illuminates the entire sample, both within and outside of the focal volume. As a result, epi-illumination often produces images with high background fluorescence. However, there are other illumination modes available, two of which are also illustrated in \autoref{fig:epi-modes}. Highly inclined and laminated optical sheet (HILO) microscopy illuminates the sample with a thin sheet of light that is highly inclined with respect to the optical axis of the microscope \cite{tokunaga-naturemethods-2008}. Only regions of the sample within the light sheet will be illuminated. If the lightsheet is thin enough to fit within the focal volume, then out-of-focus fluorescence will be minimized because no fluorophores outside the focal volume will be excited.
+
+Total internal reflection fluorescence (TIRF) microscopy illuminates the sample with light that is totally internally reflected at the coverslip \cite{axelrod-traffic-2001}. Only regions of the sample within one wavelength of the coverslip will be illuminated.
+
+Why would one choose epi-illumination if the background is higher than the other methods? For one, epi-illumination often produces smooth illumination patterns on the sample, whereas HILO and TIRF can produce stripe-like artifacts due to the directionality of the illumination and scattering from the sample. It's also the simplest of all the techniques to implement and is good enough in many situations. HILO would be appropriate for targets deep inside thick cells, and TIRF is ideal for targets that are very close to the coverslip, such as the cell membrane.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1.0\textwidth]{epi-illumination-modalities.png}
+    \caption{Different illumination modalities for epi-fluorescence imaging. Epi-illumination illuminates the whole sample at once so that out-of-focus fluorescence contributes to the background. HILO illuminates the sample with a thin light sheet. Only regions of the sample within the light sheet will fluoresce. Finally, in TIRF, the illumination is totally internally reflected at the coverslip so that only regions of the sample within one wavelength of the coverslip are illuminated.}
+    \label{fig:epi-modes}
+\end{figure}
+
 \section{Digital Image Formation}
 
 The image described by \autoref{eq:image-formation} is a function of continuous spatial variables $x$ and $y$ and represents the optical power per area at a point $\left(x, y\right)$ in the image plane.\footnote{Equivalently, it is proportional to the photon flux at the image plane in units of $\text{photons} / s / m^2$.} A camera, which is used to record the image, is comprised of regularly-spaced, discrete, photo-sensitive elements called pixels. Each pixel converts the optical signal integrated over the time of exposure into a digital number called an analog-to-digital unit, or ADU. A well-designed camera produces images with pixel values (in units of ADUs) that are proportional to the number of photons that were incident on each pixel during an exposure.

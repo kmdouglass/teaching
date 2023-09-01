@@ -1,0 +1,1 @@
+The focal volume of a microscope. This the volume within which a point source will appear in focus in an image. Point sources outside of this volume will appear out-of-focus. The axial extent of the focal volume is called the depth of focus.
