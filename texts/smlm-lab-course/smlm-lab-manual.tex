@@ -368,6 +368,32 @@ The qualities of photoswitching and photoactivation are compared in \autoref{tab
     \label{table:photophysics-comparison}
 \end{table}
 
+\chapter{Structural Biology of the Cell}
+
+\section{Microtubules}
+
+Microtubules are hollow, cylindrical polymers of tubulin proteins that are found in eukaryotic cells. They are a major component of the cytoskeleton, which is a network of filaments that gives the cell its shape and provides a framework for the cell to move. Microtubules are also involved in intracellular transport, cell division, and cell signaling. A schematic of a single microtuble structure is shown in \autoref{fig:microtubule}. The network of microtubules in several cells as seen in a SMLM image is found in \autoref{fig:cos7-microtubules}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1.0\textwidth]{tubulin-infographic.jpg}
+    \caption{Schematic of a microtubule and relevant physical parameters. By PKS615 at English Wikipedia , CC BY-SA 4.0, \url{https://commons.wikimedia.org/wiki/File:Tubulin_Infographic.jpg}}
+    \label{fig:microtubule}
+\end{figure}
+
+A key physical parameter of microtubules is their diameter. At 25 nm, these structures are well below the diffraction limit of light. As a result, their diameter cannot be determined using conventional light microscopy. However, they can be determined using SMLM because the localization precision of single molecules is on the order of 10 nm, which is sufficient to resolve the structure of a microtubule. For this reason, microtubules serve as good reference structures for testing the performance of SMLM microscopes.
+
+To compute the diameter of a microtubule, first start with a SMLM image. Next, select a microtubule that appears to be roughly straight and well-labeled with fluorophore localizations. Then, using any image processing tool of your choice\footnote{Fiji is a very popular and free choice for this purpose. \url{https://fiji.sc}}, draw a line through the cross-section of the microtubule. Then, compute a line profile of the intensity values along the line. Because the image is a projection of a 3D cylinder on to a 2D plane, the line profile should display two peaks due to the apparent increase in density of localizations on the edges of the microtubule. The distance between these peaks is the value of the microtubule's diameter. The results of this process are illustrated in \autoref{fig:mt-line-profiles}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1.0\textwidth]{mt-line-profiles.png}
+    \caption{Line profiles of microtubules (green). The mitochondrial outermembrane is labelled in red. The distance between the peaks is the diameter of the microtubule, which here is larger than the expected 25 nm due to the size of the antibodies used for fluorescence labeling. From \cite{douglass-naturephotonics-2016}.}
+    \label{fig:mt-line-profiles}
+\end{figure}
+
+You might be surprised to find that the peak distance is larger than the expected diameter of 25 nm. This is due to antibody labelling. To attach flourophores to specific proteins (tubulin, in this case), antibodies that target these proteins are experimentally conjugated to the fluorophores. These antibodies are large molecules, and they can be as large as 10 nm in diameter. As a result, the apparent diameter of the microtubule is larger than the actual diameter.
+
 \subfile{chapters/lab-Instructions}
 
 \bibliographystyle{plain}
