@@ -161,6 +161,18 @@ The model for the camera that is used in this course is from the EMVA 1288 speci
     \label{fig:camera-model}
 \end{figure}
 
+In this model, a single pixel takes an input (a number of photons) and transforms this number into an output (a digital value in analog-to-digital units, or ADU). In performing this transformation, various sources of noise are added to the signal so that we can only make probabilisitic inferences about the actual number of photons that hit the pixel. There are also a few assumptions in this model that, when taken together, constitute what's called an ideal image sensor. They are:
+
+\begin{enumerate}
+    \item The numer of photons collected by the pixel depends on the product of irradiance $I \, \left[ W / m^2 \right]$ and the exposure time $t_{exp} \, \left[s\right]$.
+    \item The sensor is linear, i.e. the digital signal $y$ increases linearly with the number of photons received.
+    \item All noise sources are constant in time and space.
+    \item Only the quantum efficiency of the camera is dependent on the wavelength of the incident irradiation.
+    \item Only the dark current depends on the temperature.
+\end{enumerate}
+
+From these five assumptions, the laws of quantum mechanics, and the laws of probability, expressions for the mean output, $\mu_y$, the variance of the output $\sigma^2_y$, and the signal-to-noise ratio $\text{SNR}$ may be derived.
+
 \chapter{Single Molecule Localization Microscopy}
 
 \section{Determination of a Single Molecule's Position}
