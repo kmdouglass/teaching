@@ -150,6 +150,17 @@ This raises the following question: how many pixels should the PSF span? If the 
 
 One approach to the problem is to consider the Nyquist sampling criterion for the entire system. In signal processing, the Nyquist criterion states that we need to sample a signal at twice the rate of its highest frequency component to reconstruct the signal exactly. The equivalent formulation in optics states that we need approximately two pixels per PSF to reconstruct the $I \left(x, y\right)$. For a Gaussian PSF, this analysis leads to a full-width half maximum of 2.355 pixels.
 
+\subsection{A Mathematical Model for Cameras}
+
+The model for the camera that is used in this course is from the EMVA 1288 specification: \url{https://www.emva.org/standards-technology/emva-1288/} .This document details a standard set of models and procedures to characterize CMOS and CCD cameras and light sensors. \autoref{fig:camera-model} depicts the model visually.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1.0\textwidth]{camera_noise_model.png}
+    \caption{The EMVA 1288 camera model.}
+    \label{fig:camera-model}
+\end{figure}
+
 \chapter{Single Molecule Localization Microscopy}
 
 \section{Determination of a Single Molecule's Position}
