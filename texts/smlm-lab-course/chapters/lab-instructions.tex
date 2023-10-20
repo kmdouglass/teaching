@@ -4,7 +4,11 @@
 
 \chapter{Laboratory Instructions}
 
-This laboratory is divided into two different experiments. In the first part, you will perform STORM imaging of tubulin. Tubulin is the protein that makes up microtubules, one of the filaments comprising the cytoskeleton. In this experiment tubulin has been labeled with fluorescent markers. You will image these markers and reconstruct the microtubule network in the cell. In the second part, you will image mitochondria. Mitochondria are tube-like organelles that produce energy for the cell.
+This laboratory is divided into three different experiments. In the first part, you will measure the point spread function (PSF) and estimate the localization precision of single fluorescent molecules. You will do this using fluorescent beads deposited onto a glass coverslip.
+
+In the second experiment, you will perform STORM imaging of tubulin. Tubulin is the protein that makes up microtubules, one of the filaments comprising the cytoskeleton. In this experiment, tubulin in COS7 cells has been labeled with the fluorescent dye AlexaFluor 647. You will image these markers and reconstruct the microtubule network in the cell.
+
+In the third part, you will perform STORM imaging of mitochondria, also using AlexaFluor 647 as a fluorescent marker for the mitochondrial outer membrane in COS7 cells. Mitochondria are tube-like organelles that produce energy for the cell. Since they are effectively 2D structures, they will require a different set of imaging parameters than the tubulin, which is effectively 1D.
 
 \section{Safety}
 
@@ -69,7 +73,7 @@ Ethanol (EPFL OMoD code: 07 01 04) goes in the bin for alcohols; the used STORM 
 
 \section{Common Procedures}
 
-The following procedures are common to both experiments.
+The following procedures are common to all experiments.
 
 \subsection{Turn On the Microscope}\label{sec:startup}
 
@@ -100,42 +104,9 @@ To turn on the microscope, turn on the following components in this order. There
     \item The computer
 \end{enumerate}
 
-\subsection{Mount the Sample}\label{sec:mount-sample}
+\subsection{Mount the Slide onto the Microscope}\label{sec:mount-slide}
 
-The sample is mounted in two steps: 1. mount the sample coverslip onto a glass cavity well slide, and 2. mount the slide/coverslip combination onto the microscope.
-
-\subsubsection{Mount the Coverslip onto the Slide}
-
-\fbox{
-    \parbox{\textwidth}{\textbf{WARNING} Gloves and eye protection must be worn for this procedure.}
-}\newline
-
-A video tutorial describing this process may be found at \url{https://drive.google.com/file/d/1czRAzCVn1dEPEgESOuVnm_-1_1xvhQnW/view?usp=sharing}. You need to be signed in with your EPFL account to view the video.
-
-Mounting the coverslip onto the slide requires the following materials:
-
-\begin{itemize}
-    \item{Glass cavity well slide}
-    \item{Coverslip with sample}
-    \item{Buffer kit}
-    \item{Picodent sealant (both yellow and blue components)}
-    \item{Tweezers}
-    \item{Pipettes}
-    \item{10 $\mu$L and 1 mL pipette tips}
-    \item{Paper towels}
-\end{itemize}
-
-Begin by mixing the components of the buffer kit. Add 10 $\mu$L of solution from the green tube the blue tube. \textbf{Be sure to never exceed the soft stop on the pipette because you may accidentally suck solution into it.} Mix the solution by pipetting it up and down several times. Next, add 6 $\mu$L of solution from the red tube to blue tube. Mix the solution again. The buffer is now ready to use.
-
-For the next step, load 175 $\mu$L of the prepared buffer solution into the cavity slide using a 1 mL pipette tip. Then, using tweezers, gently pick up the coverslip with the cell sample on it and place it over the cavity well with the sample side facing into the buffer. Gently remove any excess buffer by placing a paper towel over the slide.
-
-If there is a bubble, \textbf{very gently} slide the coverslip to the side until the bubble is exposed. Add a tiny bit more buffer, then slide the coverslip back to the center of the well. Remove any excess buffer as before.
-
-Finally, mix together equal amounts of the Picodent sealant's yellow and blue components in a small dish with a 1 mL pipette tip. When properly mixed, the sealant will turn to a light green color. Using the same tip, add the sealant around the entirety of the coverslip edge to prevent any buffer from leaking out.
-
-\subsubsection{Mount the Slide onto the Microscope}
-
-\autoref{fig:objective-sample} illustrates how the sample should be mounted onto the microscope. The side with the sample must face in towards the buffer, and the side of the slide with the coverslip must be closest to the microscope objective.
+\autoref{fig:objective-sample} illustrates how the sample should be mounted onto the microscope for all of the experiments in this course. The side with the sample must face in towards the buffer, and the side of the slide with the coverslip must be closest to the microscope objective.
 
 \begin{figure}[ht]
     \centering
@@ -151,6 +122,8 @@ To mount the slide onto the microscope, first remove the black safety cover over
 Next, turn the focus knob so that the microscope objective is all the way down as indicated by the yellow line in the objective position indicator section of the microscope control panel. Then, place the slide into the sliding black metallic mounts and gently push them together until the slide is secure. Ensure that the coverslip is centered over the objective. Finally, turn the focus knob to raise the objective slowly until it is just touching the oil. You will know when the objective is touching the oil because you can see the oil spreading out underneath the objective. A video that illustrates this effect may be found at \url{https://drive.google.com/file/d/1IC5Azq-raW6_jVSnuBDrSsZ0OsQYxoPK/view?usp=sharing}.
 
 When done, replace the black safety cover over the objective and sample.
+
+\textbf{At this point, continue to the instructions for the specific experiment you are performing, i.e. \autoref{sec:exp1}, \autoref{sec:exp2}, or \autoref{sec:exp3}}.
 
 \subsection{Turn Off the Microscope}
 
@@ -170,19 +143,14 @@ The oil must be removed from the objective after imaging, and sometimes during i
 
 A video demonstration on cleaning objectives may be found at \url{https://www.youtube.com/watch?v=Tz4Dy5D6kdw}.
 
-\section{Experiment 1 - STORM Imaging of Microtubules}\label{sec:exp1}
+\section{Experiment 1 - Measure the PSF and Localization Precision}\label{sec:exp1}
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.75\textwidth]{cos7-microtubules.png}
-    \caption{STORM image of microtubules in COS7 cells. Cells were labelled with antibodies against $\alpha$-tubulin and secondary antibodies conjugated with AlexaFluor 647. Scale bar 10 $\mu$m. From \cite{douglass-naturephotonics-2016}.}
-    \label{fig:cos7-microtubules}
-\end{figure}
+In this experiment, you will measure the point spread function (PSF) of the microscope and the localization precision. The PSF is a measure of the resolution of the microscope. The localization precision is a measure of the precision with which you can determine position of a single fluorescent molecule.
 
 \subsection{Materials}
 
 \begin{itemize}
-    \item{Mounted cell sample (see \autoref{sec:mount-sample})}
+    \item{Bead sample}
     \item{Immersion oil}
     \item{Lens cleaning products (see \autoref{sec:remove-oil})}
 \end{itemize}
@@ -191,7 +159,9 @@ A video demonstration on cleaning objectives may be found at \url{https://www.yo
 
 \subsubsection{Setup the Microscope Configuration}
 
-After mounting the sample and making contact with the immersion oil (\autoref{sec:mount-sample}), you should start the imaging software which is called \textbf{NEO Live Imaging}. You will see a screen like the one in \autoref{fig:liveimaging-startup}.
+The bead sample is comprised of 0.1 $\mu m$ diameter fluorescent beads attached to a glass coverslip. Their small size makes them good approximations to single molecules. The bead sample is provided to you in this lab.
+
+After mounting the bead sample and making contact with the immersion oil (\autoref{sec:mount-slide}), you should start the imaging software which is called \textbf{NEO Live Imaging}. You will see a screen like the one in \autoref{fig:liveimaging-startup}.
 
 \begin{figure}[ht]
     \centering
@@ -232,7 +202,146 @@ Now you will try to find the sample in the focal plane of the microscope. To sta
 
 Ensure that the metallic safety cover is in place over the objective and sample. If it is not, the lasers will not turn on. Turn on the red 642 nm laser by first selecting the `Settings' button to enable the laser controls. Then, toggle the radio button next to the \textbf{red} slider. Slide the slider a small amount to the right to increase the power slightly.
 
-With the laser on, adjust the focus slowly to try and find the sample. You may need to increase the laser power a small amount and/or move the sample stage with the joystick. When the sample is in focus, you should see a clear image of the cells. Out-of-focus images will appear blurry, as in \autoref{fig:in-vs-out-of-focus}. If, after several minutes, you are unable to find the sample, ask for help. It could be that the cells have detached from the coverslip, in which case you would need to mount a new sample.
+With the laser on, adjust the focus slowly to try and find the sample. You may need to increase the laser power a small amount and/or move the sample stage with the joystick. When the sample is in focus, you should see a clear image of the beads. This will look a little bit like a zoomed out view of \autoref{fig:fiji-bead-stack}, including many more beads over the larger field of view.
+
+\subsubsection{Setup an Acquisition}
+
+Here you are going to setup a time series acquisition of a field of view of beads. This will allow you to measure the 2D point spread function (PSF) of the microscope and the localization precision by repeatedly computing estimates for the bead positions and widths.
+
+To setup a new acquisition, first create a project by clicking the `New Project' button. You will be prompted to enter a name for the project, as well as a path to the project data. The path should be \textbf{Documents/acquisition/YYYY-MM-DD-NAME1-NAME2} where `YYYY-MM-DD' are the year, month, and day of the acquisition. `NAME1' and `NAME2' are you and your partner's last names. Once finished, click `OK'. You will see the project appear in the project explorer pane. For the moment, there are no files in the project.
+
+Next, start a live preview. Increase the red laser power until the beads are visible. In the `Settings' window, adjust the exposure time and the number of frames. Common values are 50 ms exporsures and 100 frames. Also ensure that `EPI' (epi-illumination) is selected for the illumination mode.
+
+For the next step, double click in the window containing the live stream. This will create a green box to define a region of interest, or ROI. The area inside the ROI will be acquired during the acquisition.
+
+Good ROI sizes are between $25 \, \mu m\times 25 \, \mu m$ and $100 \, \mu m\times 100 \, \mu m$, which is enough to cover several beads.
+
+At this point, everything is set. Click the `Start' button to begin the acquisition. The acquisiton should take only a few seconds. When the acquisition is finished, you will see new files appear in the project explorer pane for this acquisition.
+
+\subsection{Analysis}
+
+\subsubsection{Measure the PSF Width and Localization Precision}
+
+You will use the image analysis software FIJI to analyze the image data. Begin by opening FIJI. Then, open the file `ROI.tif' from the acquisition you just performed. You will see an image like the one in \autoref{fig:fiji-bead-stack}. If the image appears too dark, adjust the contrast by navigating to "Image \textgreater Adjust \textgreater Brightness/Contrast..." in the menu bar. Adjust the contrast by clicking the `Auto' button in the toolbar or by manually changing the minimum and maximum values.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fiji-bead-stack.png}
+    \caption{A stack of images of fluorescent beads. The slider allows you to move through the stack, which in this example is moving through time.}
+    \label{fig:fiji-bead-stack}
+\end{figure}
+
+Find a single, well-isolated fluorescent bead. We will use this bead to estimate the microscope PSF. First select the \textbf{Rectangle} tool from the FIJI toolbar. Click and drag a region around the bead. Select "Image \textgreater Crop" from the menu bar to crop the image to the region that you just selected. This will make working with the image easier.
+
+Next, select the line tool from the toolbar as shown in \autoref{fig:fiji-line-tool}. Click and drag a line across the bead. (If you hold the Shift key while dragging, then you can ensure that the profile is perfectly horizontal or vertical.) The line should be long enough to cover the entire bead. Select "Analyze \textgreater Plot Profile" from the menu bar to plot the intensity profile of the bead. You should see a plot like the one in \autoref{fig:fiji-plot-profile}. The plot shows the intensity of the bead along the line that you drew. The peak of the plot corresponds to the \textbf{approximate} center of the bead. The width of the peak corresponds to the width of the PSF.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{fiji-line-tool.png}
+    \caption{The line tool selected in FIJI.}
+    \label{fig:fiji-line-tool}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{fiji-plot-profile.png}
+    \caption{The intensity profile of a bead.}
+    \label{fig:fiji-plot-profile}
+\end{figure}
+
+Click "Live" in the line profile window so that you can observe changes to the profile in real time. Double click the line tool and increase the width of the line to cover the bead. This will look like \autoref{fig:fiji-plot-profile-thick}. In this mode, the profile is computed by averaging the pixel intensities in directions perpendicular to the line. Doing so helps remove the effects of noise.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{fiji-plot-profile-thick.png}
+    \caption{The intensity profile of a bead with a thick line.}
+    \label{fig:fiji-plot-profile-thick}
+\end{figure}
+
+If we only take the peak of the curve as the bead's position, then we are limited to a precision of one pixel. We can do better by fitting a model of the PSF to the profile. The simplest model for the PSF is a Gaussian curve.\footnote{Remember that the Airy disk is a better model, but the Gaussian is good enough in many cases and simpler to work with.} To fit a Gaussian to the profile, select the "Data \textgreater \textgreater" button in the Plot Profile window and choose "Select Fit..." from the popup menu. Select "Gaussian" from the fit function menu. After clicking OK, should see the best-fit Gaussian curve overlaid on the data, as well as a table of the fit parameters. The fit parameters are the mean, standard deviation, and amplitude of the Gaussian curve. The mean is the position bead, and the standard deviation is the width of the curve.
+
+Note that almost certainly the bead position will be in fractions of a pixel, meaning that you have located the bead center with sub-pixel accuracy.
+
+Record the fit parameters for both the mean of the Gaussian and the standard deviation from at least ten frames. (You automate the procedure to do more if you wish.)
+
+Repeat this procedure for other laser wavelengths. In total, you should use the 488 nm laser, the 561 nm laser, and the 647 nm laser.
+
+\subsubsection{Questions and Tasks: Experiment 1}
+
+You should answer the following questions in your final report:
+
+\begin{enumerate}
+    \item What is the width of the PSF as determined from the images of beads and how does it compare to theory? Remember that theory states that the distance between the center of the PSF and first zero is $dr = 0.61 \lambda / \text{NA}$.
+    \item From the bead images, determine the localization precision by fitting a Gaussian curve to images of single fluorescent beads and making histograms of the x and y positions. How does the uncertainty in the localization precision depend on the number of photons collected?
+\end{enumerate}
+
+Include the following plots in your report:
+
+\begin{enumerate}
+    \item A histogram or scatterplot of the fitted Gaussian PSF widths with the mean and standard deviation indicated. This represents the PSF width and uncertainty.
+    \item A plot of PSF width vs. wavelength.
+    \item A histogram or scatterplot of the fitted Gaussian positions with the mean and standard deviation indicated. This represents the localization precision and uncertainty.
+\end{enumerate}
+
+\section{Experiment 2 - STORM Imaging of Microtubules}\label{sec:exp2}
+
+In this experiment you will take images of blinking, fluorescent molecules attached to the microtubules in COS7 cells. From the movies of blinking molecules you will reconstruct a super-resolved image of the microtubule network.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{cos7-microtubules.png}
+    \caption{STORM image of microtubules in COS7 cells. Cells were labelled with antibodies against $\alpha$-tubulin and secondary antibodies conjugated with AlexaFluor 647. Scale bar 10 $\mu$m. From \cite{douglass-naturephotonics-2016}.}
+    \label{fig:cos7-microtubules}
+\end{figure}
+
+\subsection{Materials}
+
+\begin{itemize}
+    \item{Mounted cell sample (see \autoref{sec:mount-sample})}
+    \item{Immersion oil}
+    \item{Lens cleaning products (see \autoref{sec:remove-oil})}
+\end{itemize}
+
+\subsection{Procedure}
+
+\subsubsection{Mount the Sample}\label{sec:mount-sample}
+
+For STORM imaging you will need to mount the coverslips onto a slide with buffer. The sample is mounted in two steps: 1. mount the sample coverslip onto a glass cavity well slide, and 2. mount the slide/coverslip combination onto the microscope.
+
+\subsubsection{Mount the Coverslip onto the Slide}
+
+\fbox{
+    \parbox{\textwidth}{\textbf{WARNING} Gloves and eye protection must be worn for this procedure.}
+}\newline
+
+A video tutorial describing this process may be found at \url{https://drive.google.com/file/d/1czRAzCVn1dEPEgESOuVnm_-1_1xvhQnW/view?usp=sharing}. You need to be signed in with your EPFL account to view the video.
+
+Mounting the coverslip onto the slide requires the following materials:
+
+\begin{itemize}
+    \item{Glass cavity well slide}
+    \item{Coverslip with sample}
+    \item{Buffer kit}
+    \item{Picodent sealant (both yellow and blue components)}
+    \item{Tweezers}
+    \item{Pipettes}
+    \item{10 $\mu$L and 1 mL pipette tips}
+    \item{Paper towels}
+\end{itemize}
+
+Begin by mixing the components of the buffer kit. Add 10 $\mu$L of solution from the green tube the blue tube. \textbf{Be sure to never exceed the soft stop on the pipette because you may accidentally suck solution into it.} Mix the solution by pipetting it up and down several times. Next, add 6 $\mu$L of solution from the red tube to blue tube. Mix the solution again. The buffer is now ready to use.
+
+For the next step, load 175 $\mu$L of the prepared buffer solution into the cavity slide using a 1 mL pipette tip. Then, using tweezers, gently pick up the coverslip with the cell sample on it and place it over the cavity well with the sample side facing into the buffer. Gently remove any excess buffer by placing a paper towel over the slide.
+
+If there is a bubble, \textbf{very gently} slide the coverslip to the side until the bubble is exposed. Add a tiny bit more buffer, then slide the coverslip back to the center of the well. Remove any excess buffer as before.
+
+Finally, mix together equal amounts of the Picodent sealant's yellow and blue components in a small dish with a 1 mL pipette tip. When properly mixed, the sealant will turn to a light green color. Using the same tip, add the sealant around the entirety of the coverslip edge to prevent any buffer from leaking out.
+
+\subsubsection{Find the Sample}
+
+This part is largely the same as in the beginning of the procedure of \autoref{sec:exp1} where you found the sample.
+
+With the laser on and at low power, adjust the focus slowly to try and find the sample. You may need to increase the laser power a small amount and/or move the sample stage with the joystick. When the sample is in focus, you should see a clear image of the cells. Out-of-focus images will appear blurry, as in \autoref{fig:in-vs-out-of-focus}. If, after several minutes, you are unable to find the sample, ask for help. It could be that the cells have detached from the coverslip, in which case you would need to mount a new sample.
 
 \begin{figure}[ht]
     \centering
@@ -257,7 +366,7 @@ Next, start a live preview. Increase the red laser power until the fluorescent m
 For the next step, double click in the window containing the live stream. This will create a green box to define a region of interest, or ROI. The area inside the ROI will be acquired during the acquisition.
 
 \fbox{
-    \parbox{\textwidth}{\textbf{TIP} Always use a ROI. Using the full camera frame will create very large datasets that are difficult to work with.}
+    \parbox{\textwidth}{\textbf{TIP} Always use a ROI for STORM imaging. Using the full camera frame will create very large datasets that are difficult to work with.}
 }\newline
 
 Good ROI sizes are between $25 \, \mu m\times 25 \, \mu m$ and $100 \, \mu m\times 100 \, \mu m$, which is large enough to cover about one cell.
@@ -301,6 +410,8 @@ Also, remove any oil from the sample slide. To do this, use lens cleaning soluti
 
 \subsection{Analysis}
 
+\subsubsection{Compute the Localizations}
+
 In the previous section you acquired image stacks of blinking single molecules. In this section, you will reconstruct a super-resolution image from the raw data.
 
 To begin, open the software called \textbf{NEO Analysis}. Click on the `Batch' button to enter batch processing mode. Here you will configure which files to process and how to process them. Select `Input Dataset', which will open a File Open... dialog window. Navigate to one of your datasets and select the `ROI.tif' file from within the dataset. This file contains the raw image stack that will be processed into a single super-resolution image. For now, leave all the options at their default values for processing.
@@ -316,11 +427,13 @@ Processing can take several minutes, or even more than an hour if many large dat
     \label{fig:smlm-data-analysis}
 \end{figure}
 
-The final steps that remain involve analyzing the localization data and super-resolution image. Click `Batch' to exit Batch mode, and then click `3D Viewer' to open the 3D viewer. Then click `Load File' to select a file containing localization data from the previous steps. These files will be named `CoordTable\_SAFE180\_2D.csv'. After loading the file, you will see a 3D rendering of the localizations. From here you can attempt filtering and further processing on the localizations. See \autoref{sec:questions} for more information about what to try during these post-processing steps.
+\subsubsection{Visualize the Localizations}
 
-For a more complete discussion of the many ways to analyze super-resolution data, please see \cite{martens-frontiersinbioinformatics-2022}.
+The final steps that remain involve analyzing the localization data and super-resolution image. Click `Batch' to exit Batch mode, and then click `3D Viewer' to open the 3D viewer. Then click `Load File' to select a file containing localization data from the previous steps. These files will be named `CoordTable\_SAFE180\_2D.csv'. After loading the file, you will see a 3D rendering of the localizations. From here you can attempt filtering and further processing on the localizations.
 
-\section{Experiment 2 - STORM Imaging of Mitochondria}
+See \autoref{sec:questions} for more information about what to try during these post-processing steps. For a more complete discussion of the many ways to analyze super-resolution data, please see \cite{martens-frontiersinbioinformatics-2022}.
+
+\section{Experiment 3 - STORM Imaging of Mitochondria}\label{sec:exp3}
 
 \begin{figure}[ht]
     \centering
@@ -329,20 +442,26 @@ For a more complete discussion of the many ways to analyze super-resolution data
     \label{fig:cos7-mitochondria}
 \end{figure}
 
-This experiment is performed exactly as in \autoref{sec:exp1}, except that the mitochondrial sample is used.
+This experiment is performed exactly as in \autoref{sec:exp2}, except that the mitochondrial sample is used.
 
-\subsection{Questions}\label{sec:questions}
+\subsection{Questions: Experiments 2 and 3}\label{sec:questions}
 
-In your final report, you should answer the following questions based on what you learned during this experiment:
+The following analyses should be included in your final report:
+
+\begin{enumerate}
+    \item What is the width of a microtubule as imaged in SMLM? Try to find the distance between the double peak as we discussed. If you did not manage to do this, discuss what it was that you think prevented you from doing it. If you did, manage, how does it compare to published values for the width as measured with STORM or PALM?
+\end{enumerate}
+
+In addition, you should answer the following questions based on what you learned during these experiments:
 
 \begin{enumerate}
     \item{What is the difference between a STORM image and a conventional fluorescence image?}
     \item{What is the effect of the red (642 nm) laser power in STORM imaging?}
     \item{What is the effect of the UV (405 nm) laser power in STORM imaging?}
     \item{What is the effect of the exposure time in STORM imaging? What does it mean when the exposure time is too high or too low?}
-    \item{What is the effect of changing the number of frames in an acquisition?}
+    \item{What is the effect of changing the number of frames in a SMLM acquisition?}
     \item{Do you think drift correction is necessary to produce good images?}
-    \item{Is it necessary to filter the localizations to get a good image? Why or why not?}
+    \item{Is it necessary to filter the localizations to get a good image, for example by removing localizations with bad values of uncertainty or goodness-of-fit paramters? Why or why not?}
     \item{What makes a good STORM image? How can you tell during an acquisiton whether the super-resolution image will be good or not?}
     \item{Which is easier to image: microtubules or mitochondria? Why?}
     \item{If you failed to create any super-resolution images, what do you think went wrong? What could be improved?}
