@@ -232,7 +232,7 @@ In practice, the choice of model and fitting technique will involve tradeoffs be
 Let $f \left(x, y\right)$ represent the PSF model. A Gaussian model is written as follows:
 
 \begin{equation}
-    f \left(x, y\right) = a \exp \left[ \frac{\left(x-x_{0}^2\right) + \left(y - y_{0}^2\right)}{w} \right] + b
+    f \left(x, y\right) = a \exp \left[ \frac{\left(x-x_{0}^2\right) + \left(y - y_{0}^2\right)}{2 w^2} \right] + b
 \end{equation}
 
 \noindent Here, $x_0$ and $y_0$ represent the center of the molecule in pixels, $w$ is the width of the PSF in pixels, and $a$ and $b$ are related to the maximum pixel signal and the background signal, respectively. Importantly, $x_0$ and $y_0$ are continuous numbers, which means that the center of the molecule may be found with sub-pixel precision.
@@ -244,6 +244,16 @@ The position of the molecule is found by minimizing the following objective func
 \end{equation}
 
 \noindent where there are $K$ pixels with coordinates $\left( x_k, y_k\right)$, and the PSF model parameters are $\theta = \left( x_0, y_0, w, a, b \right)$. Gaussian least squares fitting provides good precision and performance relative to the other techniques.
+
+\subsubsection{Gaussian vs. Airy Disk PSFs}
+
+As shown in \autoref{fig:airy-vs-gauss}, a Gaussian model can be a very good approximation to an Airy disk. In fact, this close similarity and the computational efficiency of fitting a Gaussian is why it is almost always chosen over the Airy disk as the PSF model in SMLM. However, there are some important differences between the two models that are worth noting.
+
+For one, the PSF width is often stated as $\Delta r = 0.61 \lambda / \text{NA} $. This is the distance between the central peak and the first zeros of the Airy disk. The width of the Gaussian PSF, on the other hand, can be described by the $w$ parameter. The two measures of PSF width are not the same thing. However, we can still determine a relationship between $w$, $\lambda$, and $\text{NA}$, which is\cite{zhang-appliedoptics-2007}:
+
+\begin{equation}
+    w = 0.21 \frac{\lambda}{\text{NA}}
+\end{equation}
 
 \subsection{Gaussian Maximum Likelihood Estimation}
 
