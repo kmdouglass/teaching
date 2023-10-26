@@ -324,6 +324,41 @@ So far we have ignored the mechanism that allows us to switch single fluorophore
 
 \chapter{Fluorescence Photophysics}
 
+\section{The Response of Fluorophores to Light}
+
+When flourophores are exposed to light of the proper wavelength, they emit photons. This is called fluorescence. An important question is: given incident light of a certain irradiance (in units of photons per area per time), what will be the rate of fluorescent photon emission?
+
+Let's first consider a simple model for a fluorophore: a system of two sets of states separated by an energy barrier. This model is illustrated in \autoref{fig:two-state-jablonski}. Absorption of a photon causes a transition from the ground ($S_0$) state to the excited ($S_1$) state on time scales of roughly $10^{-15}$ seconds. The fluorophore then relaxes through several closely-spaced vibrational states on time scales of approximately $10^{-12}$ seconds. From there, the fluorophore can decay back to the ground state. If it is a radiative decay, then a photon is emitted. Due to the energy lost during internal conversion, its wavelength is longer than the wavelength of the incident photon. Alternatively, the fluorophore can lose energy through non-radiative means. The average time spent in the excited state is typically around $10^{-9}$ seconds, though there is significant variation in this value across fluorophores.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{two-state-jablonski-diagram.png}
+    \caption{Jablonski diagram of a fluorophore.}
+    \label{fig:two-state-jablonski}
+\end{figure}
+
+From \autoref{fig:two-state-jablonski}, we can see that three different processes primarily determine the rate of fluoresence emission: absorption, radiative and non-radiative decay. The rate of absorption is given by
+
+\begin{equation}
+    \kappa_a = \sigma I
+\end{equation}
+
+\noindent where $\sigma$ is the absorption cross section of the fluorophore and $I$ is the intensity of the incident light. The absorption cross section has units of area and represents the probability that a photon will be absorbed by the fluorophore. Additionally, the decay rate from the excited state is the sum of the radiative and non-radiative decay rates:
+
+\begin{equation}
+    \kappa_e = \kappa_r + \kappa_{nr}
+\end{equation}
+
+The inverse of the rate coefficients are called lifetimes. In particular, $\tau_{fl} = 1 / \kappa_r$ is called fluorescence lifetime and represents the average amount of time it takes for a fluorophore in the excited state to undergo a radiative decay. It is an important quantity in characterizing a fluorophore.
+
+Finally, let $Q$, called the quantum yield, represent the fractional number of fluorophores that undergo a radiative decay. It can be shown that the number of photons emitted per unit time $\phi$ by a single fluorophore is related to these quantities through the expression
+
+\begin{equation}
+    \phi \left( I \right) = \frac{\sigma Q I} {1 + \sigma Q \tau_{fl} I } 
+\end{equation}
+
+\noindent At low values of the $I$, the fluorescent photon flux is approximately linear with $I$. However, once $I$ becomes approximately equal to $I_s = 1 / \left( \sigma Q \tau_{fl} \right)$, the fluorescent photon flux saturates and becomes independent of $I$. For this reason, $I_s$ is known as the saturation irradiance.
+
 \section{Energetic States of Fluorophores}
 
 The most important mechanism to achieving super-resolution with SMLM is the ON/OFF switching of fluorophores. Activating only a sparse subset of fluorophores in the ON state at a given time allows us to localize individual fluorophores and, over time, build up a pointilist-like reconstruction of the object.
