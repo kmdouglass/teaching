@@ -9,7 +9,7 @@
    id="svg5"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    sodipodi:docname="aplanatic-telecentric-system.svg"
-   inkscape:export-filename="oil-immersion-objective-with-sample.png"
+   inkscape:export-filename="C:\Users\douglass\Desktop\aplanatic-telecentric-system.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -25,14 +25,14 @@
      bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="1"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="4"
-     inkscape:cx="170.875"
-     inkscape:cy="89.25"
+     inkscape:zoom="2"
+     inkscape:cx="104.75"
+     inkscape:cy="100"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="-8"
@@ -787,15 +787,6 @@
   <metadata
      id="metadata2091">
     <rdf:RDF>
-      <cc:License
-         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-      </cc:License>
       <cc:Work
          rdf:about="">
         <cc:license
@@ -807,6 +798,15 @@
           </cc:Agent>
         </dc:creator>
       </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
     </rdf:RDF>
   </metadata>
 </svg>
