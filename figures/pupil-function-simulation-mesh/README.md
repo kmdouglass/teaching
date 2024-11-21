@@ -1,0 +1,1 @@
+A numeric mesh representing the far field and angular spectrum coordinate systems of a microscope objective.
