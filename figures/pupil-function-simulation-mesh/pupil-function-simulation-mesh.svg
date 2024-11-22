@@ -30,15 +30,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="133.11285"
-     inkscape:cy="65.407377"
+     inkscape:zoom="4"
+     inkscape:cx="171.75"
+     inkscape:cy="80.000001"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g8597">
+     inkscape:current-layer="g2399">
     <inkscape:grid
        type="xygrid"
        id="grid25"
@@ -306,6 +306,10 @@
                      style="fill:none;stroke:#e1e1e1;stroke-width:0.216722;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
                      d="M 75.81781,28.906899 V 67.831265"
                      id="path2213" />
+                  <path
+                     style="fill:none;stroke:#e1e1e1;stroke-width:0.216722;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                     d="M 60.680555,28.906899 V 67.831265"
+                     id="path432" />
                 </g>
                 <g
                    id="g2399"
@@ -367,21 +371,26 @@
                      style="fill:none;stroke:#e1e1e1;stroke-width:0.216722;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
                      d="M 43.380836,31.069358 H 82.3052"
                      id="path2381" />
+                  <path
+                     style="fill:none;stroke:#e1e1e1;stroke-width:0.216722;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                     d="M 43.380836,46.206613 H 82.3052"
+                     id="path434" />
                 </g>
                 <path
                    style="fill:none;stroke:#000000;stroke-width:0.204327;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#marker1408)"
-                   d="M 60.689068,63.399493 60.672038,30.204378"
+                   d="m 60.689068,62.464381 -0.01703,-30.97607"
                    id="path506" />
                 <path
                    style="fill:none;stroke:#000000;stroke-width:0.204327;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow1L)"
-                   d="m 43.381303,46.215132 33.301489,-0.01703"
+                   d="m 44.581563,46.210909 31.135328,-0.01273"
                    id="path1292" />
-                <circle
+                <ellipse
                    style="fill:none;stroke:#000000;stroke-width:0.204327;stroke-linejoin:round;stroke-dasharray:none"
                    id="path1350"
-                   cx="60.629471"
-                   cy="46.155533"
-                   r="17.248636" />
+                   cx="60.777767"
+                   cy="46.263657"
+                   rx="16.15465"
+                   ry="16.114477" />
                 <rect
                    style="fill:none;stroke:#000000;stroke-width:0.204327;stroke-linejoin:round;stroke-dasharray:none"
                    id="rect1550"
@@ -393,7 +402,7 @@
                    rx="1.9404223e-07" />
                 <path
                    style="fill:none;stroke:#000000;stroke-width:0.204327;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#marker1556)"
-                   d="M 60.665399,46.221772 71.872195,35.014975"
+                   d="M 60.665399,46.221772 71.195923,35.691247"
                    id="path1552" />
                 <text
                    xml:space="preserve"
