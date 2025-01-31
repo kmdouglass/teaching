@@ -8,8 +8,8 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   sodipodi:docname="protein-distributions.svg"
-   inkscape:export-filename="C:\Users\douglass\Desktop\protein-distributions.png"
+   sodipodi:docname="protein-distributions-microscopy-slice.svg"
+   inkscape:export-filename="C:\Users\douglass\Desktop\protein-distributions-microscopy-slice.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -33,15 +33,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="18.915107"
-     inkscape:cy="76.721086"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="-78.842407"
+     inkscape:cy="138.94648"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g4701">
+     inkscape:current-layer="g10843">
     <inkscape:grid
        type="axonomgrid"
        id="grid452"
@@ -295,7 +295,7 @@
                       <g
                          id="g10853">
                         <path
-                           style="fill:#ffffff;fill-opacity:1;stroke:#c8c8c8;stroke-width:0.204327;stroke-linejoin:round;stroke-opacity:1"
+                           style="fill:#ffffff;fill-opacity:1;stroke:#ff00ff;stroke-width:0.204327;stroke-linejoin:round;stroke-opacity:1"
                            d="M 74.013953,57.274348 81.092061,53.1878 v -8.173094 l -7.078108,4.086548 v 8.173094"
                            id="path10849" />
                       </g>
@@ -307,9 +307,33 @@
                     <g
                        id="g10843">
                       <path
-                         style="fill:#ffffff;fill-opacity:1;stroke:#c8c8c8;stroke-width:0.204327;stroke-linejoin:round;stroke-opacity:1"
+                         style="fill:#ffffff;fill-opacity:1;stroke:#00ffff;stroke-width:0.204327;stroke-linejoin:round;stroke-opacity:1"
                          d="M 74.013953,57.274348 81.092061,53.1878 v -8.173094 l -7.078108,4.086548 v 8.173094"
                          id="path10839" />
+                      <path
+                         style="fill:none;stroke:#000000;stroke-width:0.163462;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+                         d="m 81.60288,44.657131 0.707811,-0.408655 -2.123433,-1.225964 -0.707811,0.408655"
+                         id="path6066" />
+                      <path
+                         style="fill:none;stroke:#000000;stroke-width:0.163462;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+                         d="M 80.895066,43.431168 84.43412,41.387894"
+                         id="path6176" />
+                      <text
+                         xml:space="preserve"
+                         style="font-size:2.30664px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.163462;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+                         x="86.804657"
+                         y="37.317867"
+                         id="text6232"><tspan
+                           sodipodi:role="line"
+                           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.163462"
+                           x="86.804657"
+                           y="37.317867"
+                           id="tspan6284">Microscopy</tspan><tspan
+                           sodipodi:role="line"
+                           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.163462"
+                           x="86.804657"
+                           y="40.201168"
+                           id="tspan6454">measurements</tspan></text>
                     </g>
                   </g>
                   <g

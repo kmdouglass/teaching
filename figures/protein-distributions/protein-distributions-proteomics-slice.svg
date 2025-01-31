@@ -8,8 +8,8 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   sodipodi:docname="protein-distributions.svg"
-   inkscape:export-filename="C:\Users\douglass\Desktop\protein-distributions.png"
+   sodipodi:docname="protein-distributions-proteomics-slice.svg"
+   inkscape:export-filename="C:\Users\douglass\Desktop\protein-distributions-proteomics-slice.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -33,15 +33,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="18.915107"
-     inkscape:cy="76.721086"
+     inkscape:zoom="4"
+     inkscape:cx="85.000001"
+     inkscape:cy="90.750001"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g4701">
+     inkscape:current-layer="layer4">
     <inkscape:grid
        type="axonomgrid"
        id="grid452"
@@ -408,6 +408,46 @@
         </g>
       </g>
     </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="slice">
+    <path
+       style="display:inline;stroke-width:0.163462;fill:none;fill-opacity:1;stroke:#00ffff;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="M 68.862286,42.205203 91.51223,55.282155 v 8.173093"
+       id="path6783"
+       transform="matrix(1.2235267,0,0,1.2235267,-76.942667,-41.014198)" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#00ffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:0.40000001,0.2;stroke-dashoffset:0"
+       d="m 7.3121768,10.624994 v 3"
+       id="path6897" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#00ffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.20000002,1.20000002;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 35.024988,36.624992 7.3121768,20.624994 v -7"
+       id="path6899" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.2, 1.2;stroke-dashoffset:0;stroke-opacity:1"
+       x="10.776278"
+       y="4.6249943"
+       id="text7717"><tspan
+         sodipodi:role="line"
+         id="tspan7715"
+         style="stroke-width:0.2;fill:#000000;fill-opacity:1;stroke:none"
+         x="10.776278"
+         y="4.6249943" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.2, 1.2;stroke-dashoffset:0;stroke-opacity:1"
+       x="23.766659"
+       y="7.1249943"
+       id="text7826"><tspan
+         sodipodi:role="line"
+         id="tspan7824"
+         style="stroke-width:0.2"
+         x="23.766659"
+         y="7.1249943">Single cell proteomics</tspan></text>
   </g>
   <metadata
      id="metadata2091">
