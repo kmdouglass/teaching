@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90mm"
+   height="57mm"
+   viewBox="0 0 90 57"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="problem-statement.svg"
+   inkscape:export-filename="C:\Users\douglass\Desktop\problem-statement.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title4253">A system of two flat mirrors whose optical axis forms the figure Z.</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="56.568543"
+     inkscape:cy="198.34345"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer6">
+    <inkscape:grid
+       type="xygrid"
+       id="grid25"
+       empcolor="#e50000"
+       empopacity="0.18823529"
+       spacingy="0.26458334"
+       empspacing="10"
+       originx="0"
+       originy="0"
+       units="mm" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker3552"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1L"
+       markerWidth="8.75"
+       markerHeight="5"
+       viewBox="0 0 8.75 5"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path3550"
+         transform="scale(-0.5)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1L"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1L"
+       markerWidth="8.75"
+       markerHeight="5"
+       viewBox="0 0 8.75 5"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="arrow1L"
+         transform="scale(-0.5)" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8221">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop8217" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop8219" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8221"
+       id="linearGradient8223"
+       x1="45.090595"
+       y1="15.143952"
+       x2="56.651337"
+       y2="15.143952"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(45.323687,10.548882)" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Figure"
+     transform="translate(-8.1437838,-4.572918)">
+    <g
+       inkscape:label="Optical Axis"
+       inkscape:groupmode="layer"
+       id="layer1"
+       style="display:inline">
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow1L)"
+         d="m 70.72408,40.731539 30,1e-6"
+         id="path3134"
+         inkscape:label="Top Path"
+         transform="translate(-26.673212,-22.210706)" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none"
+         d="M 87.527377,69.835705 70.724079,40.73154"
+         id="path3132"
+         inkscape:label="Middle Path"
+         transform="translate(-26.673212,-22.210706)" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 57.527378,69.710708 h 30"
+         id="path946"
+         transform="translate(-26.673212,-22.210706)"
+         inkscape:label="Bottom Path" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer2"
+       inkscape:label="Mirrors">
+      <g
+         inkscape:groupmode="layer"
+         id="layer3"
+         inkscape:label="Bottom Mirror">
+        <path
+           style="display:inline;fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none"
+           d="m 85.236019,73.804458 4.582718,-7.9375"
+           id="path3130"
+           transform="translate(-26.673212,-22.210706)"
+           inkscape:label="Bottom Mirror" />
+        <text
+           xml:space="preserve"
+           style="font-size:3.52778px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none"
+           x="100.16434"
+           y="71.099197"
+           id="text3448"
+           inkscape:label="Label"
+           transform="translate(-26.673212,-22.210706)"><tspan
+             sodipodi:role="line"
+             id="tspan3446"
+             style="font-size:3.52778px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+             x="100.16434"
+             y="71.099197">MIRROR</tspan></text>
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.250001;stroke-linejoin:round;stroke-dasharray:0.5, 0.250001;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3552)"
+           d="M 60.735129,47.508875 51.722654,41.936939"
+           id="path3504"
+           inkscape:label="Normal" />
+        <g
+           inkscape:groupmode="layer"
+           id="layer5"
+           inkscape:label="Angle">
+          <path
+             style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="path3705"
+             sodipodi:type="arc"
+             sodipodi:cx="87.527374"
+             sodipodi:cy="69.835709"
+             sodipodi:rx="8.4666662"
+             sodipodi:ry="8.4666662"
+             sodipodi:start="3.1415927"
+             sodipodi:end="3.7041155"
+             sodipodi:arc-type="arc"
+             d="m 79.060708,69.835709 a 8.4666662,8.4666662 0 0 1 1.304609,-4.51546"
+             sodipodi:open="true"
+             inkscape:label="Guide Curve"
+             transform="translate(-26.673212,-22.210706)" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             x="76.627617"
+             y="68.806412"
+             id="text3709"
+             inkscape:label="Label"
+             transform="translate(-26.673212,-22.210706)"><tspan
+               sodipodi:role="line"
+               id="tspan3893"
+               x="76.627617"
+               y="68.806412">30°</tspan></text>
+        </g>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer4"
+         inkscape:label="Top Mirror">
+        <path
+           style="display:inline;fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none"
+           d="m 68.43272,44.70029 4.582718,-7.9375"
+           id="path1676"
+           transform="translate(-26.673212,-22.210706)"
+           inkscape:label="Top Mirror" />
+        <text
+           xml:space="preserve"
+           style="font-size:3.52778px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none"
+           x="59.252613"
+           y="41.995029"
+           id="text3502"
+           inkscape:label="Label"
+           transform="translate(-26.673212,-22.210706)"><tspan
+             sodipodi:role="line"
+             id="tspan3500"
+             style="font-size:3.52778px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+             x="59.252613"
+             y="41.995029">MIRROR</tspan></text>
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.250001;stroke-linejoin:round;stroke-dasharray:0.5, 0.250001;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3552)"
+           d="m 44.050866,18.520834 9.018082,5.663329"
+           id="path3895"
+           inkscape:label="Normal" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata2091">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Kyle M. Douglass</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:language>English</dc:language>
+        <dc:title>A system of two flat mirrors whose optical axis forms the figure Z.</dc:title>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

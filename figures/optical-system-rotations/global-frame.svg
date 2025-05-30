@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90mm"
+   height="57mm"
+   viewBox="0 0 90 57"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="global-frame.svg"
+   inkscape:export-filename="C:\Users\douglass\Desktop\global-reference-frame.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title4253">The global reference frame.</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="4"
+     inkscape:cx="150.75"
+     inkscape:cy="61.000001"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer6">
+    <inkscape:grid
+       type="xygrid"
+       id="grid25"
+       empcolor="#e50000"
+       empopacity="0.18823529"
+       spacingy="0.26458334"
+       empspacing="10"
+       originx="0"
+       originy="0"
+       units="mm" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker4415"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1L"
+       markerWidth="8.75"
+       markerHeight="5"
+       viewBox="0 0 8.75 5"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4413"
+         transform="scale(-0.5)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4381"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1L"
+       markerWidth="8.75"
+       markerHeight="5"
+       viewBox="0 0 8.75 5"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4379"
+         transform="scale(-0.5)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1L"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1L"
+       markerWidth="8.75"
+       markerHeight="5"
+       viewBox="0 0 8.75 5"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="arrow1L"
+         transform="scale(-0.5)" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8221">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop8217" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop8219" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8221"
+       id="linearGradient8223"
+       x1="45.090595"
+       y1="15.143952"
+       x2="56.651337"
+       y2="15.143952"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(45.323687,10.548882)" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Figure"
+     transform="translate(-8.233767,-4.572918)">
+    <g
+       inkscape:label="Optical Axis"
+       inkscape:groupmode="layer"
+       id="layer1"
+       style="display:inline">
+      <path
+         style="display:inline;fill:none;stroke:#c4c4c4;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1L)"
+         d="m 70.72408,40.731539 30,1e-6"
+         id="path3134"
+         inkscape:label="Top Path"
+         transform="translate(-26.673212,-22.210706)" />
+      <path
+         style="display:inline;fill:none;stroke:#c4c4c4;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 87.527377,69.835705 70.724079,40.73154"
+         id="path3132"
+         inkscape:label="Middle Path"
+         transform="translate(-26.673212,-22.210706)" />
+      <path
+         style="display:inline;fill:none;stroke:#c4c4c4;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 57.527378,69.710708 h 30"
+         id="path946"
+         transform="translate(-26.673212,-22.210706)"
+         inkscape:label="Bottom Path" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer2"
+       inkscape:label="Mirrors">
+      <g
+         inkscape:groupmode="layer"
+         id="layer3"
+         inkscape:label="Bottom Mirror">
+        <path
+           style="display:inline;fill:none;stroke:#c4c4c4;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 85.236019,73.804458 4.582718,-7.9375"
+           id="path3130"
+           transform="translate(-26.673212,-22.210706)"
+           inkscape:label="Bottom Mirror" />
+        <g
+           inkscape:groupmode="layer"
+           id="layer5"
+           inkscape:label="Angle" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer4"
+         inkscape:label="Top Mirror">
+        <path
+           style="display:inline;fill:none;stroke:#c4c4c4;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 68.43272,44.70029 4.582718,-7.9375"
+           id="path1676"
+           transform="translate(-26.673212,-22.210706)"
+           inkscape:label="Top Mirror" />
+      </g>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer7"
+       inkscape:label="Reference Frame"
+       transform="translate(42.05488,13.822917)">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4381)"
+         d="M 18.727117,33.677084 V 25.739585"
+         id="path4377"
+         inkscape:label="y-axis" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4415)"
+         d="m 18.727117,33.677084 h 7.9375"
+         id="path4411"
+         inkscape:label="z-axis" />
+      <g
+         inkscape:groupmode="layer"
+         id="layer8"
+         inkscape:label="x-axis">
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path5223"
+           cx="18.727118"
+           cy="33.677086"
+           r="1.3229166"
+           inkscape:label="circle" />
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 17.757173,32.707141 1.939889,1.939889"
+           id="path5333"
+           inkscape:label="cross-2" />
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 19.697062,32.707141 17.757173,34.64703"
+           id="path5335"
+           inkscape:label="cross-1" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           x="15.734013"
+           y="36.807152"
+           id="text5597"
+           inkscape:label="x-label"><tspan
+             sodipodi:role="line"
+             id="tspan5595"
+             style="stroke-width:0.25"
+             x="15.734013"
+             y="36.807152">x</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="29.31045"
+         y="34.591755"
+         id="text5435"
+         inkscape:label="z-label"><tspan
+           sodipodi:role="line"
+           id="tspan5433"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+           x="29.31045"
+           y="34.591755">z</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="18.714197"
+         y="22.806425"
+         id="text5593"
+         inkscape:label="y-label"><tspan
+           sodipodi:role="line"
+           id="tspan5591"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+           x="18.714197"
+           y="22.806425">y</tspan></text>
+    </g>
+  </g>
+  <metadata
+     id="metadata2091">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Kyle M. Douglass</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:language>English</dc:language>
+        <dc:title>The global reference frame.</dc:title>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
