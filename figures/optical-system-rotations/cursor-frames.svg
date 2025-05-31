@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90mm"
+   height="57mm"
+   viewBox="0 0 90 57"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.4.2 (ebf0e94, 2025-05-08)"
+   sodipodi:docname="cursor-frames.svg"
+   inkscape:export-filename="/home/kmd/src/website/images/sequential-layout-cursor-frames.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title4253">The cursor frames at three different locations along the optical axis.</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="143.89623"
+     inkscape:cy="135.0574"
+     inkscape:window-width="1920"
+     inkscape:window-height="1131"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer8">
+    <inkscape:grid
+       type="xygrid"
+       id="grid25"
+       empcolor="#e50000"
+       empopacity="0.18823529"
+       spacingy="1"
+       empspacing="10"
+       originx="0"
+       originy="0"
+       units="mm"
+       spacingx="1" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker4415"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1L"
+       markerWidth="8.75"
+       markerHeight="5"
+       viewBox="0 0 8.75 5"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4413"
+         transform="scale(-0.5)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4381"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1L"
+       markerWidth="8.75"
+       markerHeight="5"
+       viewBox="0 0 8.75 5"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4379"
+         transform="scale(-0.5)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1L"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1L"
+       markerWidth="8.75"
+       markerHeight="5"
+       viewBox="0 0 8.75 5"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="arrow1L"
+         transform="scale(-0.5)" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8221">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop8217" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop8219" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8221"
+       id="linearGradient8223"
+       x1="45.090595"
+       y1="15.143952"
+       x2="56.651337"
+       y2="15.143952"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(45.323687,10.548882)" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Figure"
+     transform="translate(-8.233767,-4.572918)">
+    <g
+       inkscape:label="Optical Axis"
+       inkscape:groupmode="layer"
+       id="layer1"
+       style="display:inline">
+      <path
+         style="display:inline;fill:none;stroke:#c4c4c4;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1L)"
+         d="m 70.72408,40.731539 30,1e-6"
+         id="path3134"
+         inkscape:label="Top Path"
+         transform="translate(-26.673212,-22.210706)" />
+      <path
+         style="display:inline;fill:none;stroke:#c4c4c4;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 87.527377,69.835705 70.724079,40.73154"
+         id="path3132"
+         inkscape:label="Middle Path"
+         transform="translate(-26.673212,-22.210706)" />
+      <path
+         style="display:inline;fill:none;stroke:#c4c4c4;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 57.527378,69.710708 h 30"
+         id="path946"
+         transform="translate(-26.673212,-22.210706)"
+         inkscape:label="Bottom Path" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer2"
+       inkscape:label="Mirrors">
+      <g
+         inkscape:groupmode="layer"
+         id="layer3"
+         inkscape:label="Bottom Mirror">
+        <path
+           style="display:inline;fill:none;stroke:#c4c4c4;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 85.236019,73.804458 4.582718,-7.9375"
+           id="path3130"
+           transform="translate(-26.673212,-22.210706)"
+           inkscape:label="Bottom Mirror" />
+        <g
+           inkscape:groupmode="layer"
+           id="layer5"
+           inkscape:label="Angle" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer4"
+         inkscape:label="Top Mirror">
+        <path
+           style="display:inline;fill:none;stroke:#c4c4c4;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 68.43272,44.70029 4.582718,-7.9375"
+           id="path1676"
+           transform="translate(-26.673212,-22.210706)"
+           inkscape:label="Top Mirror" />
+      </g>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="g11"
+       inkscape:label="Reference Frame 2"
+       transform="translate(11.43448,-8.2291646)">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4381)"
+         d="M 41.018036,41.302081 37.049287,34.428005"
+         id="path3"
+         inkscape:label="u-axis" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4415)"
+         d="m 41.018036,41.302081 6.874077,-3.96875"
+         id="path4"
+         inkscape:label="f-axis" />
+      <g
+         inkscape:groupmode="layer"
+         id="g7"
+         inkscape:label="x-axis">
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle4"
+           cx="14.871621"
+           cy="56.277676"
+           r="1.3229166"
+           inkscape:label="circle"
+           transform="rotate(-30)" />
+        <ellipse
+           style="fill:#000000;stroke-width:0.264583"
+           id="path11"
+           cx="41.01804"
+           cy="41.302082"
+           rx="0.49999997"
+           ry="0.5"
+           inkscape:label="dot" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           x="46.592964"
+           y="43.819115"
+           id="text7"
+           inkscape:label="r-label"><tspan
+             sodipodi:role="line"
+             id="tspan7"
+             style="stroke-width:0.25"
+             x="46.592964"
+             y="43.819115">r(s<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan18">2</tspan>)</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="33.096001"
+         y="36.442375"
+         id="text9"
+         inkscape:label="f-label"><tspan
+           sodipodi:role="line"
+           id="tspan9"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+           x="33.096001"
+           y="36.442375">f(s<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan19">2</tspan>)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="52.799286"
+         y="36.802082"
+         id="text11"
+         inkscape:label="u-label"><tspan
+           sodipodi:role="line"
+           id="tspan11"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+           x="52.799286"
+           y="36.802082">u(s<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan20">2</tspan>)</tspan></text>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer7"
+       inkscape:label="Reference Frame 1"
+       transform="translate(42.05488,13.822917)"
+       style="display:inline">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4381)"
+         d="m -3.8211138,33.750002 3e-7,-7.9375"
+         id="path4377"
+         inkscape:label="u-axis" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4415)"
+         d="M -3.8211138,33.750002 H 4.1163865"
+         id="path4411"
+         inkscape:label="z-axis" />
+      <g
+         inkscape:groupmode="layer"
+         id="layer8"
+         inkscape:label="r-axis">
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path5223"
+           cx="-3.8211133"
+           cy="33.750004"
+           r="1.3229166"
+           inkscape:label="circle" />
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m -4.7910571,32.780059 1.9398881,1.939889"
+           id="path5333"
+           inkscape:label="cross-2" />
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m -2.8511686,32.780058 -1.939889,1.93989"
+           id="path5335"
+           inkscape:label="cross-1" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           x="-7.8794465"
+           y="37.220833"
+           id="text5597"
+           inkscape:label="r-label"><tspan
+             sodipodi:role="line"
+             id="tspan5595"
+             style="stroke-width:0.25"
+             x="-7.8794465"
+             y="37.220833">r(s<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan15">1</tspan>)</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="5.6189957"
+         y="37.220833"
+         id="text5435"
+         inkscape:label="f-label"><tspan
+           sodipodi:role="line"
+           id="tspan5433"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+           x="5.6189957"
+           y="37.220833">f(s<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan17">1</tspan>)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="-3.8185296"
+         y="23.239296"
+         id="text5593"
+         inkscape:label="u-label"><tspan
+           sodipodi:role="line"
+           id="tspan5591"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+           x="-3.8185294"
+           y="23.239296">u(s<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan16">1</tspan>)</tspan></text>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="g28"
+       inkscape:label="Reference Frame 3"
+       transform="translate(62.054879,-15.177085)"
+       style="display:inline">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4381)"
+         d="m -3.8211138,33.750002 3e-7,-7.9375"
+         id="path20"
+         inkscape:label="u-axis" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4415)"
+         d="M -3.8211138,33.750002 H 4.1163865"
+         id="path21"
+         inkscape:label="z-axis" />
+      <g
+         inkscape:groupmode="layer"
+         id="g24"
+         inkscape:label="r-axis">
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle21"
+           cx="-3.8211133"
+           cy="33.750004"
+           r="1.3229166"
+           inkscape:label="circle" />
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m -4.7910571,32.780059 1.9398881,1.939889"
+           id="path22"
+           inkscape:label="cross-2" />
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m -2.8511686,32.780058 -1.939889,1.93989"
+           id="path23"
+           inkscape:label="cross-1" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           x="-7.8794465"
+           y="37.220833"
+           id="text24"
+           inkscape:label="r-label"><tspan
+             sodipodi:role="line"
+             id="tspan24"
+             style="stroke-width:0.25"
+             x="-7.8794465"
+             y="37.220833">r(s<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan29">3</tspan>)</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="5.6189957"
+         y="37.220833"
+         id="text26"
+         inkscape:label="f-label"><tspan
+           sodipodi:role="line"
+           id="tspan26"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+           x="5.6189957"
+           y="37.220833">f(s<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan30">3</tspan>)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="-3.8185296"
+         y="23.239296"
+         id="text28"
+         inkscape:label="u-label"><tspan
+           sodipodi:role="line"
+           id="tspan28"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+           x="-3.8185294"
+           y="23.239296">u(s<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan31">3</tspan>)</tspan></text>
+    </g>
+  </g>
+  <metadata
+     id="metadata2091">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Kyle M. Douglass</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by/4.0/" />
+        <dc:language>English</dc:language>
+        <dc:title>The cursor frames at three different locations along the optical axis.</dc:title>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
