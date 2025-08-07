@@ -30,15 +30,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="3.6596241"
-     inkscape:cx="158.62285"
-     inkscape:cy="122.6902"
+     inkscape:zoom="2.587745"
+     inkscape:cx="135.83255"
+     inkscape:cy="109.74806"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1996">
+     inkscape:current-layer="g1594">
     <inkscape:grid
        type="xygrid"
        id="grid25"
@@ -119,163 +119,300 @@
     <g
        id="g1996"
        transform="translate(-33.406433,-15.507753)">
-      <path
-         style="fill:#000000;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1"
-         d="M 76.729167,66.145834 89.958333,52.916668"
-         id="path131" />
-      <path
-         style="fill:#000000;stroke:#000000;stroke-width:0.25;stroke-dasharray:2, 0.25;stroke-dashoffset:0;stroke-opacity:1"
-         d="M 76.729167,50.270835 89.958333,37.041669"
-         id="path811" />
       <g
-         id="g437">
-        <path
-           style="fill:none;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           d="m 81.491665,31.75 h -2.645833 v -7.9375 l 2.645833,-2.645833 h 2.645834 L 86.783332,23.8125 V 31.75 h -2.645833"
-           id="path2383" />
+         id="g1594"
+         transform="translate(3.4981477,-3.4378098e-4)">
+        <g
+           id="g1915"
+           transform="translate(0.65864816)">
+          <g
+             id="g1546"
+             transform="translate(0,-3.8918203)">
+            <text
+               xml:space="preserve"
+               style="font-size:2.82223px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';fill:#000000;stroke-width:0.0499999"
+               x="34.047588"
+               y="22.525862"
+               id="text434"><tspan
+                 sodipodi:role="line"
+                 id="tspan432"
+                 style="stroke-width:0.05"
+                 x="34.047588"
+                 y="22.525862">EXCITATION LIGHT</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+               x="34.039322"
+               y="26.231188"
+               id="text1919"><tspan
+                 sodipodi:role="line"
+                 id="tspan1917"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+                 x="34.039322"
+                 y="26.231188">FLUORESCENCE LIGHT</tspan></text>
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:miter;stroke-dasharray:0.25, 0.25;stroke-dashoffset:0"
+               d="m 67.46875,21.515068 h 5.672367"
+               id="path1536" />
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0"
+               d="m 67.46875,25.220398 h 5.672367"
+               id="path1538" />
+          </g>
+          <path
+             style="fill:#000000;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1"
+             d="m 79.029761,63.794031 8.730223,-8.730223"
+             id="path131" />
+          <path
+             style="fill:#000000;stroke:#000000;stroke-width:0.25;stroke-dasharray:2, 0.25;stroke-dashoffset:0;stroke-opacity:1"
+             d="m 78.978552,48.021451 8.730397,-8.730397"
+             id="path811" />
+          <g
+             id="g437">
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+               d="m 81.491665,31.75 h -2.645833 v -7.9375 l 2.645833,-2.645833 h 2.645834 L 86.783332,23.8125 V 31.75 h -2.645833"
+               id="path2383" />
+          </g>
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-dasharray:0.25, 0.25;stroke-dashoffset:0;marker-end:url(#TriangleStart)"
+             d="m 66.145831,44.446663 8.31146,10e-4 m 8.092708,-0.0022 10e-7,-12.695478"
+             id="path792"
+             sodipodi:nodetypes="cccc" />
+          <ellipse
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:butt"
+             id="path4893"
+             cx="64.822914"
+             cy="59.53125"
+             rx="1.3229166"
+             ry="4.3284998" />
+          <g
+             id="g1863">
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:butt"
+               d="m 44.979166,62.177085 h 2.645833 v -5.291666 l -2.645832,-10e-7"
+               id="path4895" />
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:butt"
+               d="M 44.979166,54.239585 V 64.822918 H 34.395833 V 54.239585 Z"
+               id="path4897" />
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:butt"
+               d="M 44.979166,54.239585 V 64.822918 H 34.395833 V 54.239585 Z"
+               id="path4899" />
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="89.317558"
+             y="27.469124"
+             id="text7392"><tspan
+               sodipodi:role="line"
+               id="tspan7390"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="89.317558"
+               y="27.469124">OBJECTIVE</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="89.236252"
+             y="44.667042"
+             id="text8390"><tspan
+               sodipodi:role="line"
+               id="tspan8388"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="89.236252"
+               y="44.667042">DICHROIC MIRROR</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="77.534637"
+             y="71.40374"
+             id="text8394"><tspan
+               sodipodi:role="line"
+               id="tspan8392"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="77.534637"
+               y="71.40374">MIRROR</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="34.064125"
+             y="52.570969"
+             id="text8398"><tspan
+               sodipodi:role="line"
+               id="tspan8396"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="34.064125"
+               y="52.570969">LIGHT SOURCE</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="34.900887"
+             y="71.403053"
+             id="text328"><tspan
+               sodipodi:role="line"
+               id="tspan326"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="34.900887"
+               y="71.403053">CAMERA</tspan></text>
+          <g
+             id="g1815">
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+               d="m 78.845832,19.314584 v 0.79375 h 7.9375 v -0.79375 z"
+               id="path2385" />
+            <ellipse
+               style="fill:none;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1"
+               id="path491"
+               cx="82.814583"
+               cy="18.653124"
+               rx="2.6458333"
+               ry="0.66145849" />
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;line-height:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="89.317558"
+             y="18.632656"
+             id="text1811"><tspan
+               sodipodi:role="line"
+               id="tspan1809"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="89.317558"
+               y="18.632656">SAMPLE AND</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="89.317558"
+               y="21.480618"
+               id="tspan1817">GLASS COVERSLIP</tspan></text>
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;marker-end:url(#marker2343)"
+             d="M 63.304349,59.53125 H 47.693933"
+             id="path2148" />
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:miter;stroke-dasharray:none"
+             id="rect467"
+             width="8.6569996"
+             height="1.75"
+             x="79.015251"
+             y="50.721939"
+             rx="2.3741589e-07"
+             ry="2.3741585e-07" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:miter;stroke-dasharray:none"
+             d="M 66.145831,59.531249 H 83.34375"
+             id="path1035" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:miter;stroke-dasharray:none"
+             d="m 83.34375,59.531249 3e-6,-7.05931"
+             id="path1091" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:miter;stroke-dasharray:none"
+             d="m 83.343753,50.721939 -3e-6,-19.339186"
+             id="path1093" />
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="89.236252"
+             y="52.604549"
+             id="text1097"><tspan
+               sodipodi:role="line"
+               id="tspan1095"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="89.236252"
+               y="52.604549">EMISSION FILTER</tspan></text>
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:miter;stroke-dasharray:none"
+             id="rect1201"
+             width="8.6569996"
+             height="1.75"
+             x="-48.776249"
+             y="74.457291"
+             rx="2.3741588e-07"
+             ry="2.3741585e-07"
+             transform="rotate(-90)" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:miter;stroke-dasharray:0.25, 0.25;stroke-dashoffset:0"
+             d="m 76.207291,44.447748 6.342707,-0.0022"
+             id="path1299"
+             sodipodi:nodetypes="cc" />
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="49.555653"
+             y="38.346111"
+             id="text1303"><tspan
+               sodipodi:role="line"
+               id="tspan1301"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="49.555653"
+               y="38.346111">EXCITATION FILTER</tspan></text>
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:miter;stroke-dasharray:none"
+             id="rect1362"
+             width="8.6569996"
+             height="1.75"
+             x="-48.776249"
+             y="34.395832"
+             rx="2.3741588e-07"
+             ry="2.3741585e-07"
+             transform="rotate(-90)" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:miter;stroke-dasharray:none"
+             id="path1416"
+             sodipodi:type="arc"
+             sodipodi:cx="36.145832"
+             sodipodi:cy="44.448124"
+             sodipodi:rx="0.62245578"
+             sodipodi:ry="0.62703812"
+             sodipodi:start="4.722312"
+             sodipodi:end="1.5670839"
+             sodipodi:arc-type="slice"
+             d="m 36.152009,43.821117 a 0.62245578,0.62703812 0 0 1 0.616276,0.628954 0.62245578,0.62703812 0 0 1 -0.620142,0.625087 l -0.0023,-0.627034 z" />
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
+             x="57.021847"
+             y="71.40374"
+             id="text1673"><tspan
+               sodipodi:role="line"
+               id="tspan1671"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+               x="57.021847"
+               y="71.40374">TUBE LENS</tspan></text>
+          <ellipse
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:butt"
+             id="ellipse1740"
+             cx="64.822914"
+             cy="44.446663"
+             rx="1.3229166"
+             ry="4.3284998" />
+          <ellipse
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:butt"
+             id="ellipse1742"
+             cx="45.772896"
+             cy="44.446663"
+             rx="1.3229166"
+             ry="4.3284998" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker2343)"
+             d="M 33.776226,51.331733 C 32.149522,48.901249 33.595481,47.716834 33.595481,47.716834"
+             id="path1744" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker2343)"
+             d="m 76.858034,37.878204 c 1.626704,2.430484 0.180745,3.614899 0.180745,3.614899"
+             id="path1778" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:miter;stroke-dasharray:0.25, 0.25;stroke-dashoffset:0"
+             d="m 36.768288,44.448124 7.681691,-0.0016"
+             id="path1784" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linejoin:miter;stroke-dasharray:0.25, 0.25;stroke-dashoffset:0"
+             d="M 47.095812,44.446663 H 63.499996"
+             id="path1786" />
+        </g>
       </g>
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;marker-end:url(#TriangleStart)"
-         d="m 47.624999,44.449999 h 34.925 L 82.55,31.750001"
-         id="path792" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;marker-end:"
-         d="m 83.343749,31.75 v 27.781249 l -17.128983,0"
-         id="path4041"
-         sodipodi:nodetypes="ccc" />
-      <ellipse
-         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:butt"
-         id="path4893"
-         cx="64.822914"
-         cy="59.53125"
-         rx="1.3229166"
-         ry="6.614583" />
-      <g
-         id="g1863">
-        <path
-           style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:butt"
-           d="m 44.979166,62.177085 h 2.645833 v -5.291666 l -2.645832,-10e-7"
-           id="path4895" />
-        <path
-           style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:butt"
-           d="M 44.979166,54.239585 V 64.822918 H 34.395833 V 54.239585 Z"
-           id="path4897" />
-        <path
-           style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:butt"
-           d="M 44.979166,54.239585 V 64.822918 H 34.395833 V 54.239585 Z"
-           id="path4899" />
-      </g>
-      <text
-         xml:space="preserve"
-         style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
-         x="90.375893"
-         y="27.469124"
-         id="text7392"><tspan
-           sodipodi:role="line"
-           id="tspan7390"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
-           x="90.375893"
-           y="27.469124">OBJECTIVE</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
-         x="90.294586"
-         y="44.667042"
-         id="text8390"><tspan
-           sodipodi:role="line"
-           id="tspan8388"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
-           x="90.294586"
-           y="44.667042">DICHROIC MIRROR</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
-         x="77.534637"
-         y="71.40374"
-         id="text8394"><tspan
-           sodipodi:role="line"
-           id="tspan8392"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
-           x="77.534637"
-           y="71.40374">MIRROR</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
-         x="57.021847"
-         y="71.403053"
-         id="text8398"><tspan
-           sodipodi:role="line"
-           id="tspan8396"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
-           x="57.021847"
-           y="71.403053">TUBE LENS</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
-         x="34.900887"
-         y="71.403053"
-         id="text328"><tspan
-           sodipodi:role="line"
-           id="tspan326"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
-           x="34.900887"
-           y="71.403053">CAMERA</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:2.82223px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';fill:#000000;stroke-width:0.0499999"
-         x="47.401756"
-         y="43.39167"
-         id="text434"><tspan
-           sodipodi:role="line"
-           id="tspan432"
-           style="stroke-width:0.05"
-           x="47.401756"
-           y="43.39167">EXCITATION LIGHT</tspan></text>
-      <g
-         id="g1815">
-        <path
-           style="fill:none;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           d="m 78.845832,19.314584 v 0.79375 h 7.9375 v -0.79375 z"
-           id="path2385" />
-        <ellipse
-           style="fill:none;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1"
-           id="path491"
-           cx="82.814583"
-           cy="18.653124"
-           rx="2.6458333"
-           ry="0.66145849" />
-      </g>
-      <text
-         xml:space="preserve"
-         style="font-size:2.82222px;line-height:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
-         x="90.375893"
-         y="18.632656"
-         id="text1811"><tspan
-           sodipodi:role="line"
-           id="tspan1809"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
-           x="90.375893"
-           y="18.632656">SAMPLE AND</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
-           x="90.375893"
-           y="21.487545"
-           id="tspan1817">GLASS COVERSLIP</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:butt;stroke-dasharray:none"
-         x="90.294586"
-         y="51.959618"
-         id="text1919"><tspan
-           sodipodi:role="line"
-           id="tspan1917"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
-           x="90.294586"
-           y="51.959618">FLUORESCENCE LIGHT</tspan></text>
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:square;marker-end:url(#marker2343)"
-         d="M 63.304349,59.53125 H 47.693933"
-         id="path2148" />
     </g>
   </g>
   <metadata
