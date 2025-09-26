@@ -1,0 +1,1 @@
+A thin lens with an object at infinity.
