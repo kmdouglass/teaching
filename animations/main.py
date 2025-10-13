@@ -1,12 +1,67 @@
 from manim import *
+import numpy as np
+import numpy.typing as npt
+
+
+OBJ_BARREL_HEIGHT = 1.0  # Height of the objective barrel
+OBJ_FOCAL_LENGTH = 4.0  # Focal length of the objective lens
+OBJ_WORKING_DISTANCE = 3.0  # Working distance of the objective lens
+OBJ_COLLECTION_ANGLE = 2 * np.atan2(OBJ_BARREL_HEIGHT, OBJ_WORKING_DISTANCE)
+
+
+def vector_length_and_dir_to_coords(
+    vec: npt.NDArray[np.float64],
+    origin: npt.NDArray[np.float64],
+    length: float
+    ) -> npt.NDArray[np.float64]:
+    direction = vec / np.linalg.norm(vec)
+    return origin + direction * length
+
+
+def ewald_circle() -> VGroup:
+    circ = Circle(radius=OBJ_FOCAL_LENGTH, color=GREEN, stroke_width=3)
+    k_inc = Arrow(
+        start=[0, 0, 0],
+        end=[OBJ_FOCAL_LENGTH, 0, 0],
+        buff=0,
+        color=GREEN,
+        stroke_width=2,
+        max_tip_length_to_length_ratio=0.025,
+    )
+
+    scattered_wave_vector = vector_length_and_dir_to_coords(
+        np.array([3, 1, 0]),
+        np.array([0, 0, 0]),
+        OBJ_FOCAL_LENGTH
+    )
+    k_scat = Arrow(
+        start=[0, 0, 0],
+        end=scattered_wave_vector,
+        buff=0,
+        color=GREEN,
+        stroke_width=2,
+        max_tip_length_to_length_ratio=0.025,
+    )
+
+    na_limits = Arc(
+        radius=OBJ_FOCAL_LENGTH,
+        start_angle=-OBJ_COLLECTION_ANGLE / 2,
+        angle=OBJ_COLLECTION_ANGLE,
+        color=YELLOW,
+        stroke_width=5,
+    )
+
+    vg_ewald_circle = VGroup(circ, k_inc, k_scat, na_limits)
+    return vg_ewald_circle
 
 
 class MicroscopeObjective(Scene):
     def construct(self):
-        title = Text("Ewald Sphere", font_size=36)
+        title = Text("The 3D Aperture", font_size=36)
         title.to_edge(UP)
         self.play(Write(title))
         self.wait(0.5)
+        self.play(FadeOut(title))
         
         objective_housing = Polygram(
             [[10, 3, 0], [5, 3, 0], [3, 1, 0], [3, -1, 0], [5, -3, 0], [10, -3, 0]],
@@ -14,6 +69,15 @@ class MicroscopeObjective(Scene):
             fill_opacity=0.8,
             stroke_color=GRAY,
             stroke_width=2
+        )
+        
+        # Principal surface - arc centered at origin
+        principal_surface = Arc(
+            radius=OBJ_FOCAL_LENGTH,
+            start_angle=-OBJ_COLLECTION_ANGLE / 2,
+            angle=OBJ_COLLECTION_ANGLE,
+            color=BLUE,
+            stroke_width=3
         )
 
         specimen_line = DashedLine(
@@ -35,15 +99,26 @@ class MicroscopeObjective(Scene):
         )
         incident_ray_continuation = Arrow(
             start=[0, 0, 0],
-            end=[3, 0, 0],
+            end=[OBJ_FOCAL_LENGTH, 0, 0],
             buff=0,
             color=BLUE,
             stroke_width=2,
             max_tip_length_to_length_ratio=0.025,
         )
+
+        scattered_wave_vector_top = vector_length_and_dir_to_coords(
+            np.array([3, 1, 0]),
+            np.array([0, 0, 0]),
+            OBJ_FOCAL_LENGTH
+        )
+        scattered_wave_vector_bottom = vector_length_and_dir_to_coords(
+            np.array([3, -1, 0]),
+            np.array([0, 0, 0]),
+            OBJ_FOCAL_LENGTH
+        )
         scattered_ray_top = Arrow(
             start=[0, 0, 0],
-            end=[3, 1, 0],  # Top edge of aperture entrance
+            end=scattered_wave_vector_top,  # Top edge of aperture entrance
             buff=0,
             color=RED,
             stroke_width=2,
@@ -51,15 +126,27 @@ class MicroscopeObjective(Scene):
         )
         scattered_ray_bottom = Arrow(
             start=[0, 0, 0],
-            end=[3, -1, 0],  # Bottom edge of aperture entrance
+            end=scattered_wave_vector_bottom,  # Bottom edge of aperture entrance
             buff=0,
             color=RED,
             stroke_width=2,
             max_tip_length_to_length_ratio=0.025,
         )
 
+        vg_microscope = VGroup(
+            objective_housing,
+            principal_surface,
+            specimen_line,
+            specimen_label,
+            incident_ray_partial,
+            incident_ray_continuation,
+            scattered_ray_top,
+            scattered_ray_bottom
+        )
+
         self.play(
             Create(objective_housing),
+            Create(principal_surface),
             run_time=0.5,
         )
         self.wait()
@@ -91,4 +178,17 @@ class MicroscopeObjective(Scene):
             rate_func=linear
         )
 
+        vg_ewald = ewald_circle()
+        self.play(
+            FadeOut(vg_microscope),
+            FadeIn(vg_ewald),
+            run_time=2.0,
+        )
+
+
+
         self.wait(10)
+
+
+if __name__ == "__main__":
+    print("Objective collection angle, degrees:", OBJ_COLLECTION_ANGLE * DEGREES)
