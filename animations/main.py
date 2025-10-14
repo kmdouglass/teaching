@@ -3,10 +3,12 @@ import numpy as np
 import numpy.typing as npt
 
 
-OBJ_BARREL_HEIGHT = 1.0  # Height of the objective barrel
-OBJ_FOCAL_LENGTH = 4.0  # Focal length of the objective lens
-OBJ_WORKING_DISTANCE = 3.0  # Working distance of the objective lens
-OBJ_COLLECTION_ANGLE = 2 * np.atan2(OBJ_BARREL_HEIGHT, OBJ_WORKING_DISTANCE)
+OBJ_BARREL_BACK_HEIGHT = 3.0  # Height of the objective barrel in the back
+OBJ_BARREL_FRONT_HEIGHT = 1.5  # Height of the objective barrel
+OBJ_BARREL_TAPER_LENGTH = 1.2  # Length of the tapered section of the objective barrel
+OBJ_FOCAL_LENGTH = 3.0  # Focal length of the objective lens
+OBJ_WORKING_DISTANCE = 1.2  # Working distance of the objective lens
+OBJ_COLLECTION_ANGLE = 2 * np.atan2(OBJ_BARREL_FRONT_HEIGHT, OBJ_WORKING_DISTANCE)
 
 
 def vector_length_and_dir_to_coords(
@@ -33,12 +35,12 @@ def ewald_circle_group() -> VGroup:
         end=[OBJ_FOCAL_LENGTH, 0, 0],
         buff=0,
         color=GREEN,
-        stroke_width=2,
-        max_tip_length_to_length_ratio=0.025,
+        stroke_width=5,
+        max_tip_length_to_length_ratio=0.1,
     )
 
     scattered_wave_vector = vector_length_and_dir_to_coords(
-        np.array([3, 1, 0]),
+        np.array([OBJ_WORKING_DISTANCE, OBJ_BARREL_FRONT_HEIGHT, 0]),
         np.array([0, 0, 0]),
         OBJ_FOCAL_LENGTH
     )
@@ -47,8 +49,8 @@ def ewald_circle_group() -> VGroup:
         end=scattered_wave_vector,
         buff=0,
         color=GREEN,
-        stroke_width=2,
-        max_tip_length_to_length_ratio=0.025,
+        stroke_width=5,
+        max_tip_length_to_length_ratio=0.1,
     )
 
     na_limits = Arc(
@@ -72,7 +74,14 @@ class MicroscopeObjective(Scene):
         self.play(FadeOut(title))
         
         objective_housing = Polygram(
-            [[10, 3, 0], [5, 3, 0], [3, 1, 0], [3, -1, 0], [5, -3, 0], [10, -3, 0]],
+            [
+                [10, OBJ_BARREL_BACK_HEIGHT, 0],
+                [OBJ_WORKING_DISTANCE + OBJ_BARREL_TAPER_LENGTH, OBJ_BARREL_BACK_HEIGHT, 0],
+                [OBJ_WORKING_DISTANCE, OBJ_BARREL_FRONT_HEIGHT, 0],
+                [OBJ_WORKING_DISTANCE, -OBJ_BARREL_FRONT_HEIGHT, 0],
+                [OBJ_WORKING_DISTANCE + OBJ_BARREL_TAPER_LENGTH, -OBJ_BARREL_BACK_HEIGHT, 0],
+                [10, -OBJ_BARREL_BACK_HEIGHT, 0]
+            ],
             fill_color=DARK_GRAY,
             fill_opacity=0.8,
             stroke_color=GRAY,
@@ -98,7 +107,7 @@ class MicroscopeObjective(Scene):
         specimen_label.next_to(specimen_line, DOWN)
 
         incident_ray_partial = Arrow(
-            start=[-3, 0, 0],
+            start=[-OBJ_WORKING_DISTANCE, 0, 0],
             end=[0, 0, 0],
             buff=0,
             color=BLUE,
@@ -115,12 +124,12 @@ class MicroscopeObjective(Scene):
         )
 
         scattered_wave_vector_top = vector_length_and_dir_to_coords(
-            np.array([3, 1, 0]),
+            np.array([OBJ_WORKING_DISTANCE, OBJ_BARREL_FRONT_HEIGHT, 0]),
             np.array([0, 0, 0]),
             OBJ_FOCAL_LENGTH
         )
         scattered_wave_vector_bottom = vector_length_and_dir_to_coords(
-            np.array([3, -1, 0]),
+            np.array([OBJ_WORKING_DISTANCE, -OBJ_BARREL_FRONT_HEIGHT, 0]),
             np.array([0, 0, 0]),
             OBJ_FOCAL_LENGTH
         )
@@ -128,7 +137,7 @@ class MicroscopeObjective(Scene):
             start=[0, 0, 0],
             end=scattered_wave_vector_top,  # Top edge of aperture entrance
             buff=0,
-            color=RED,
+            color=BLUE,
             stroke_width=2,
             max_tip_length_to_length_ratio=0.025,
         )
@@ -136,7 +145,7 @@ class MicroscopeObjective(Scene):
             start=[0, 0, 0],
             end=scattered_wave_vector_bottom,  # Bottom edge of aperture entrance
             buff=0,
-            color=RED,
+            color=BLUE,
             stroke_width=2,
             max_tip_length_to_length_ratio=0.025,
         )
@@ -198,7 +207,7 @@ class MicroscopeObjective(Scene):
         k_inc_label.next_to(k_inc.get_end(), DOWN - RIGHT * 1.0)
 
         k_scat_label = MathTex(r"\vec{k}_{sca}", font_size=36, color=GREEN)
-        k_scat_label.next_to(k_scat.get_end(), UP - RIGHT * 1.0)
+        k_scat_label.next_to(k_scat.get_end(), UP + RIGHT * 1.0)
 
         self.play(
             Write(k_inc_label),
@@ -298,7 +307,11 @@ class MicroscopeObjective(Scene):
             y_range=[-1, 1, 0.5],
             x_length=2,
             y_length=2,
-            axis_config={"color": WHITE, "include_tip": False},
+            axis_config={
+                "color": WHITE,
+                "include_tip": False,
+                "stroke_width": 0.5,
+            },
             tips=False,
         )
         axes.shift(RIGHT * 3.5)
@@ -312,7 +325,7 @@ class MicroscopeObjective(Scene):
             background_line_style={
                 "stroke_color": GRAY,
                 "stroke_width": 1,
-                "stroke_opacity": 0.3,
+                "stroke_opacity": 0.5,
             }
         )
         grid.shift(RIGHT * 3.5)
@@ -340,6 +353,16 @@ class MicroscopeObjective(Scene):
         G_dot.add_updater(
             lambda m: m.move_to(axes.coords_to_point(get_G_vector()[0] * 0.5, get_G_vector()[1] * 0.5))
         )
+
+        # Add traced path that follows the dot
+        G_trace = TracedPath(
+            G_dot.get_center,
+            stroke_color=PURPLE,
+            stroke_width=5,
+            stroke_opacity=0.7,
+            dissipating_time=None,
+        )
+        self.add(G_trace)
 
         self.play(Create(G_dot))
         self.wait(1)
