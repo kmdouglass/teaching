@@ -18,7 +18,15 @@ def vector_length_and_dir_to_coords(
     return origin + direction * length
 
 
-def ewald_circle() -> VGroup:
+def reciprocal_lattice_vector(
+    k_inc: npt.NDArray[np.float64],
+    k_scat: npt.NDArray[np.float64]
+) -> npt.NDArray[np.float64]:
+    origin = k_inc
+    return k_scat - k_inc + origin
+
+
+def ewald_circle_group() -> VGroup:
     circ = Circle(radius=OBJ_FOCAL_LENGTH, color=GREEN, stroke_width=3)
     k_inc = Arrow(
         start=[0, 0, 0],
@@ -178,13 +186,94 @@ class MicroscopeObjective(Scene):
             rate_func=linear
         )
 
-        vg_ewald = ewald_circle()
+        vg_ewald = ewald_circle_group()
+        ewald_circle, k_inc, k_scat, na_limits = vg_ewald
         self.play(
             FadeOut(vg_microscope),
             FadeIn(vg_ewald),
             run_time=2.0,
         )
 
+        k_inc_label = MathTex(r"\vec{k}_{inc}", font_size=36, color=GREEN)
+        k_inc_label.next_to(k_inc.get_end(), DOWN - RIGHT * 1.0)
+
+        k_scat_label = MathTex(r"\vec{k}_{sca}", font_size=36, color=GREEN)
+        k_scat_label.next_to(k_scat.get_end(), UP - RIGHT * 1.0)
+
+        self.play(
+            Write(k_inc_label),
+            Write(k_scat_label),
+        )
+        self.wait(1)
+        self.play(
+            FadeOut(k_inc_label),
+            FadeOut(k_scat_label),
+        )
+
+        self.play(
+            Rotate(k_scat, angle=-OBJ_COLLECTION_ANGLE, about_point=[0, 0, 0]),
+        )
+        self.wait(1)
+        self.play(
+            Rotate(k_scat, angle=OBJ_COLLECTION_ANGLE, about_point=[0, 0, 0]),
+        )
+        self.wait(1)
+
+        # Try to pass the NA limits but fail
+        bump = 1 * DEGREES
+        self.play(
+            Rotate(k_scat, angle=-bump, about_point=[0, 0, 0]),
+            run_time=0.3,
+        )
+        self.play(
+            Rotate(k_scat, angle=bump, about_point=[0, 0, 0]),
+            run_time=0.3,
+        )
+        self.play(
+            Rotate(k_scat, angle=-bump, about_point=[0, 0, 0]),
+            run_time=0.2,
+        )
+        self.play(
+            Rotate(k_scat, angle=bump, about_point=[0, 0, 0]),
+            run_time=0.2,
+        )
+
+        G = Arrow(
+            start = k_inc.get_end(),
+            end = reciprocal_lattice_vector(k_inc.get_end(), k_scat.get_end()),
+            buff=0,
+            color=PURPLE,
+            stroke_width=5,
+            max_tip_length_to_length_ratio=0.1,
+        )
+        G_label = MathTex(r"\vec{G}", font_size=36, color=PURPLE)
+        G_label.next_to(G.get_center(), UP + RIGHT * 1.0)
+
+        # Pin G to the end of k_scat
+        G.add_updater(
+            lambda m: m.put_start_and_end_on(k_inc.get_end(), k_scat.get_end())
+        )
+
+        self.play(
+            Create(G),
+            Write(G_label),
+            run_time=2.0
+        )
+        self.wait(1)
+        self.play(
+            FadeOut(G_label),
+        )
+
+        # Rotate k_scat and show how G changes
+        self.play(
+            Rotate(k_scat, angle=-OBJ_COLLECTION_ANGLE, about_point=[0, 0, 0]),
+            rate_func=linear,
+        )
+        self.wait(1)
+        self.play(
+            Rotate(k_scat, angle=OBJ_COLLECTION_ANGLE, about_point=[0, 0, 0]),
+            rate_func=linear,
+        )
 
 
         self.wait(10)
