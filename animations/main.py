@@ -239,7 +239,7 @@ class MicroscopeObjective(Scene):
         )
 
         G = Arrow(
-            start = k_inc.get_end(),
+            start=k_inc.get_end(),
             end = reciprocal_lattice_vector(k_inc.get_end(), k_scat.get_end()),
             buff=0,
             color=PURPLE,
@@ -250,9 +250,17 @@ class MicroscopeObjective(Scene):
         G_label.next_to(G.get_center(), UP + RIGHT * 1.0)
 
         # Pin G to the end of k_scat
-        G.add_updater(
-            lambda m: m.put_start_and_end_on(k_inc.get_end(), k_scat.get_end())
-        )
+        def update_G(m):
+            new_G = Arrow(
+                start=k_inc.get_end(),
+                end=k_scat.get_end(),
+                buff=0,
+                color=PURPLE,
+                stroke_width=5,
+                max_tip_length_to_length_ratio=0.1,
+            )
+            m.become(new_G)
+        G.add_updater(update_G)
 
         self.play(
             Create(G),
@@ -275,6 +283,79 @@ class MicroscopeObjective(Scene):
             rate_func=linear,
         )
 
+
+        #--------------------------------
+        # Scale the scene to make room for the plot
+        self.play(
+            vg_ewald.animate.scale(0.5).shift(LEFT * 3.5),
+            G.animate.scale(0.5).shift(LEFT * 3.5),
+            run_time=1.5
+        )
+
+        # Create axes for the G vector plot on the right side
+        axes = Axes(
+            x_range=[-1, 4, 1],
+            y_range=[-2, 2, 1],
+            x_length=5,
+            y_length=4,
+            axis_config={"color": WHITE, "include_tip": False},
+            tips=False,
+        )
+        axes.shift(RIGHT * 3.5)
+
+        # Create grid
+        grid = NumberPlane(
+            x_range=[-1, 4, 1],
+            y_range=[-2, 2, 1],
+            x_length=5,
+            y_length=4,
+            background_line_style={
+                "stroke_color": GRAY,
+                "stroke_width": 1,
+                "stroke_opacity": 0.3,
+            }
+        )
+        grid.shift(RIGHT * 3.5)
+
+        # Add axes labels
+        x_label = MathTex("G_z", font_size=28).next_to(axes.x_axis, RIGHT)
+        y_label = MathTex("G_x", font_size=28).next_to(axes.y_axis, UP)
+
+        self.play(
+            Create(grid),
+            Create(axes),
+            Write(x_label),
+            Write(y_label),
+            run_time=1
+        )
+
+        # Create a dot that tracks the G vector endpoint
+        def get_G_vector():
+            return k_scat.get_end() - k_inc.get_end()
+
+        G_dot = Dot(color=PURPLE, radius=0.04)
+        G_dot.move_to(axes.coords_to_point(get_G_vector()[0] * 0.5, get_G_vector()[1] * 0.5))
+
+        # Add updater to track G vector
+        G_dot.add_updater(
+            lambda m: m.move_to(axes.coords_to_point(get_G_vector()[0] * 0.5, get_G_vector()[1] * 0.5))
+        )
+
+        self.play(Create(G_dot))
+        self.wait(1)
+
+        # Now animate k_scat and watch G_dot move on the plot
+        self.play(
+            Rotate(k_scat, angle=-OBJ_COLLECTION_ANGLE, about_point=[0, 0, 0]),
+            rate_func=linear,
+            run_time=2
+        )
+        self.wait(1)
+        self.play(
+            Rotate(k_scat, angle=OBJ_COLLECTION_ANGLE, about_point=[0, 0, 0]),
+            rate_func=linear,
+            run_time=2
+        )
 
         self.wait(10)
 
