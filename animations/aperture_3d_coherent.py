@@ -29,12 +29,12 @@ def reciprocal_lattice_vector(
 
 
 def ewald_circle_group() -> VGroup:
-    circ = Circle(radius=OBJ_FOCAL_LENGTH, color=GREEN, stroke_width=3)
+    circ = Circle(radius=OBJ_FOCAL_LENGTH, color=GRAY, stroke_width=3)
     k_inc = Arrow(
         start=[0, 0, 0],
         end=[OBJ_FOCAL_LENGTH, 0, 0],
         buff=0,
-        color=GREEN,
+        color=BLUE,
         stroke_width=5,
         max_tip_length_to_length_ratio=0.1,
     )
@@ -48,7 +48,7 @@ def ewald_circle_group() -> VGroup:
         start=[0, 0, 0],
         end=scattered_wave_vector,
         buff=0,
-        color=GREEN,
+        color=BLUE,
         stroke_width=5,
         max_tip_length_to_length_ratio=0.1,
     )
@@ -59,15 +59,18 @@ def ewald_circle_group() -> VGroup:
         angle=OBJ_COLLECTION_ANGLE,
         color=YELLOW,
         stroke_width=5,
+        stroke_opacity=0.3,
     )
 
     vg_ewald_circle = VGroup(circ, k_inc, k_scat, na_limits)
     return vg_ewald_circle
 
 
-class MicroscopeObjective(Scene):
+class Aperture3DCoherent(Scene):
     def construct(self):
-        title = Text("The 3D Aperture", font_size=36)
+        title_line1 = Text("The 3D Aperture", font_size=36)
+        title_line2 = Text("Coherent Illumination", font_size=36)
+        title = VGroup(title_line1, title_line2).arrange(DOWN, center=True, buff=0.2)
         title.to_edge(UP)
         self.play(Write(title))
         self.wait(0.5)
@@ -196,18 +199,23 @@ class MicroscopeObjective(Scene):
         )
 
         vg_ewald = ewald_circle_group()
-        ewald_circle, k_inc, k_scat, na_limits = vg_ewald
+        _, k_inc, k_scat, _ = vg_ewald
         self.play(
             FadeOut(vg_microscope),
             FadeIn(vg_ewald),
             run_time=2.0,
         )
+        ewald_label = Text("Ewald Sphere", font_size=24, color=GRAY)
+        ewald_label.next_to(vg_ewald, UP)
+        self.play(Write(ewald_label))
+        self.wait(1)
+        self.play(FadeOut(ewald_label))
 
-        k_inc_label = MathTex(r"\vec{k}_{inc}", font_size=36, color=GREEN)
+        k_inc_label = MathTex(r"\vec{k}_{inc}", font_size=36, color=BLUE)
         k_inc_label.next_to(k_inc.get_end(), DOWN - RIGHT * 1.0)
 
-        k_scat_label = MathTex(r"\vec{k}_{sca}", font_size=36, color=GREEN)
-        k_scat_label.next_to(k_scat.get_end(), UP + RIGHT * 1.0)
+        k_scat_label = MathTex(r"\vec{k}_{sca}", font_size=36, color=BLUE)
+        k_scat_label.next_to(k_scat.get_end(), UP + RIGHT * 0.25)
 
         self.play(
             Write(k_inc_label),
@@ -251,11 +259,11 @@ class MicroscopeObjective(Scene):
             start=k_inc.get_end(),
             end = reciprocal_lattice_vector(k_inc.get_end(), k_scat.get_end()),
             buff=0,
-            color=PURPLE,
+            color=YELLOW,
             stroke_width=5,
             max_tip_length_to_length_ratio=0.1,
         )
-        G_label = MathTex(r"\vec{G}", font_size=36, color=PURPLE)
+        G_label = MathTex(r"\vec{G} = \vec{k}_{sca} - \vec{k}_{inc}", font_size=36, color=YELLOW)
         G_label.next_to(G.get_center(), UP + RIGHT * 1.0)
 
         # Pin G to the end of k_scat
@@ -264,7 +272,7 @@ class MicroscopeObjective(Scene):
                 start=k_inc.get_end(),
                 end=k_scat.get_end(),
                 buff=0,
-                color=PURPLE,
+                color=YELLOW,
                 stroke_width=5,
                 max_tip_length_to_length_ratio=0.1,
             )
@@ -346,26 +354,25 @@ class MicroscopeObjective(Scene):
         def get_G_vector():
             return k_scat.get_end() - k_inc.get_end()
 
-        G_dot = Dot(color=PURPLE, radius=0.04)
+        G_dot = Dot(color=YELLOW, radius=0.04)
         G_dot.move_to(axes.coords_to_point(get_G_vector()[0] * 0.5, get_G_vector()[1] * 0.5))
 
         # Add updater to track G vector
         G_dot.add_updater(
             lambda m: m.move_to(axes.coords_to_point(get_G_vector()[0] * 0.5, get_G_vector()[1] * 0.5))
         )
+        self.play(Create(G_dot))
+        self.wait(1)
 
         # Add traced path that follows the dot
         G_trace = TracedPath(
             G_dot.get_center,
-            stroke_color=PURPLE,
+            stroke_color=YELLOW,
             stroke_width=5,
             stroke_opacity=0.7,
             dissipating_time=None,
         )
         self.add(G_trace)
-
-        self.play(Create(G_dot))
-        self.wait(1)
 
         rotation_point = k_scat.get_start()
         self.play(
@@ -380,7 +387,39 @@ class MicroscopeObjective(Scene):
             run_time=2
         )
 
-        self.wait(10)
+        # Prevent the trace from following the dot when the axes get resized
+        G_trace_static = G_trace.copy()
+        G_trace_static.clear_updaters()
+        self.remove(G_trace)
+        self.add(G_trace_static)
+
+        G.clear_updaters()
+        G_dot.clear_updaters()
+    
+        plot_group = VGroup(grid, axes, x_label, y_label, G_dot, G_trace_static)
+
+        self.play(
+            FadeOut(vg_ewald),
+            FadeOut(G),
+            plot_group.animate.scale(2).shift(LEFT * 3.5),
+            run_time=1.5
+        )
+
+        self.play(
+            FadeOut(G_dot),
+            run_time=0.5,
+        )
+
+        self.wait(3)
+
+        self.play(
+            FadeOut(plot_group),
+        )
+        
+        author = Text("Kyle M. Douglass", font_size=24)
+        self.play(Write(author))
+
+        self.wait(3)
 
 
 if __name__ == "__main__":
