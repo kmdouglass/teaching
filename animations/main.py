@@ -284,7 +284,7 @@ class MicroscopeObjective(Scene):
         )
 
 
-        #--------------------------------
+        #-------------------------------------------------------------------
         # Scale the scene to make room for the plot
         self.play(
             vg_ewald.animate.scale(0.5).shift(LEFT * 3.5),
@@ -294,10 +294,10 @@ class MicroscopeObjective(Scene):
 
         # Create axes for the G vector plot on the right side
         axes = Axes(
-            x_range=[-1, 4, 1],
-            y_range=[-2, 2, 1],
-            x_length=5,
-            y_length=4,
+            x_range=[-1, 1, 0.5],
+            y_range=[-1, 1, 0.5],
+            x_length=2,
+            y_length=2,
             axis_config={"color": WHITE, "include_tip": False},
             tips=False,
         )
@@ -305,10 +305,10 @@ class MicroscopeObjective(Scene):
 
         # Create grid
         grid = NumberPlane(
-            x_range=[-1, 4, 1],
-            y_range=[-2, 2, 1],
-            x_length=5,
-            y_length=4,
+            x_range=[-1, 1, 0.5],
+            y_range=[-1, 1, 0.5],
+            x_length=2,
+            y_length=2,
             background_line_style={
                 "stroke_color": GRAY,
                 "stroke_width": 1,
@@ -344,15 +344,15 @@ class MicroscopeObjective(Scene):
         self.play(Create(G_dot))
         self.wait(1)
 
-        # Now animate k_scat and watch G_dot move on the plot
+        rotation_point = k_scat.get_start()
         self.play(
-            Rotate(k_scat, angle=-OBJ_COLLECTION_ANGLE, about_point=[0, 0, 0]),
+            Rotate(k_scat, angle=-OBJ_COLLECTION_ANGLE, about_point=rotation_point),
             rate_func=linear,
             run_time=2
         )
         self.wait(1)
         self.play(
-            Rotate(k_scat, angle=OBJ_COLLECTION_ANGLE, about_point=[0, 0, 0]),
+            Rotate(k_scat, angle=OBJ_COLLECTION_ANGLE, about_point=rotation_point),
             rate_func=linear,
             run_time=2
         )
