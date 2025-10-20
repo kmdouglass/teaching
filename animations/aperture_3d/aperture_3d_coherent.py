@@ -198,6 +198,15 @@ class Aperture3DCoherent(Scene):
             rate_func=linear
         )
 
+        illumination_explanation = Text(
+            "Specimen is illuminated by one plane wave",
+            font_size=24,
+        )
+        illumination_explanation.to_edge(UP)
+        self.play(Write(illumination_explanation))
+        self.wait(2)
+        self.play(FadeOut(illumination_explanation))
+
         vg_ewald = ewald_circle_group()
         _, k_inc, k_scat, _ = vg_ewald
         self.play(
@@ -205,11 +214,20 @@ class Aperture3DCoherent(Scene):
             FadeIn(vg_ewald),
             run_time=2.0,
         )
-        ewald_label = Text("Ewald Sphere", font_size=24, color=GRAY)
+        ewald_label = Text("Ewald Sphere", font_size=24)
         ewald_label.next_to(vg_ewald, UP)
         self.play(Write(ewald_label))
         self.wait(1)
         self.play(FadeOut(ewald_label))
+
+        na_explanation = Text(
+            "The objective collects scattered waves within its numerical aperture",
+            font_size=24,
+        )
+        na_explanation.to_edge(UP)
+        self.play(Write(na_explanation))
+        self.wait(2)
+        self.play(FadeOut(na_explanation))
 
         k_inc_label = MathTex(r"\vec{k}_{inc}", font_size=36, color=BLUE)
         k_inc_label.next_to(k_inc.get_end(), DOWN - RIGHT * 1.0)
@@ -263,7 +281,7 @@ class Aperture3DCoherent(Scene):
             stroke_width=5,
             max_tip_length_to_length_ratio=0.1,
         )
-        G_label = MathTex(r"\vec{G} = \vec{k}_{sca} - \vec{k}_{inc}", font_size=36, color=YELLOW)
+        G_label = MathTex(r"\vec{K} = \vec{k}_{sca} - \vec{k}_{inc}", font_size=36, color=YELLOW)
         G_label.next_to(G.get_center(), UP + RIGHT * 1.0)
 
         # Pin G to the end of k_scat
@@ -279,14 +297,22 @@ class Aperture3DCoherent(Scene):
             m.become(new_G)
         G.add_updater(update_G)
 
+        G_explanation = Text(
+            "K represents the spatial frequencies of the specimen that are collected",
+            font_size=24,
+        )
+        G_explanation.to_edge(UP)
+
         self.play(
             Create(G),
             Write(G_label),
+            Write(G_explanation),
             run_time=2.0
         )
         self.wait(1)
         self.play(
             FadeOut(G_label),
+            FadeOut(G_explanation),
         )
 
         # Rotate k_scat and show how G changes
@@ -339,8 +365,8 @@ class Aperture3DCoherent(Scene):
         grid.shift(RIGHT * 3.5)
 
         # Add axes labels
-        x_label = MathTex("G_z", font_size=28).next_to(axes.x_axis, RIGHT)
-        y_label = MathTex("G_x", font_size=28).next_to(axes.y_axis, UP)
+        x_label = MathTex("K_z", font_size=28).next_to(axes.x_axis, RIGHT)
+        y_label = MathTex("K_x", font_size=28).next_to(axes.y_axis, UP)
 
         self.play(
             Create(grid),
@@ -404,16 +430,24 @@ class Aperture3DCoherent(Scene):
             plot_group.animate.scale(2).shift(LEFT * 3.5),
             run_time=1.5
         )
+        plot_group.remove(G_dot)
 
         self.play(
             FadeOut(G_dot),
             run_time=0.5,
         )
 
+        support_explanation = Text(
+            "The support of the 3D aperture in Fourier space",
+            font_size=24,
+        )
+        support_explanation.to_edge(UP)
+        self.play(Write(support_explanation))
         self.wait(3)
 
         self.play(
             FadeOut(plot_group),
+            FadeOut(support_explanation),
         )
         
         author = Text("Kyle M. Douglass", font_size=24)

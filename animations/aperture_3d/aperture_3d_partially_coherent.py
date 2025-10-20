@@ -531,6 +531,8 @@ class Aperture3DPartiallyCoherent(Scene):
             run_time=1.5
         )
 
+        plot_group.remove(G_dot)
+
         self.play(
             FadeOut(G_dot),
             run_time=0.5,
