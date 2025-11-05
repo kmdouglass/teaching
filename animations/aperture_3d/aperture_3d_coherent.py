@@ -450,7 +450,7 @@ class Aperture3DCoherent(Scene):
             FadeOut(support_explanation),
         )
         
-        author = Text("Kyle M. Douglass", font_size=24)
+        author = Text("by Kyle M. Douglass", font_size=24)
         self.play(Write(author))
 
         self.wait(3)

@@ -11,6 +11,55 @@ OBJ_WORKING_DISTANCE = 1.2  # Working distance of the objective lens
 OBJ_COLLECTION_ANGLE = 2 * np.atan2(OBJ_BARREL_FRONT_HEIGHT, OBJ_WORKING_DISTANCE)
 
 
+def support(fxy, fz) -> npt.NDArray[np.float64]:
+    """Returns the whether the given spatial frequency is within the 3D aperture support."""
+    fxy = np.where(fxy == 0, 1e-10, fxy)  # Avoid division by zero
+
+    # I know that the units don't work here; it's just for illustration as everything
+    # is in the global coordinate system
+    wavelength_um = 1
+    NA_O = NA_C = np.sin(np.arctan(OBJ_BARREL_FRONT_HEIGHT / OBJ_WORKING_DISTANCE))
+
+    term_0 = 0.5 * (NA_O**2 + NA_C**2) / wavelength_um**2
+    term_1 = -0.25 * fxy**2
+    term_2 = -(fz / wavelength_um / fxy)**2
+    term_3 = -np.abs(fz / wavelength_um - 0.5 * (NA_O**2 - NA_C**2) / wavelength_um**2)
+    term_4 = -np.abs(fz / wavelength_um + 0.5 * (NA_O**2 - NA_C**2) / wavelength_um**2)
+    term_sum_0123 = term_0 + term_1 + term_2 + term_3
+    term_sum_0124 = term_0 + term_1 + term_2 + term_4
+
+    # Avoid invalid values due to sqrt of negative numbers
+    term_sum_0123 = np.where(term_sum_0123 < 0, 0.0, term_sum_0123)
+    term_sum_0124 = np.where(term_sum_0124 < 0, 0.0, term_sum_0124)
+
+    otf = np.real(np.sqrt(term_sum_0123) + np.sqrt(term_sum_0124)) / 2 / np.pi / fxy
+    otf_binarized = np.where(np.abs(otf) > 0, 1.0, 0.0)  # Binarize the support
+
+    return otf_binarized
+
+
+def create_support_image(resolution: int = 100):
+    """Creates a 2D numpy array containing the binarized support."""
+    max_freq = 2 * np.sin(np.arctan(OBJ_BARREL_FRONT_HEIGHT / OBJ_WORKING_DISTANCE))
+    z_range = np.linspace(-max_freq, max_freq, resolution)
+    xy_range = np.linspace(-max_freq, max_freq, resolution)
+    FZ, FXY = np.meshgrid(z_range, xy_range)
+    
+    Z = support(FXY, FZ)
+
+    # Repeat the array 4 times along a new third axis to create an RGBA image
+    support_image = np.repeat(Z[:, :, np.newaxis], 4, axis=2)
+    mask = support_image[:, :, 0] > 0
+
+    # Set the color to yellow (R=1, G=1, B=0) and alpha to 1
+    support_image[:, :, 0] = support_image[:, :, 0] * 255  # Red channel
+    support_image[:, :, 1] = support_image[:, :, 1] * 255  # Green channel
+    support_image[:, :, 2] = 0.0  # Blue channel
+    support_image[:, :, 3] = support_image[:, :, 3] * 127  # Alpha channel
+    support_image[~mask, 3] = 0  # Set alpha to 0 where there is no support
+    return support_image.astype(np.uint8)
+
+
 def vector_length_and_dir_to_coords(
     vec: npt.NDArray[np.float64],
     origin: npt.NDArray[np.float64],
@@ -530,11 +579,21 @@ class Aperture3DPartiallyCoherent(Scene):
             plot_group.animate.scale(2).shift(LEFT * 3.5),
             run_time=1.5
         )
+       
+        # empirically determined
+        scale = 2.35
+        support_image = ImageMobject(create_support_image(resolution=600))
+        support_image.set_width(scale * axes.x_length)
+        support_image.set_height(scale * axes.y_length)
+        support_image.set_resampling_algorithm(RESAMPLING_ALGORITHMS["cubic"])
+        support_image.move_to(axes.c2p(0, 0))
 
-        plot_group.remove(G_dot)
+        plot_group.remove(G_dot, G_trace_static)
 
         self.play(
             FadeOut(G_dot),
+            FadeOut(G_trace_static),
+            FadeIn(support_image),
             run_time=0.5,
         )
 
@@ -548,14 +607,19 @@ class Aperture3DPartiallyCoherent(Scene):
 
         self.play(
             FadeOut(plot_group),
+            FadeOut(support_image),
             FadeOut(support_explanation),
         )
         
-        author = Text("Kyle M. Douglass", font_size=24)
+        author = Text("by Kyle M. Douglass", font_size=24)
         self.play(Write(author))
 
         self.wait(3)
 
 
 if __name__ == "__main__":
-    print("Objective collection angle, degrees:", OBJ_COLLECTION_ANGLE * DEGREES)
+    import matplotlib.pyplot as plt
+
+    image = create_support_image()
+    plt.imshow(image)
+    plt.show()
