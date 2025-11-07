@@ -121,7 +121,7 @@ class Aperture3DPartiallyCoherent(Scene):
         title_line1 = Text("The 3D Aperture", font_size=36)
         title_line2 = Text("Partially Coherent Illumination", font_size=36)
         title = VGroup(title_line1, title_line2).arrange(DOWN, center=True, buff=0.2)
-        title.to_edge(UP)
+
         self.play(Write(title))
         self.wait(0.5)
         self.play(FadeOut(title))
@@ -267,11 +267,11 @@ class Aperture3DPartiallyCoherent(Scene):
             Create(scattered_ray_top),
             Create(scattered_ray_bottom),
             run_time=time_to_aperture,
-            rate_func=linear
+            rate_func=linear,
         )
 
         illumination_explanation = Text(
-            "Specimen is illuminated by many incoherent plane waves",
+            "The specimen is illuminated by many incoherent plane waves",
             font_size=24,
         )
         illumination_explanation.to_edge(UP)

@@ -71,7 +71,6 @@ class Aperture3DCoherent(Scene):
         title_line1 = Text("The 3D Aperture", font_size=36)
         title_line2 = Text("Coherent Illumination", font_size=36)
         title = VGroup(title_line1, title_line2).arrange(DOWN, center=True, buff=0.2)
-        title.to_edge(UP)
         self.play(Write(title))
         self.wait(0.5)
         self.play(FadeOut(title))
@@ -199,7 +198,7 @@ class Aperture3DCoherent(Scene):
         )
 
         illumination_explanation = Text(
-            "Specimen is illuminated by one plane wave",
+            "The specimen is illuminated by one plane wave",
             font_size=24,
         )
         illumination_explanation.to_edge(UP)
